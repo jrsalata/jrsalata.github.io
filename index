@@ -1,0 +1,197 @@
+/* Credit to Larry Serflaten for helping me out with the basic code that I based this off of.
+Welcome to Voluntold 2.4! This has a more user-friendly interface than 1.0
+To begin, click on the button that is the same as your current class. 
+When there are no more people left, it will automatically restart.
+To restart manually, click the restart button.
+*/
+
+//Variables 8-13 control which class is it using
+var firstClass = false;
+var secondClass = false;
+var thirdClass = false;
+var fourthClass = false;
+var sixthClass = false;
+var seventhClass = false;
+
+//Controls clicking control
+var pressed = false;
+var debuger = false;
+//Button creates the buttons on the front screen
+var Button = function(config) {
+    this.x = config.x;
+    this.y = config.y;
+    this.text = config.text;
+};
+
+Button.prototype.draw = function() {
+    fill(255, 255, 255);
+    strokeWeight(2);
+    rect(this.x,this.y,200,50,100);
+    if(mouseX > this.x && mouseX< this.x+200 && mouseY > this.y && mouseY < this.y + 50){
+        fill(242, 5, 5);
+    }else {
+        fill(0, 0, 0);
+    }
+    textSize(20);
+    text(this.text,this.x+15,this.y+30);
+    fill(255, 255, 255);
+        
+};
+Button.prototype.isMouseInside = function() {
+    return mouseX > this.x &&
+           mouseX < (this.x + 200) &&
+           mouseY > this.y &&
+           mouseY < (this.y + 50);
+};
+//Each individual button
+var firstButton = new Button({x:20,y:20,text:"First Hour"});
+var secondButton = new Button({x:20,y:100,text:"Second Hour"});
+var thirdButton = new Button({x:20,y:180,text:"Third Hour"});
+var fourthButton = new Button({x:20,y:260,text:"Fourth Hour"});
+var sixthButton = new Button({x:20,y:340,text:"Sixth Hour"});
+var seventhButton =new Button({x:20,y:420,text:"Seventh Hour"});
+var restartButton = new Button({x:390,y:540,text:"Restart"});
+
+//Choices is all of the classes
+var choices = {
+    firstHour:[" Shae"," Kaille"," Luka"," Reagan"," James E"," Goober"," Lublow"," Bart"," Jack"," Leah"," Myah"," Tyler"," Ashley"," Sebastian"," Nathaniel"," Chris"," Jordyn"," Phoenix"," Ian"," Olivia"," Jenna"," Andrea"," Darian"," Zach"," Peyton"," Austin"," Hope"," Jimmy" ],
+    secondHour:[" Kyle"," Caroline"," Thomas"," Ariell"," Aidan"," Julia"," Ryan"," Cassidy"," Kylie"," Mikayla"," Hailey D."," Stanley"," Noelle"," JohnDaBomb💣"," Let's get it!"," Young dolph"," Davianna"," Danielle"," Blake"," Paige"," Alfie"," Jasmine"," Katrina"," Kristina"," Haley W."],
+    thirdHour:[" Avery"," Maya"," Brady"," bustdwnirene"," Lieutenant"," Lexie"," Ally"," Fruity Keggles"," Danny"," Yuh"," breanne"," Kailee"," Hailey"," sheepman39©"," Hannah"," Laci"," Cheyenne"," Riahna"," Jamin"," Espi"," Sierra Mist"," Ashlyn"],
+    fourthHour:[" Taylor"," Luke"," Marisol"," Brianna"," Kevin"," Sav"," Mia"," Allison"," Leo"," Adam"," Hempka"," Grace"," Jenna"," Maddy Kartz"," Faith"," Julius"," James"," Nick"," Nicole"," Maddie R."," Lauren"," Jakeswim"," Danny"," Conor"," Lyle"," Alexis"," Maddy Vic"," Cade"," Bella"],
+    sixthHour:[" Naomie"," Ashtyn"," Lonye"," Corn"," Jacob"," Chloe"," Austin"," Grace"," Nevaeh"," Tyler"," Katie" ," Bre"," Paige"," Ella eh eh"," Ludwig"," Abby"," oljemice"," Maddy O."," Maddy"," Star", " Kill"  ],
+    seventhHour:[" Arce"," J-rock"," Avery"," Niko"," palo de golf"," Kayla"," Angela"," Snipes"," Dom"," Abby"," Marissa Metcalfe"," Julia"," Natalie"," Kennedy"," Jimmy"," Primo"," A-rod"," Troy"," Zack"," Jade"," Eva"," Brooke"," Krout"]
+    
+};
+
+//Shows the random person chosen and all of the other info
+var show = function(n,classHour){
+    if(restartButton.isMouseInside()){
+        Program.restart();
+    }
+    background(94, 255, 242);
+    textSize(40);
+    fill(0);
+    if (n !== undefined){
+        text("Next Victim: " + n, 20, 80);
+        textSize(20);
+        text("Choices left.." + classHour, 20, 200,width-100,height);
+        text("People left.." + classHour.length,20,400);
+        text("Click to pick another person",20, 520);
+    }else{
+    Program.restart();
+    }
+    
+};
+//Choosing function 
+var choose = function(hour){
+     restartButton.draw();
+        mouseClicked = function(){
+            var ranNum= floor(random(hour.length));
+            var pick = hour[ranNum];
+            if (hour.length>0){
+                hour.splice(ranNum, 1);
+            }
+            show(pick,hour);
+        };
+};
+//Error message
+var ohNoes = function(){
+    background(255, 255, 255);
+    textSize(20);
+    fill(0,0,0);
+    text("Something went wrong! Let me know what you did and i'll try to fix it.", 20,20,width-100,height);
+    image(getImage("creatures/OhNoes"),200,200);
+    text("OhNoes! Ya done goofed!",300,206);
+
+};
+
+//Controls which class is being used with user interaction
+draw = function() {
+    
+    if(pressed === false && mouseIsPressed){
+           
+        if(firstButton.isMouseInside()){          
+                pressed = true;
+                firstClass = true;
+        }else if(secondButton.isMouseInside()){
+                pressed = true;
+                secondClass = true;
+        }else if(thirdButton.isMouseInside()){
+                pressed = true;
+                thirdClass = true;
+        }else if(fourthButton.isMouseInside()){
+                pressed = true;
+                fourthClass = true;
+        }else if(sixthButton.isMouseInside()){
+                pressed = true;
+                sixthClass = true;
+        }else if(seventhButton.isMouseInside()){
+                pressed = true;
+                seventhClass = true;
+            }
+    
+    }
+    
+//Shows the buttons and picks the random names
+    keyPressed = function(){ if(keyPressed&&keyCode===32){ println("Welcome! You found my easter egg!\nSay 'Owa Tago Siam' really fast for a special reward. \nFor another reward, type 'elbillugosmai' backwards \nThis is Voluntold 2.4 created by sheepman39 (john salata)\n\nEdit history:\nReduced restart speed\nAdded Restart button and function\nRemoved drag to restart function\nAdded edit history\nMade a more efficient choosing function (line 85)\n\nNeed to do:\nFix some small glitches that do not affect functionality\nMake it so the thing does not show when first click"); } };
+    //102-111 is the buttons draw
+    if(pressed === false){
+        background(94, 255, 242);
+        firstButton.draw();
+        secondButton.draw();
+        thirdButton.draw();
+        fourthButton.draw();
+        sixthButton.draw();
+        seventhButton.draw();
+        restartButton.draw();
+        
+    }
+    //112-191 is the specialized code for each class and picking a random student}
+    else if(firstClass === true){
+        choose(choices.firstHour);
+        
+    }
+    else if(secondClass === true){
+       choose(choices.secondHour);
+       
+    }
+    else if(thirdClass === true){
+        choose(choices.thirdHour);
+        
+    }
+    else if(fourthClass === true){
+        choose(choices.fourthHour);
+        
+    }
+    else if(sixthClass === true){
+        choose(choices.sixthHour);
+        
+    }
+    else if(seventhClass === true){
+        choose(choices.seventhHour);
+    }
+    else{
+    ohNoes();
+    }
+    
+    
+};    
+
+//original base code for the picking of a person
+/*mouseClicked = function(){
+    var ranNum= floor(random(choices.firstHour.length));
+    var pick = choices.firstHour[ranNum];
+    if (choices.firstHour.length>0){
+        choices.firstHour.splice(ranNum, 1);
+    }
+    show(pick);
+};
+
+*/
+
+//Easter eggs
+//john's jeans
+/**
+ * To do: 
+ * Fix the failsafe for clicking
+ **/
