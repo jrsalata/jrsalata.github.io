@@ -170,7 +170,7 @@ var ohNoes = function(message){
 //Displays the menu for manual class selection
 var menu = function(){
     //Manual Controlls for which hour is selected
-    if(pressed === false && mousePressed){
+    if(pressed === false && mouseIsPressed){
            
         if(firstButton.isMouseInside()){          
                 pressed = true;
@@ -280,7 +280,7 @@ draw = function() {
     if(pressed2===false){
         
         welcomeScreen();
-        if(mousePressed){
+        if(mouseIsPressed){
         
             pressed2=true;
         
@@ -306,7 +306,7 @@ draw = function() {
     time(400,500,h,m);
     
     //Easter Egg/edit history
-    keyPressed = function(){ if(keyPressed&&keyCode===32){ 
+    keyIsPressed = function(){ if(keyPressed&&keyCode===32){ 
         println("For Voluntold 2.41, go to the link below \nbit.ly/voluntold2_41\n\n"); } };
     
 };    
