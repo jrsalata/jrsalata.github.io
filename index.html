@@ -170,7 +170,7 @@ var ohNoes = function(message){
 //Displays the menu for manual class selection
 var menu = function(){
     //Manual Controlls for which hour is selected
-    if(pressed === false && mouseIsPressed){
+    if(pressed === false && mousePressed){
            
         if(firstButton.isMouseInside()){          
                 pressed = true;
@@ -280,7 +280,7 @@ draw = function() {
     if(pressed2===false){
         
         welcomeScreen();
-        if(mouseIsPressed){
+        if(mousePressed){
         
             pressed2=true;
         
