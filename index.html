@@ -1,56 +1,334 @@
 <!DOCTYPE html>
+<!-- i found this at:
+http://stackoverflow.com/questions/25341597/how-can-khan-academy-computer-programs-be-run-offline-or-on-my-own-website
+all credet to them-->
+<!--legal stuff VVV-->
+<!--This work, "KA P.JS", is a derivative of "http://stackoverflow.com/questions/25341597/how-can-khan-academy-computer-programs-be-run-offline-or-on-my-own-website " by Robert Tupelo-Schneck(http://stackoverflow.com/users/394431/robert-tupelo-schneck), used under CC BY. "KA P.JS" is by michael basaj(https://www.khanacademy.org/profile/michaelbasaj/).-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-    </head>
-    <style>
-        body{
-             font-family: "comic sans Ms",sans-serif;
-             background-color: black;
-             color: white;
-        }
-        h1{
-            font-style: italic;
-           
-        }
-        #firstPost{
-            color: rgb(126, 131, 232);
-        }
-        #secondPost{
-            color: rgb(20, 224, 173);
-        }
-        h6{
-            font-size: 1em;
-        }
-        .posts{
-            background-color: black;
-            color: white;
-            font-family: sans-script;
-            font-weight: bold;
-        }
-        .date{
-            font-family: serif;
-            color: rgb(60, 255, 0);
-        }
-    </style>
-    <body>
-        
-        <h1>John's blog</h1>
+<head>
+    <title>Webpage Voluntold v3.0 WIP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
+</head>
+<body>
 
-        <h3>Contents</h3>
-        <ul>
-            <li><a href="#firstPost">5/16/19</a></li>
-            <li><a href="#secondPost">5/22/19</a></li>
-        </ul>
+    <canvas id="canvas"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var processing = new Processing(canvas, function(processing) {
+            processing.size(600, 600);
+            processing.background(0xFFF);
+    
+            var mouseIsPressed = false;
+            processing.mousePressed = function () { mouseIsPressed = true; };
+            processing.mouseReleased = function () { mouseIsPressed = false; };
+    
+            var keyIsPressed = false;
+            processing.keyPressed = function () { keyIsPressed = true; };
+            processing.keyReleased = function () { keyIsPressed = false; };
+    
+            function getImage(s) {
+                var url = "https://www.kasandbox.org/programming-images/" + s + ".png";
+                processing.externals.sketch.imageCache.add(url);
+                return processing.loadImage(url);
+            }
+    
+            with (processing) {
+                /** Credit to Larry Serflaten for helping me out with the basic code that I based this off of.  To see the original code, go to Line 275
+Welcome to Voluntold 3.0! This has an automatic class selector using the time.  I improved the interface a bit and included a manual override
+To begin, just click on the screen and it will automatically take you to your current hour, however if you are using a different schedule, just click the Main Menu button.
+When there are no more people left, it will automatically restart.
+To restart manually, click the restart button
+**/
+
+//Font selector
+textFont(createFont("Ariel Bold"));
+
+//The current class that is being selected
+/**Will probably change later to make life easier**/
+var currentClass;
+
+//Lines 16-18 help with selecting scenes and other control
+var pressed = false;
+var menuOn = false;
+var pressed2 = false;
+
+//time function shows the current time of the computer
+var time = function(x,y,h,m){
+    
+    fill(94, 255, 242);
+    noStroke();
+    rect(x-25,y-25,210,50,10);
+    textSize(20);
+    fill(0, 0, 0);
+    
+    //Adds a 0 if the minutes are less than
+    if(m<10){
+        text("Current Time "+h+":0"+m,x,y);
+    }
+    else{
+        text("Current Time "+h+":"+m,x,y);
         
-        <h2 id ="firstPost">First post</h2>
-        <h6 class = "date">Posted on 5/16/19</h6>
+    }
+    
+    stroke(0, 0, 0);
+};
+
+//Lines 34-69 are the button objects to draw, select, and create 
+var Button = function(config) {
+    this.x = config.x;
+    this.y = config.y;
+    this.text = config.text;
+    this.classNum = config.classNum;
+};
+Button.prototype.draw = function() {
+    fill(255, 255, 255);
+    strokeWeight(2);
+    rect(this.x,this.y,200,50,100);
+    if(mouseX > this.x && mouseX< this.x+200 && mouseY > this.y && mouseY < this.y + 50){
+        fill(242, 5, 5);
+    }else {
+        fill(0, 0, 0);
+    }
+    textSize(20);
+    text(this.text,this.x+15,this.y+30);
+    fill(255, 255, 255);
         
-        <p class = "posts">So today we had a govert test on the Japanese theater in WW2.  It was surprisenly easy so the next test is going to be <strong>impossible</strong>.  Right now, everyone on Earth is deciding to debate and get angry with everyone over eachother's opinions. It is just a pointless debate that affects absolutley no one, so why are we causing social wars in an already tence environment.  There are only <em>8 days left of school!</em> Why can't we just live in peace?</p>
+};
+Button.prototype.isMouseInside = function() {
+    return mouseX > this.x &&
+           mouseX < (this.x + 200) &&
+           mouseY > this.y &&
+           mouseY < (this.y + 50);
+};
+{
+var firstButton = new Button({x:20,y:20,text:"First Hour",classNum:1});
+var secondButton = new Button({x:20,y:100,text:"Second Hour",classNum:2});
+var thirdButton = new Button({x:20,y:180,text:"Third Hour",classNum:3});
+var fourthButton = new Button({x:20,y:260,text:"Fourth Hour",classNum:4});
+var sixthButton = new Button({x:20,y:340,text:"Sixth Hour",classNum:6});
+var seventhButton =new Button({x:20,y:420,text:"Seventh Hour",classNum:7});
+var restartButton = new Button({x:390,y:540,text:"Restart"});
+var mainButton = new Button({x:20,y:540,text:"Main Menu"});
+}
+
+//Has the different arrays of each class
+var choices = {
+    firstHour:[" Shae"," Kaille"," Luka"," Reagan"," James E"," Goober"," Lublow"," Bart"," Jack"," Leah"," Myah"," Tyler"," Ashley"," Sebastian"," Nathaniel"," Chris"," Jordyn"," Phoenix"," Ian"," Olivia"," Jenna"," Andrea"," Darian"," Zach"," Peyton"," Austin"," Hope"," Jimmy" ],
+    secondHour:[" Kyle"," Caroline"," Thomas"," Ariell"," Aidan"," Julia"," Ryan"," Cassidy"," Kylie"," Mikayla"," Hailey D."," Stanley"," Noelle"," JohnDaBomb💣"," Let's get it!"," Young dolph"," Davianna"," Danielle"," Blake"," Paige"," Alfie"," Jasmine"," Katrina"," Kristina"," Haley W."],
+    thirdHour:[" Avery"," Maya"," Brady"," bustdwnirene"," Lieutenant"," Lexie"," Ally"," Fruity Keggles"," Danny"," Yuh"," breanne"," Kailee"," Hailey"," sheepman39©"," Kaitlyn's Mommy"," Laci"," Cheyenne"," Riahna"," Jamin"," Espi"," Sierra Mist"," Ashlyn"],
+    fourthHour:[" Taylor"," Luke"," Marisol"," Brianna"," Kevin"," Sav"," Mia"," Allison"," Leo"," Adam"," Hempka"," Grace"," Jenna"," Maddy Kartz"," Faith"," Julius"," James"," Nick"," Nicole"," Maddie R."," Lauren"," Jakeswim"," Danny"," Conor"," Lyle"," Alexis"," Maddy Vic"," Cade"," Bella"],
+    sixthHour:[" Naomie"," Ashtyn"," Lonye"," Corn"," Jacob"," Chloe"," Austin"," Grace"," Nevaeh"," Tyler"," Katie" ," Bre"," Paige"," Ella eh eh"," Ludwig"," Abby"," oljemice"," Maddy O."," Maddy"," Star", " Kill"  ],
+    seventhHour:[" Arce"," J-rock"," Avery"," Niko"," palo de golf"," Kayla"," Angela"," Snipes"," Dom"," Abby"," Marissa Metcalfe"," Julia"," Natalie"," Kennedy"," Jimmy"," Primo"," A-rod"," Troy"," Zack"," Jade"," Eva"," Brooke"," Krout"]
+    
+};
+
+//Show is what is displayed when selecting students
+var show = function(n,classHour,name){
+    if(restartButton.isMouseInside()){
+        Program.restart();
+    }
+    background(94, 255, 242);
+    textSize(40);
+    fill(0);
+    if (n !== undefined){
+        text("Next Victim: " + n, 20, 80);
+        textSize(20);
+        text("Choices left.." + classHour, 20, 200,width-100,height);
+        text("People left.." + classHour.length,20,400);
+        text(name,20,460);
+        text("Click to pick another person",20, 520);
+    }else{
+        Program.restart();
+    }
+    
+};
+
+//Choose is what generates the random number that goes to a student
+var choose = function(hour,name){
+    restartButton.draw();
+        mouseClicked = function(){
+            var ranNum= floor(random(hour.length));
+            var pick = hour[ranNum];
+            if (hour.length>0){
+                hour.splice(ranNum, 1);
+            }
+            show(pick,hour,name);
+        };
+};
+
+//Error screen
+var ohNoes = function(message){
+    background(255, 255, 255);
+    textSize(20);
+    fill(0,0,0);
+    text(message, 20,20,width-100,height);
+    image(getImage("creatures/OhNoes"),200,200);
+    text("OhNoes! Ya done goofed!",300,206);
+
+};
+
+//Displays the menu for manual class selection
+var menu = function(){
+    //Manual Controlls for which hour is selected
+    if(pressed === false && mouseIsPressed){
+           
+        if(firstButton.isMouseInside()){          
+                pressed = true;
+                currentClass = firstButton.classNum;
+        }else if(secondButton.isMouseInside()){
+                pressed = true;
+                currentClass = secondButton.classNum;
+        }else if(thirdButton.isMouseInside()){
+                pressed = true;
+                currentClass = thirdButton.classNum;
+        }else if(fourthButton.isMouseInside()){
+                pressed = true;
+                currentClass = fourthButton.classNum;
+        }else if(sixthButton.isMouseInside()){
+                pressed = true;
+                currentClass = sixthButton.classNum;
+        }else if(seventhButton.isMouseInside()){
+                pressed = true;
+                currentClass = seventhButton.classNum;
+            }
+    
+    }
+    
+    //Shows the buttons for each class
+    if(pressed === false){
+        background(94, 255, 242);
+        firstButton.draw();
+        secondButton.draw();
+        thirdButton.draw();
+        fourthButton.draw();
+        sixthButton.draw();
+        seventhButton.draw();
         
-        <h2 id="secondPost">Second Post</h2>
-        <h6 class = "date">Posted on 5/22/19</h6>
-        <p class = "posts">So today is Wednesday and I am almost done with filling out all of my paperwork for my Eagle Application. Tonight I have my conference and then just need to gather some more signatures and badda bing badda boom it's all done.  I am so excited for all of this to be over!</p>
-    </body>
+        
+    }
+    else if(currentClass === firstButton.classNum){
+        choose(choices.firstHour,"First Hour");
+        
+    }
+    else if(currentClass === secondButton.classNum){
+        choose(choices.secondHour,"Second Hour");
+       
+    }
+    else if(currentClass === thirdButton.classNum){
+        choose(choices.thirdHour,"Third Hour");
+    }
+    else if(currentClass === fourthButton.classNum){
+        choose(choices.fourthHour,"Fourth Hour");
+        
+    }
+    else if(currentClass === sixthButton.classNum){
+        choose(choices.sixthHour,"Sixth Hour");
+    }
+    else if(currentClass === seventhButton.classNum){
+        choose(choices.seventhHour,"Seventh Hour");
+    }
+    else{
+    ohNoes("Oh no! Something went wrong with the buttons! Let me know what you did and I'll try to fix it\nerror code: ____menu_error___" );
+    }
+    
+};
+
+//The function that chooses classes automatically by schedule
+var auto = function(h,m){
+   
+    if(h===8 && m>0 && m<55){
+        choose(choices.firstHour,"First Hour");
+    }else if(h===9&&m>0&&m<48){
+        choose(choices.secondHour,"Second Hour");
+    }else if(h===9&&m>53||h===10&&m<41){
+        choose(choices.thirdHour,"Third Hour");
+    }else if(h===10&&m>46||h===11&&m<34){
+        choose(choices.fourthHour,"Fourth Hour");
+    }else if(h===13&&m>9&&m<57){
+        choose(choices.sixthHour,"Sixth Hour");
+    }else if(h===14&&m>2&&m<50){
+        choose(choices.seventhHour,"Seventh Hour");
+    }else{
+        menu();
+    }
+};
+
+//welcome screen
+var welcomeScreen = function(){
+background(94, 255, 242);
+textSize(30);
+fill(0, 0, 0);
+textAlign(CENTER);
+text("Welcome to Voluntold 3.0\nClick to get started",300,150);
+textSize(15);
+text("If it is outside of school hours, click anywhere to get to the menu.\n (click on the right side)",300,250);
+textAlign(LEFT);
+mainButton.draw();
+};
+
+//Where everything is put together
+draw = function() {
+    
+    //High frame rate to not have random flashes
+    frameRate(150);
+    
+    //Variables to show time
+    var h = hour();
+    var m = minute();
+    
+    //Shows the welcome screen with the menu button 
+    if(pressed2===false){
+        
+        welcomeScreen();
+        if(mouseIsPressed){
+        
+            pressed2=true;
+        
+            if(mainButton.isMouseInside()){
+                menuOn = true;
+                       
+            }else{
+                menuOn=false;
+            }
+        }
+    }
+    
+    //Decides if it should select the menu or automatically select
+    if(pressed2===true){
+        if(menuOn === true){
+            menu();
+        }else if(menuOn === false){
+            auto(h,m);
+        }
+     }
+     
+    //Displays the time on the right
+    time(400,500,h,m);
+    
+    //Easter Egg/edit history
+    keyPressed = function(){ if(keyPressed&&keyCode===32){ 
+        println("For Voluntold 2.41, go to the link below \nbit.ly/voluntold2_41\n\n"); } };
+    
+};    
+
+//original base code for the picking of a person
+/*mouseClicked = function(){
+    var ranNum= floor(random(choices.firstHour.length));
+    var pick = choices.firstHour[ranNum];
+    if (choices.firstHour.length>0){
+        choices.firstHour.splice(ranNum, 1);
+    }
+    show(pick);
+};
+
+
+Easter eggs
+john's jeans
+*/
+                
+            }
+            if (typeof draw !== 'undefined') processing.draw = draw;
+        });
+    </script>
+</body>
 </html>
