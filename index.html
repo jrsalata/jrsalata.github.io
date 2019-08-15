@@ -105,7 +105,7 @@ var firstButton = new Button({x:20,y:20,text:"First Hour",classNum:1});
 var secondButton = new Button({x:20,y:100,text:"Second Hour",classNum:2});
 var thirdButton = new Button({x:20,y:180,text:"Third Hour",classNum:3});
 var fourthButton = new Button({x:20,y:260,text:"Fourth Hour",classNum:4});
-var sixthButton = new Button({x:20,y:340,text:"Sixth Hour",classNum:6});
+var fifthButton = new Button({x:20,y:340,text:"Fifth Hour",classNum:6});
 var seventhButton =new Button({x:20,y:420,text:"Seventh Hour",classNum:7});
 var restartButton = new Button({x:390,y:540,text:"Restart"});
 var mainButton = new Button({x:20,y:540,text:"Main Menu"});
@@ -117,7 +117,7 @@ var choices = {
     secondHour:[" Kyle"," Caroline"," Thomas"," Ariell"," Aidan"," Julia"," Ryan"," Cassidy"," Kylie"," Mikayla"," Hailey D."," Stanley"," Noelle"," JohnDaBomb💣"," Let's get it!"," Young dolph"," Davianna"," Danielle"," Blake"," Paige"," Alfie"," Jasmine"," Katrina"," Kristina"," Haley W."],
     thirdHour:[" Avery"," Maya"," Brady"," bustdwnirene"," Lieutenant"," Lexie"," Ally"," Fruity Keggles"," Danny"," Yuh"," breanne"," Kailee"," Hailey"," sheepman39©"," Kaitlyn's Mommy"," Laci"," Cheyenne"," Riahna"," Jamin"," Espi"," Sierra Mist"," Ashlyn"],
     fourthHour:[" Taylor"," Luke"," Marisol"," Brianna"," Kevin"," Sav"," Mia"," Allison"," Leo"," Adam"," Hempka"," Grace"," Jenna"," Maddy Kartz"," Faith"," Julius"," James"," Nick"," Nicole"," Maddie R."," Lauren"," Jakeswim"," Danny"," Conor"," Lyle"," Alexis"," Maddy Vic"," Cade"," Bella"],
-    sixthHour:[" Naomie"," Ashtyn"," Lonye"," Corn"," Jacob"," Chloe"," Austin"," Grace"," Nevaeh"," Tyler"," Katie" ," Bre"," Paige"," Ella eh eh"," Ludwig"," Abby"," oljemice"," Maddy O."," Maddy"," Star", " Kill"  ],
+    fifthHour:[" Naomie"," Ashtyn"," Lonye"," Corn"," Jacob"," Chloe"," Austin"," Grace"," Nevaeh"," Tyler"," Katie" ," Bre"," Paige"," Ella eh eh"," Ludwig"," Abby"," oljemice"," Maddy O."," Maddy"," Star", " Kill"  ],
     seventhHour:[" Arce"," J-rock"," Avery"," Niko"," palo de golf"," Kayla"," Angela"," Snipes"," Dom"," Abby"," Marissa Metcalfe"," Julia"," Natalie"," Kennedy"," Jimmy"," Primo"," A-rod"," Troy"," Zack"," Jade"," Eva"," Brooke"," Krout"]
     
 };
@@ -184,9 +184,9 @@ var menu = function(){
         }else if(fourthButton.isMouseInside()){
                 pressed = true;
                 currentClass = fourthButton.classNum;
-        }else if(sixthButton.isMouseInside()){
+        }else if(fifthButton.isMouseInside()){
                 pressed = true;
-                currentClass = sixthButton.classNum;
+                currentClass = fifthButton.classNum;
         }else if(seventhButton.isMouseInside()){
                 pressed = true;
                 currentClass = seventhButton.classNum;
@@ -201,7 +201,7 @@ var menu = function(){
         secondButton.draw();
         thirdButton.draw();
         fourthButton.draw();
-        sixthButton.draw();
+        fifthButton.draw();
         seventhButton.draw();
         
         
@@ -221,8 +221,8 @@ var menu = function(){
         choose(choices.fourthHour,"Fourth Hour");
         
     }
-    else if(currentClass === sixthButton.classNum){
-        choose(choices.sixthHour,"Sixth Hour");
+    else if(currentClass === fifthButton.classNum){
+        choose(choices.fifthHour,"Fifth Hour");
     }
     else if(currentClass === seventhButton.classNum){
         choose(choices.seventhHour,"Seventh Hour");
@@ -244,8 +244,8 @@ var auto = function(h,m){
         choose(choices.thirdHour,"Third Hour");
     }else if(h===10&&m>46||h===11&&m<34){
         choose(choices.fourthHour,"Fourth Hour");
-    }else if(h===13&&m>9&&m<57){
-        choose(choices.sixthHour,"Sixth Hour");
+    }else if(h===11&&m>34||h===13&&m<4||h===12){
+        choose(choices.fifthHour,"Fifth Hour");
     }else if(h===14&&m>2&&m<50){
         choose(choices.seventhHour,"Seventh Hour");
     }else{
@@ -267,7 +267,7 @@ mainButton.draw();
 };
 
 //Where everything is put together
-draw = function() {
+draw = function() { 
     
     //High frame rate to not have random flashes
     frameRate(150);
@@ -306,7 +306,7 @@ draw = function() {
     time(400,500,h,m);
     
     //Easter Egg/edit history
-    keyIsPressed = function(){ if(keyPressed&&keyCode===32){ 
+    keyPressed = function(){ if(keyPressed&&keyCode===32){ 
         println("For Voluntold 2.41, go to the link below \nbit.ly/voluntold2_41\n\n"); } };
     
 };    
