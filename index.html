@@ -124,7 +124,8 @@ var choices = {
     thirdHour:[" Avery"," Maya"," Brady"," bustdwnirene"," Lieutenant"," Lexie"," Ally"," Fruity Keggles"," Danny"," Yuh"," breanne"," Kailee"," Hailey"," sheepman39©"," Kaitlyn's Mommy"," Laci"," Cheyenne"," Riahna"," Jamin"," Espi"," Sierra Mist"," Ashlyn"],
     fourthHour:[" Taylor"," Luke"," Marisol"," Brianna"," Kevin"," Sav"," Mia"," Allison"," Leo"," Adam"," Hempka"," Grace"," Jenna"," Maddy Kartz"," Faith"," Julius"," James"," Nick"," Nicole"," Maddie R."," Lauren"," Jakeswim"," Danny"," Conor"," Lyle"," Alexis"," Maddy Vic"," Cade"," Bella"],
     fifthHour:[" Naomie"," Ashtyn"," Lonye"," Corn"," Jacob"," Chloe"," Austin"," Grace"," Nevaeh"," Tyler"," Katie" ," Bre"," Paige"," Ella eh eh"," Ludwig"," Abby"," oljemice"," Maddy O."," Maddy"," Star", " Kill"  ],
-    seventhHour:[" Arce"," J-rock"," Avery"," Niko"," palo de golf"," Kayla"," Angela"," Snipes"," Dom"," Abby"," Marissa Metcalfe"," Julia"," Natalie"," Kennedy"," Jimmy"," Primo"," A-rod"," Troy"," Zack"," Jade"," Eva"," Brooke"," Krout"]
+    seventhHour:[" Arce"," J-rock"," Avery"," Niko"," palo de golf"," Kayla"," Angela"," Snipes"," Dom"," Abby"," Marissa Metcalfe"," Julia"," Natalie"," Kennedy"," Jimmy"," Primo"," A-rod"," Troy"," Zack"," Jade"," Eva"," Brooke"," Krout"],
+    extra:[]
     
 };
 
@@ -132,35 +133,63 @@ var choices = {
 var show = function(n,classHour,name){
     if(restartButton.isMouseInside()){
         document.location.reload(false);
-    }
+   }
     background(94, 255, 242);
     textSize(40);
     fill(0);
-    if (n !== undefined){
+   if (n !== undefined){
         text("Next Victim: " + n, 20, 80);
         textSize(20);
         text("Choices left.." + classHour, 20, 200,width-100,height);
         text("People left.." + classHour.length,20,400);
         text(name,20,460);
         text("Click to pick another person",20, 520);
-    }else{
-        document.location.reload(false);
-
-    }
+        /**
+        println("Extra:"+choices.extra);
+        println("Normal:"+classHour);
+        **/
+  }else if(n===undefined){
+        for(var i = 0; i<choices.extra.length;i++){
+        classHour.push(choices.extra[i]);
+        }
+        choices.extra=[];
+        /**
+        println("Extra:"+choices.extra);
+        println("Normal:"+classHour);
+        **/
+   }
     
 };
 
 //Choose is what generates the random number that goes to a student
 var choose = function(hour,name){
     restartButton.draw();
-        mouseClicked = function(){
+    mouseClicked = function(){
+    if(name.length>1){
+    restartButton.draw();
+       
             var ranNum= floor(random(hour.length));
             var pick = hour[ranNum];
             if (hour.length>0){
+                choices.extra.push(hour[ranNum]);
                 hour.splice(ranNum, 1);
             }
             show(pick,hour,name);
-        };
+        
+    }else{
+        background(255, 0, 0);
+        
+      
+            var ranNum= floor(random(choices.extra.length));
+            var pick = choices.extra[ranNum];
+            if (choices.extra.length>0){
+                hour.push(hour[ranNum]);
+                choices.extra.splice(ranNum, 1);
+            }
+            show(pick,choices.extra,name);
+        
+    }
+    };
 };
 
 //Error screen
@@ -314,7 +343,7 @@ draw = function() {
     
     //Easter Egg/edit history
     keyPressed = function(){ if(keyPressed&&keyCode===32){ 
-        println("For Voluntold 2.41, go to the link below \nbit.ly/voluntold2_41\n\n"); } };
+        println("For Voluntold 3.0, go to the link below \nbit.ly/voluntold3_0\n\n"); } };
     
 };    
 
