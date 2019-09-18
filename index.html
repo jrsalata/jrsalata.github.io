@@ -166,7 +166,6 @@ var show = function(n,classHour,name){
 var choose = function(hour,name){
     restartButton.draw();
     mouseClicked = function(){
-    if(name.length>1){
     restartButton.draw();
        
             var ranNum= floor(random(hour.length));
@@ -177,19 +176,7 @@ var choose = function(hour,name){
             }
             show(pick,hour,name);
         
-    }else{
-        background(255, 0, 0);
-        
-      
-            var ranNum= floor(random(choices.extra.length));
-            var pick = choices.extra[ranNum];
-            if (choices.extra.length>0){
-                hour.push(hour[ranNum]);
-                choices.extra.splice(ranNum, 1);
-            }
-            show(pick,choices.extra,name);
-        
-    }
+   
     };
 };
 
