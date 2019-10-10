@@ -163,6 +163,20 @@ var show = function(hour,name){
         hour.push(choices.extra[i]);
         }
         choices.extra=[];
+        var ranNum= floor(random(hour.length));
+        var pick = hour[ranNum];
+        if (hour.length>0){
+            choices.extra.push(hour[ranNum]);
+            hour.splice(ranNum, 1);
+        }
+        text("Next Victim: " + pick, 20, 80);
+        textSize(20);
+        text("Choices left.." + hour, 20, 200,width-100,height);
+        text("People left.." + hour.length,20,400);
+        text(name,20,460);
+        text("Click to pick another person",20, 520);
+       
+    }
        
     }
     };
