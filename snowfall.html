@@ -16,7 +16,7 @@ all credet to them-->
     <script>
         var canvas = document.getElementById("canvas");
         var processing = new Processing(canvas, function(processing) {
-            processing.size(1200, 800);
+            processing.size(1500, 900);
             processing.background(0xFFF);
     
             var mouseIsPressed = false;
@@ -41,7 +41,7 @@ var xPositions = [200];
 var yPositions = [0];
 var diameter = [10];
 var speed = [1];
-for(var g=0;g<200;g++){
+for(var g=0;g<500;g++){
     diameter.push(random(2,15));
     xPositions.push(random(0,width-10));
     yPositions.push(random(0, height+25));
