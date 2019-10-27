@@ -35,7 +35,7 @@ all credet to them-->
     
             with (processing) {
             //enjoy this relaxing snow fall on the screen and add more snow by clicking
-document.querySelector("#video").requestFullscreen();
+
 var xPositions = [200];
 var yPositions = [0];
 var diameter = [10];
@@ -54,6 +54,7 @@ mouseClicked = function(){
     playSound(getSound("rpg/hit-clop"));
 };
 draw = function() {
+    document.querySelector("#video").requestFullscreen();
     frameRate(90);
   background(87, 160, 211);
    
