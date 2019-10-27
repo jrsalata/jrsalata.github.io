@@ -6,7 +6,7 @@ all credet to them-->
 <!--This work, "KA P.JS", is a derivative of "http://stackoverflow.com/questions/25341597/how-can-khan-academy-computer-programs-be-run-offline-or-on-my-own-website " by Robert Tupelo-Schneck(http://stackoverflow.com/users/394431/robert-tupelo-schneck), used under CC BY. "KA P.JS" is by michael basaj(https://www.khanacademy.org/profile/michaelbasaj/).-->
 <html>
 <head>
-    <title>Snowfall Test.2</title>
+    <title>Snowfall Test.3</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
 </head>
     <style>
@@ -35,13 +35,7 @@ all credet to them-->
     
             with (processing) {
             //enjoy this relaxing snow fall on the screen and add more snow by clicking
-if (document.fullscreenEnabled) {
-    println("Yes it works");
-}else {println("no");
-      }
-
-
-
+document.documentElement.requestFullscreen();
 var xPositions = [200];
 var yPositions = [0];
 var diameter = [10];
