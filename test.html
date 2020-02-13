@@ -308,10 +308,6 @@ draw = function() {
     //no need to have a high frame rate since flash bug was fixed
     frameRate(30);
     
-    //Variables to show time
-    var h = hour();
-    var m = minute();
-    
  //Shows the welcome screen with the menu button 
     if(pressed2===false){
         
@@ -334,12 +330,12 @@ draw = function() {
         if(menuOn === true){
             menu();
         }else if(menuOn === false){
-            auto(h,m);
+            auto(hour(),minute());
         }
      }
      
     //Displays the time on the right
-    time(400,500,h,m);
+    time(400,500,hour(),minute());
     document.getElementById("hi").innerHTML = choices.extra;
     //Easter Egg/edit history
     keyPressed = function(){ if(keyPressed&&keyCode===32){ 
