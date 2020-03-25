@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>Playlist Generator V1</title>
+    <style>
+        h1{
+            font-family: Arial;
+            color: rgb(235,238,240);
+        }
+        h2{
+            font-family: Arial;
+            color: rgb(235,238,240);
+        }
+        p{
+            font-family: Arial;
+            color: rgb(235,238,240);
+        }
+        body{
+		    background-color: rgb(39,41,50);
+	    }
+        button{
+        	background-color: rgb(77,126,168);
+            color: rgb(235,238,240);
+        }
+    </style>
+    <script>
+    //document.getElementById("results").innerHTML = "";
+    function getRndInteger(min, max) {
+  		return Math.floor(Math.random() * (max - min)) + min;
+	}
+    var myFunction = function(){
+    
+        var songs = ["All star",	"West Virginia",	"Crab rave",	"Megalovania",	"Call me maybe",	"American pie",	"Sweet Caroline",	"Piano man",	"Never going to give you up",	"Seven nation army",	"Party in the USA",	"Miles Davis so what or kind of blue v1",	"I'm blue",	"Flamingo sketches",	"Take on me",	"Careless whisper",	"Rock the casbah",	"Don't worry be happy",	"Final countdown",	"Sweet dreams",	"Summer of 69",	"Cotton eye Joe",	"Halfway there",	"Party in the CIA",	"Word crimes",	"The saga begins",	"Centuries",	"Regular crab rave",	"High hopes",	"Carry on wayward son",	"Bohemian Rhapsody",	"Never gonna give you up",	"You give love a bad name",	"Tainted love law and order",	"Africa",	"Freaks",	"Ra ra Rasputin",	"Who let the dogs out",	"Staying Alive",	"Take on me",	"Dynamite",	"Computer error song",	"We no speak Americano",	"Rush b",	"Gangan style",	"Uptown funk",	"Counting stars",	"Cantina theme",	"Duel of the fates",	"Battle of the heroes",	"Super smash Bros brawl theme",	"Thriller",	"Timber",	"Seven Nation army",	"Another one rides the bus",	"Worscdimes",	"American pie",	"Piano man",	"https://www.youtube.com/watch?v=Udj-o2m39NA",	"tetris",	"devil went down to georgia",	"don't stop believing",	"Gravy train",	"Gravity falls",	"What doesn't kill you makes you stronger",	"The grave",	"we will rock you",	"never gonna shoot your stars",	"watch out here comes my arrow",	"all I do is win",	"radioactive",	"avengers kazoo ",	"don't stop me now",	"party rock anthem",	"cupid shuffle ",	"he's a pirate",	"she works hard for the money lyrics",	"wolf in sheeps clothing",	"the hautning",	"killer in the mirror",	"Word crimes",];
+
+        var playlist = [];
+	
+    for(var i = 0; i<songs.length; i++){
+        var ranSong = Math.round(getRndInteger(0, songs.length));
+        playlist.push(" -play "+songs[ranSong]);
+        songs.splice(ranSong, 1);
+       document.getElementById("results").innerHTML = document.getElementById("results").innerHTML+ "<br>" +playlist [i];
+    } 
+   
+    //document.getElementById("results").innerHTML = songs;
+   // document.getElementById("results").innerHTML = "d";
+    };
+    </script>
+    <head>
+    <center>
+    <h1>Mount Magma's Official Playlist Generator</h1>
+    <h2>Just click the button below to generate a random playlist</h2>
+    
+    </head>
+    <body>
+        <button type="button" onclick = "myFunction()">hello</button>
+        <p>Generated Playlist will be below</p>
+        <p id="results"></br></p>
+	</center>
+    </body>
+</html>
