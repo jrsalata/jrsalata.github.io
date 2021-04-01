@@ -59,12 +59,25 @@
                 return Math.floor(Math.random() * (max - min) ) + min;
             }
             function testingArrays(){
-                var pick = choices.firstHour[getRndInteger(0, choices.firstHour.length)];
-                choices.extra.push(pick)
-                arrayRemove(choices.firstHour, pick);
-                document.getElementById("debug").innerHTML = pick;
-                document.getElementById("output").innerHTML = choices.firstHour;
-                document.getElementById("remaining").innerHTML = "extra" + choices.extra;
+                
+                if(array.length > 0){
+                    var ranNum = getRndInteger(0, array.length);
+                    var pick = array[ranNum];
+                    choices.extra.push(pick);
+                    array.splice(ranNum, 1);
+                    document.getElementById("debug").innerHTML = pick;
+                    document.getElementById("output").innerHTML = array;
+                    document.getElementById("remaining").innerHTML = "extra" + choices.extra;
+                }else{
+                    array = choices.extra;
+                    var ranNum = getRndInteger(0, array.length);
+                    var pick = array[ranNum];
+                    choices.extra.push(pick);
+                    array.splice(ranNum, 1);
+                    document.getElementById("debug").innerHTML = "(List was restarted)" + pick;
+                    document.getElementById("output").innerHTML = array;
+                    document.getElementById("remaining").innerHTML = "extra" + choices.extra;
+                }
             }
             function firstHour() {
 
