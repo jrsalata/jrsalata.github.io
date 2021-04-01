@@ -26,7 +26,7 @@
 <body>
     <center>
         <button type="button" onclick="firstHour()">First Hour</button>
-        <button type="button" onclick="testingArrays()">Second Hour</button>
+        <button type="button" onclick="testingArrays(choices.firstHour)">Second Hour</button>
         <button type="button" onclick="myFunction()">Third Hour</button>
         <button type="button" onclick="myFunction()">Fourth Hour</button>
         <button type="button" onclick="myFunction()">Fifth Hour</button>
@@ -58,7 +58,7 @@
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min) ) + min;
             }
-            function testingArrays(){
+            function testingArrays(array){
                 
                 if(array.length > 0){
                     var ranNum = getRndInteger(0, array.length);
