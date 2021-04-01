@@ -70,6 +70,7 @@
                     document.getElementById("remaining").innerHTML = "extra" + choices.extra;
                 }else{
                     array = choices.extra;
+                    choices.extra = [];
                     var ranNum = getRndInteger(0, array.length);
                     var pick = array[ranNum];
                     choices.extra.push(pick);
