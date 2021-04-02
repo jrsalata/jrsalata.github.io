@@ -25,12 +25,12 @@
 
 <body>
     <center>
-        <button type="button" onclick="firstHour()">First Hour</button>
-        <button type="button" onclick="testingArrays(choices.firstHour)">Second Hour</button>
-        <button type="button" onclick="myFunction()">Third Hour</button>
-        <button type="button" onclick="myFunction()">Fourth Hour</button>
-        <button type="button" onclick="myFunction()">Fifth Hour</button>
-        <button type="button" onclick="myFunction()">Seventh Hour</button>
+        <button type="button" onclick="studentSelector(choices.firstHour)">First Hour</button>
+        <button type="button" onclick="studentSelector(choices.secondHour)">Second Hour</button>
+        <button type="button" onclick="studentSelector(choices.thirdHour)">Third Hour</button>
+        <button type="button" onclick="studentSelector(choices.fourthHour)">Fourth Hour</button>
+        <button type="button" onclick="studentSelector(choices.fifthHour)">Fifth Hour</button>
+        <button type="button" onclick="studentSelector(choices.seventhHour)">Seventh Hour</button>
         <p id="debug"></p>
         <p id="output"></p>
         <p id="remaining"></p>
@@ -44,21 +44,11 @@
                 seventhHour: ["Kayla", "Naturelle", "Nick H", "Makena", "Genevieve", "Nick K", "Jackson", "Julian", "Zach", "Sarah", "Piper", "Alaina", "Treyton", "Lucy", "AJ", "Nick C", "Tesla", "Madison", "Amanda", "Leah", "Sophia", "Sabrina", "Makayla", "Hailey", "Joseph"],
                 extra: []
             };
-            function arrayRemove(arr, value) {
 
-                return arr.filter(function (ele) {
-                    return ele != value;
-                });
-
-            }
-            function displayChoice(choice, extra){
-                alert(choice);
-                alert(extra);
-            }
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min) ) + min;
             }
-            function testingArrays(array){
+            function studentSelector(array){
                 
                 if(array.length > 0){
                     var ranNum = getRndInteger(0, array.length);
@@ -78,38 +68,6 @@
                     document.getElementById("debug").innerHTML = "(List was restarted)" + pick;
                     document.getElementById("output").innerHTML = array;
                     document.getElementById("remaining").innerHTML = "extra" + choices.extra;
-                }
-            }
-            function firstHour() {
-
-                var pick = choices.firstHour[Math.floor(Math.random() * choices.extra.length)];
-                if (choices.firstHour.length > 0) {
-                    choices.extra.push(pick)
-                    arrayRemove(choices.firstHour, pick);
-                    print(choices.firstHour)
-                    print(choices.extra)
-                }
-                if (pick !== undefined) {
-
-                    document.getElementById("output").innerHTML = "Next Victim: " + pick;
-                    document.getElementById("remaining").innerHTML = "Choices left... " + choices.firstHour + "\nPeople left..." + choices.firstHour.length;
-
-                }
-                else {
-
-                    choices.firstHour = choices.extra;
-                    choices.extra = [];
-
-                    var pick = choices.firstHour[Math.floor(Math.random() * choices.extra.length)];
-                    if (choices.firstHour.length > 0) {
-                        
-                        choices.extra.push(pick);
-                        arrayRemove(choices.firstHour, pick);
-                    
-                    }
-
-                    document.getElementById("output").innerHTML = "Next Victim: " + pick;
-                    document.getElementById("remaining").innerHTML = "Choices left... " + choices.extra + "\nPeople left..." + choices.extra.length;
                 }
             }
         </script>
