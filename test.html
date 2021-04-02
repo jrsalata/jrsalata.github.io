@@ -45,6 +45,12 @@
                 extra: []
             };
 
+            for(let array in choices){
+                array.forEach(function(name){
+                    name = name + " ";
+                })
+            }
+
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min) ) + min;
             }
@@ -55,9 +61,9 @@
                     var pick = array[ranNum];
                     choices.extra.push(pick);
                     array.splice(ranNum, 1);
-                    document.getElementById("debug").innerHTML = pick;
-                    document.getElementById("output").innerHTML = array;
-                    document.getElementById("remaining").innerHTML = "extra" + choices.extra;
+                    document.getElementById("output").innerHTML = pick;
+                    document.getElementById("remaining").innerHTML = array;
+                    //document.getElementById("remaining").innerHTML = "extra" + choices.extra;
                 }else{
                     array = choices.extra;
                     choices.extra = [];
@@ -65,9 +71,9 @@
                     var pick = array[ranNum];
                     choices.extra.push(pick);
                     array.splice(ranNum, 1);
-                    document.getElementById("debug").innerHTML = "(List was restarted)" + pick;
-                    document.getElementById("output").innerHTML = array;
-                    document.getElementById("remaining").innerHTML = "extra" + choices.extra;
+                    document.getElementById("output").innerHTML = "(List was restarted)" + pick;
+                    document.getElementyId("remaining").innerHTML = array;
+                    //document.getElementById("remaining").innerHTML = "extra" + choices.extra;
                 }
             }
         </script>
