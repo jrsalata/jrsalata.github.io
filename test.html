@@ -45,11 +45,12 @@
                 extra: []
             };
 
-            for(let array in choices){
-                array.forEach(function(name){
-                    name = name + " ";
-                })
-            }
+
+                for(let array in choices){
+                    array.forEach(function(name){
+                        name = name + " ";
+                    })
+                }
 
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min) ) + min;
