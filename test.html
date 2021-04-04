@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Voluntold 3.3</title>
+    <title>Voluntold 4.0.2 ALPHA</title>
 </head>
 <style>
     body {
@@ -35,7 +35,7 @@
         <p id="output"></p>
         <p id="remaining"></p>
         <script>
-            var choices = {
+            let choices = {
                 firstHour: ["Alexandria", "Addyson", "Gerald", "Luke", "Christian", "Kaleb", "Riley", "Daniel", "Hannah", "Ethan", "Austin", "Brooke", "Kaydence", "Anthony", "Angelo", "Grace", "Anaisabel", "Zoe", "ary", "Kaitlyn", "Blake", "Reile", "Julia", "Faith"],
                 secondHour: ["Ryan", "Zach B.", "Isaac", "Gabriel", "Aaron", "Wally", "Zach F.", "Keyon", "Kylah", "Maggie", "Bill", "Joseph", "Isabella", "Carlo", "Hannah", "Christopher S.", "Jessica", "Connor", "Christopher W.", "Jack", "Adam"],
                 thirdHour: ["Ruby", "Samuel", "Gabi", "Jack", "Duffy", "Shadi", "Keirstynn", "Kaylee", "Luke", "Brianna", "Joshua", "Emelia", "Clark (cooler Bryce)", "Madison", "Tyler", "Rayna", "Kenneth", "Presleigh", "Jayden", "Leo", "Grace Watson", "Grace Wilson", "Parker"],
@@ -45,37 +45,46 @@
                 extra: []
             };
 
+<<<<<<< HEAD
 
                 for(let array in choices){
                     array.forEach(function(name){
                         name = name + " ";
                     })
                 }
+=======
+            /*
+            for (let array in choices) {
+                array.forEach(function (name) {
+                    name = name + " ";
+                })
+            }
+            */
+>>>>>>> d94d4247fb2ff38a47d7dd8e0e65f467a83de6bc
 
             function getRndInteger(min, max) {
-                return Math.floor(Math.random() * (max - min) ) + min;
+                return Math.floor(Math.random() * (max - min)) + min;
             }
-            function studentSelector(array){
+            function studentSelector(array) {
                 
-                if(array.length > 0){
-                    var ranNum = getRndInteger(0, array.length);
-                    var pick = array[ranNum];
-                    choices.extra.push(pick);
-                    array.splice(ranNum, 1);
-                    document.getElementById("output").innerHTML = pick;
-                    document.getElementById("remaining").innerHTML = array;
-                    //document.getElementById("remaining").innerHTML = "extra" + choices.extra;
-                }else{
-                    array = choices.extra;
+                if (array.length === 0) {
+                    
+                    choices.extra.forEach(name => {
+                        array.push(name)
+                    })
+                 
                     choices.extra = [];
-                    var ranNum = getRndInteger(0, array.length);
-                    var pick = array[ranNum];
-                    choices.extra.push(pick);
-                    array.splice(ranNum, 1);
-                    document.getElementById("output").innerHTML = "(List was restarted)" + pick;
-                    document.getElementyId("remaining").innerHTML = array;
-                    //document.getElementById("remaining").innerHTML = "extra" + choices.extra;
+                
                 }
+
+                var ranNum = getRndInteger(0, array.length);
+                var pick = array[ranNum];
+                choices.extra.push(pick);
+                array.splice(ranNum, 1);
+                document.getElementById("output").innerHTML = pick;
+                document.getElementById("remaining").innerHTML = array;
+                //document.getElementById("remaining").innerHTML = "extra" + choices.extra;
+
             }
         </script>
         </br></br></br></br></br>
