@@ -5,16 +5,26 @@
     <title>Voluntold 4.0.2 ALPHA</title>
 </head>
 <style>
-    body {
-        background-color: rgb(39, 41, 50);
+    h1 {
+        font-family: Arial;
+        color: rgb(235, 238, 240);
+    }
+
+    h2 {
+        font-family: Arial;
+        color: rgb(235, 238, 240);
     }
 
     p {
-        color: rgb(255, 255, 255);
+        font-family: Arial;
+        color: rgb(235, 238, 240);
+        font-size: large;
+        width: 75%;
+        text-align: justify;
     }
 
-    h6 {
-        color: rgb(255, 255, 255);
+    body {
+        background-color: rgb(39, 41, 50);
     }
 
     button {
@@ -35,7 +45,7 @@
         <p id="output"></p>
         <p id="remaining"></p>
         <script>
-            
+
             let choices = {
                 firstHour: {
                     names: ["Alexandria", "Addyson", "Gerald", "Luke", "Christian", "Kaleb", "Riley", "Daniel", "Hannah", "Ethan", "Austin", "Brooke", "Kaydence", "Anthony", "Angelo", "Grace", "Anaisabel", "Zoe", "ary", "Kaitlyn", "Blake", "Reile", "Julia", "Faith"],
@@ -68,17 +78,17 @@
                 return Math.floor(Math.random() * (max - min)) + min;
             }
             function studentSelector(hour) {
-                
+
                 if (hour.names.length === 0) {
-                    
+
                     hour.extra.forEach(name => {
                         hour.names.push(name)
                     })
-                 
+
                     hour.extra = [];
-                
+
                 }
-                        
+
                 var ranNum = getRndInteger(0, hour.names.length);
                 var pick = hour.names[ranNum];
                 hour.extra.push(pick);
