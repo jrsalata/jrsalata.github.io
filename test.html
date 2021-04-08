@@ -5,16 +5,26 @@
     <title>Voluntold 4.0.2 ALPHA</title>
 </head>
 <style>
-    body {
-        background-color: rgb(39, 41, 50);
+    h1 {
+        font-family: Arial;
+        color: rgb(235, 238, 240);
+    }
+
+    h2 {
+        font-family: Arial;
+        color: rgb(235, 238, 240);
     }
 
     p {
-        color: rgb(255, 255, 255);
+        font-family: Arial;
+        color: rgb(235, 238, 240);
+        font-size: large;
+        width: 75%;
+        text-align: justify;
     }
 
-    h6 {
-        color: rgb(255, 255, 255);
+    body {
+        background-color: rgb(39, 41, 50);
     }
 
     button {
@@ -35,46 +45,57 @@
         <p id="output"></p>
         <p id="remaining"></p>
         <script>
-            let choices = {
-                firstHour: ["Alexandria", "Addyson", "Gerald", "Luke", "Christian", "Kaleb", "Riley", "Daniel", "Hannah", "Ethan", "Austin", "Brooke", "Kaydence", "Anthony", "Angelo", "Grace", "Anaisabel", "Zoe", "ary", "Kaitlyn", "Blake", "Reile", "Julia", "Faith"],
-                secondHour: ["Ryan", "Zach B.", "Isaac", "Gabriel", "Aaron", "Wally", "Zach F.", "Keyon", "Kylah", "Maggie", "Bill", "Joseph", "Isabella", "Carlo", "Hannah", "Christopher S.", "Jessica", "Connor", "Christopher W.", "Jack", "Adam"],
-                thirdHour: ["Ruby", "Samuel", "Gabi", "Jack", "Duffy", "Shadi", "Keirstynn", "Kaylee", "Luke", "Brianna", "Joshua", "Emelia", "Clark (cooler Bryce)", "Madison", "Tyler", "Rayna", "Kenneth", "Presleigh", "Jayden", "Leo", "Grace Watson", "Grace Wilson", "Parker"],
-                fourthHour: ["Rayanna", "Payton", "Hailey", "Joshua", "Kyle", "Phoebe", "Caroline", "Kayla", "Sophia", "Maria", "Paige", "Matthew", "Nicholas", "Lance", "Matthew", "Trey", "Maddux", "Madison", "Jace", "Savannah", "Daniel", "Hannah", "Philip"],
-                fifthHour: ['Nichole', "Deyton", "Abigail", "Asher", "Melanie", "Emmi", "Emma", "Elizabeth", "Vincent", "Landon", "Rylee", "Isabelle", "Ryan", "Dylan", "Miles", "Nicole", "Mitchell", "Mandy", "Grace", "Tyler", "Madison", "Luka"],
-                seventhHour: ["Kayla", "Naturelle", "Nick H", "Makena", "Genevieve", "Nick K", "Jackson", "Julian", "Zach", "Sarah", "Piper", "Alaina", "Treyton", "Lucy", "AJ", "Nick C", "Tesla", "Madison", "Amanda", "Leah", "Sophia", "Sabrina", "Makayla", "Hailey", "Joseph"],
-                extra: []
-            };
 
-            /*
-            for (let array in choices) {
-                array.forEach(function (name) {
-                    name = name + " ";
-                })
+            let choices = {
+                firstHour: {
+                    names: ["Alexandria", "Addyson", "Gerald", "Luke", "Christian", "Kaleb", "Riley", "Daniel", "Hannah", "Ethan", "Austin", "Brooke", "Kaydence", "Anthony", "Angelo", "Grace", "Anaisabel", "Zoe", "ary", "Kaitlyn", "Blake", "Reile", "Julia", "Faith"],
+                    extra: []
+                },
+                secondHour: {
+                    names: ["Ryan", "Zach B.", "Isaac", "Gabriel", "Aaron", "Wally", "Zach F.", "Keyon", "Kylah", "Maggie", "Bill", "Joseph", "Isabella", "Carlo", "Hannah", "Christopher S.", "Jessica", "Connor", "Christopher W.", "Jack", "Adam"],
+                    extra: []
+                },
+                thirdHour: {
+                    names: ["Ruby", "Samuel", "Gabi", "Jack", "Duffy", "Shadi", "Keirstynn", "Kaylee", "Luke", "Brianna", "Joshua", "Emelia", "Clark (cooler Bryce)", "Madison", "Tyler", "Rayna", "Kenneth", "Presleigh", "Jayden", "Leo", "Grace Watson", "Grace Wilson", "Parker"],
+                    extra: []
+                },
+                fourthHour: {
+                    names: ["Rayanna", "Payton", "Hailey", "Joshua", "Kyle", "Phoebe", "Caroline", "Kayla", "Sophia", "Maria", "Paige", "Matthew", "Nicholas", "Lance", "Matthew", "Trey", "Maddux", "Madison", "Jace", "Savannah", "Daniel", "Hannah", "Philip"],
+                    extra: []
+                },
+                fifthHour: {
+                    names: ['Nichole', "Deyton", "Abigail", "Asher", "Melanie", "Emmi", "Emma", "Elizabeth", "Vincent", "Landon", "Rylee", "Isabelle", "Ryan", "Dylan", "Miles", "Nicole", "Mitchell", "Mandy", "Grace", "Tyler", "Madison", "Luka"],
+                    extra: []
+                },
+                seventhHour: {
+                    names: ["Kayla", "Naturelle", "Nick H", "Makena", "Genevieve", "Nick K", "Jackson", "Julian", "Zach", "Sarah", "Piper", "Alaina", "Treyton", "Lucy", "AJ", "Nick C", "Tesla", "Madison", "Amanda", "Leah", "Sophia", "Sabrina", "Makayla", "Hailey", "Joseph"],
+                    extra: []
+                }
             }
-            */
+
 
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min)) + min;
             }
-            function studentSelector(array) {
-                
-                if (array.length === 0) {
-                    
-                    choices.extra.forEach(name => {
-                        array.push(name)
+            function studentSelector(hour) {
+
+                if (hour.names.length === 0) {
+
+                    hour.extra.forEach(name => {
+                        hour.names.push(name)
                     })
-                 
-                    choices.extra = [];
-                
+
+                    hour.extra = [];
+
                 }
 
-                var ranNum = getRndInteger(0, array.length);
-                var pick = array[ranNum];
-                choices.extra.push(pick);
-                array.splice(ranNum, 1);
+                var ranNum = getRndInteger(0, hour.names.length);
+                var pick = hour.names[ranNum];
+                hour.extra.push(pick);
+                hour.names.splice(ranNum, 1);
                 document.getElementById("output").innerHTML = pick;
-                document.getElementById("remaining").innerHTML = array;
-                //document.getElementById("remaining").innerHTML = "extra" + choices.extra;
+                document.getElementById("remaining").innerHTML = hour.names;
+                //document.getElementById("remaining").innerHTML = "hour.extra" + choices.hour.extra;
 
             }
         </script>
