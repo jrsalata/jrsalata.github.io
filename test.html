@@ -42,7 +42,7 @@
     }
 
     button:hover {
-        background-color: rgb(77,126,168);
+        background-color: rgb(77, 126, 168);
         color: rgb(0, 12, 69);
     }
 </style>
@@ -58,7 +58,7 @@
         <button type="button" onclick="studentSelector(choices.seventhHour)">Seventh Hour</button>
         <button type="button" onclick="masterRestart()">Restart</button>
         </br>
-    </br>
+        </br>
         <h2 id="output"></h2>
         </br>
         <p id="remaining"></p>
@@ -94,21 +94,21 @@
             }
 
 
-            function masterRestart(){
-                
-                for(classHour in choices){
-                    choices[classHour].extra.forEach(name =>{
+            function masterRestart() {
+
+                for (classHour in choices) {
+                    choices[classHour].extra.forEach(name => {
                         choices[classHour].names.push(name)
                     })
                 }
-                for(classHour in choices){
+                for (classHour in choices) {
                     choices[classHour].extra = [];
                 }
 
                 document.getElementById("output").innerHTML = "All classes are restarted";
                 document.getElementById("remaining").innerHTML = "Please pick a class";
                 document.getElementById("numberRemaining").innerHTML = "";
-                
+
             }
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min)) + min;
