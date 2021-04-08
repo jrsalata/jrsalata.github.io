@@ -13,6 +13,7 @@
     h2 {
         font-family: Arial;
         color: rgb(235, 238, 240);
+        font-size: 45px;
     }
 
     h4 {
@@ -23,7 +24,7 @@
     p {
         font-family: Arial;
         color: rgb(235, 238, 240);
-        font-size: large;
+        font-size: 30px;
         width: 75%;
         text-align: start;
     }
@@ -35,17 +36,29 @@
     button {
         background-color: rgb(77, 126, 168);
         color: rgb(235, 238, 240);
+        padding: 8px 19px;
+        border-radius: 8px;
+        font-size: 25px;
+    }
+
+    button:hover {
+        background-color: rgb(77,126,168);
+        color: rgb(0, 12, 69);
     }
 </style>
 
 <body>
     <center>
+        <h1>Welcome to Voluntold 4.0 Alpha</h1>
         <button type="button" onclick="studentSelector(choices.firstHour)">First Hour</button>
         <button type="button" onclick="studentSelector(choices.secondHour)">Second Hour</button>
         <button type="button" onclick="studentSelector(choices.thirdHour)">Third Hour</button>
         <button type="button" onclick="studentSelector(choices.fourthHour)">Fourth Hour</button>
         <button type="button" onclick="studentSelector(choices.fifthHour)">Fifth Hour</button>
         <button type="button" onclick="studentSelector(choices.seventhHour)">Seventh Hour</button>
+        <button type="button" onclick="masterRestart()">Restart</button>
+        </br>
+    </br>
         <h2 id="output"></h2>
         </br>
         <p id="remaining"></p>
@@ -81,7 +94,22 @@
             }
 
 
+            function masterRestart(){
+                
+                for(classHour in choices){
+                    choices[classHour].extra.forEach(name =>{
+                        choices[classHour].names.push(name)
+                    })
+                }
+                for(classHour in choices){
+                    choices[classHour].extra = [];
+                }
 
+                document.getElementById("output").innerHTML = "All classes are restarted";
+                document.getElementById("remaining").innerHTML = "Please pick a class";
+                document.getElementById("numberRemaining").innerHTML = "";
+                
+            }
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min)) + min;
             }
