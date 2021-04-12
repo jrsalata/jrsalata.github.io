@@ -2,9 +2,13 @@
 <html>
 
 <head>
-    <title>Voluntold 4.0.2 ALPHA</title>
+    <title>Voluntold 4.0.3 Beta</title>
 </head>
 <style>
+
+    /*All of these are using a custom dark mode that I created
+    Not much to explain here, just basic CSS*/
+
     h1 {
         font-family: Arial;
         color: rgb(235, 238, 240);
@@ -49,7 +53,8 @@
 
 <body>
     <center>
-        <h1>Welcome to Voluntold 4.0 Alpha</h1>
+        <!--This is the main title, followed with each of the buttons-->
+        <h1>Welcome to Voluntold 4.0.3 Beta</h1>
         <button type="button" onclick="studentSelector(choices.firstHour)">First Hour</button>
         <button type="button" onclick="studentSelector(choices.secondHour)">Second Hour</button>
         <button type="button" onclick="studentSelector(choices.thirdHour)">Third Hour</button>
@@ -59,13 +64,21 @@
         <button type="button" onclick="masterRestart()">Restart</button>
         </br>
         </br>
+	<!--This is where the student selected is shown-->
         <h2 id="output"></h2>
         </br>
+	<!--This shows the students remaining -->
         <p id="remaining"></p>
         </br>
+	<!--This shows the number of students remaining-->
         <p id="numberRemaining"></p>
         <script>
-
+	    /*
+		Each choices object has two things: 
+			An array with student names
+			An extra array that stores the students that were selected
+		Each extra array allows for flexibility and modularity and restartability for the program
+	    */
             let choices = {
                 firstHour: {
                     names: [' Alexandria', ' Addyson', ' Gerald', ' Luke', ' Christian', ' Kaleb', ' Riley', ' Daniel', ' Hannah', ' Ethan', ' Austin', ' Brooke', ' Kaydence', ' Anthony', ' Angelo', ' Grace', ' Anaisabel', ' Zoe', ' ary', ' Kaitlyn', ' Blake', ' Reile', ' Julia', ' Faith'],
@@ -93,28 +106,35 @@
                 }
             }
 
-
+	    // this function resets all of the names to be reused
             function masterRestart() {
-
+		
+		// this takes each class hour extra array and pushes it back into the names
                 for (classHour in choices) {
                     choices[classHour].extra.forEach(name => {
                         choices[classHour].names.push(name)
                     })
                 }
+		// this resets each extra array 
                 for (classHour in choices) {
                     choices[classHour].extra = [];
                 }
-
+		
+		// Displays a message that the classes are restarted
                 document.getElementById("output").innerHTML = "All classes are restarted";
                 document.getElementById("remaining").innerHTML = "Please pick a class";
                 document.getElementById("numberRemaining").innerHTML = "";
 
             }
+	    
+	    // this is the random number generator
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min)) + min;
             }
+	    // this is the actual selector function
             function studentSelector(hour) {
-
+		
+		//
                 if (hour.names.length === 0) {
 
                     hour.extra.forEach(name => {
