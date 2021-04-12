@@ -5,7 +5,6 @@
     <title>Voluntold 4.0.3 Beta</title>
 </head>
 <style>
-
     /*All of these are using a custom dark mode that I created
     Not much to explain here, just basic CSS*/
 
@@ -64,21 +63,22 @@
         <button type="button" onclick="masterRestart()">Restart</button>
         </br>
         </br>
-	<!--This is where the student selected is shown-->
+        <!--This is where the student selected is shown-->
         <h2 id="output"></h2>
         </br>
-	<!--This shows the students remaining -->
+        <!--This shows the students remaining -->
         <p id="remaining"></p>
         </br>
-	<!--This shows the number of students remaining-->
+        <!--This shows the number of students remaining-->
         <p id="numberRemaining"></p>
         <script>
-	    /*
-		Each choices object has two things: 
-			An array with student names
-			An extra array that stores the students that were selected
-		Each extra array allows for flexibility and modularity and restartability for the program
-	    */
+
+            /*
+            Each choices object has two things: 
+                An array with student names
+                An extra array that stores the students that were selected
+            Each extra array allows for flexibility and modularity and restartability for the program
+            */
             let choices = {
                 firstHour: {
                     names: [' Alexandria', ' Addyson', ' Gerald', ' Luke', ' Christian', ' Kaleb', ' Riley', ' Daniel', ' Hannah', ' Ethan', ' Austin', ' Brooke', ' Kaydence', ' Anthony', ' Angelo', ' Grace', ' Anaisabel', ' Zoe', ' ary', ' Kaitlyn', ' Blake', ' Reile', ' Julia', ' Faith'],
@@ -106,35 +106,35 @@
                 }
             }
 
-	    // this function resets all of the names to be reused
+            // this function resets all of the names to be reused
             function masterRestart() {
-		
-		// this takes each class hour extra array and pushes it back into the names
+
+                // this takes each class hour extra array and pushes it back into the names
                 for (classHour in choices) {
                     choices[classHour].extra.forEach(name => {
                         choices[classHour].names.push(name)
                     })
                 }
-		// this resets each extra array 
+                // this resets each extra array 
                 for (classHour in choices) {
                     choices[classHour].extra = [];
                 }
-		
-		        // Displays a message that the classes are restarted
+
+                // Displays a message that the classes are restarted
                 document.getElementById("output").innerHTML = "All classes are restarted";
                 document.getElementById("remaining").innerHTML = "Please pick a class";
                 document.getElementById("numberRemaining").innerHTML = "";
 
             }
-	    
-	        // this is the random number generator
+
+            // this is the random number generator
             function getRndInteger(min, max) {
                 return Math.floor(Math.random() * (max - min)) + min;
             }
-	        // this is the actual selector function
+            // this is the actual selector function
             function studentSelector(hour) {
-		
-		        // checks if the array is empty
+
+                // checks if the array is empty
                 if (hour.names.length === 0) {
 
                     // if the array is empty, push those names into the main array
@@ -151,12 +151,12 @@
                 // pick stores the name that is randomly selected
                 var ranNum = getRndInteger(0, hour.names.length);
                 var pick = hour.names[ranNum];
-                
+
                 // The chosen name is pushed to the extra array
                 // then that name is removed from the names array so it is not picked again
                 hour.extra.push(pick);
                 hour.names.splice(ranNum, 1);
-                
+
                 // output of the selected student, students left, and the number left
                 document.getElementById("output").innerHTML = "<b><em>Next Victim:</em></b>" + pick;
                 document.getElementById("remaining").innerHTML = "Students left: " + hour.names;
