@@ -53,7 +53,7 @@
 <body>
     <center>
         <!--This is the main title, followed with each of the buttons-->
-        <h1>Welcome to Voluntold 4.0.4</h1>
+        <h1>Welcome to Voluntold 4.0.4 Beta</h1>
         <button type="button" onclick="studentSelector(choices.firstHour)">First Hour</button>
         <button type="button" onclick="studentSelector(choices.secondHour)">Second Hour</button>
         <button type="button" onclick="studentSelector(choices.thirdHour)">Third Hour</button>
@@ -113,12 +113,13 @@
                 for (classHour in choices) {
                     choices[classHour].extra.forEach(name => {
                         choices[classHour].names.push(name)
-                    })
-                }
-                // this resets each extra array 
-                for (classHour in choices) {
+                    });
                     choices[classHour].extra = [];
-                }
+                };
+                // this resets each extra array 
+                //for (classHour in choices) {
+                    
+                //}
 
                 // Displays a message that the classes are restarted
                 document.getElementById("output").innerHTML = "All classes are restarted";
@@ -140,7 +141,7 @@
                     // if the array is empty, push those names into the main array
                     hour.extra.forEach(name => {
                         hour.names.push(name)
-                    })
+                    });
 
                     // clears the extra array
                     hour.extra = [];
