@@ -106,18 +106,24 @@
                     extra: []
                 }
             }
-
-            function readTextFile(filepath) {
-            	var str = "";
-            	var txtFile = new File(filepath);
-            	txtFile.open("r");
-            	while (!txtFile.eof) {
-            		// read each line of text
-            		str += txtFile.readln() + "\n";
-            	}
-            	document.getElementById('debug').innerHTML = str;
-            	return str;
+            function appendData(data){
+                var mainContainer = document.getElementById("debug");
+                for (classHour in data) {
+                    var div = document.createElement("div");
+                    div.innerHTML = 'Name: ' + data[classHour].names;
+                    mainContainer.appendChild(div);
+                }
             }
+            fetch('test.json')
+              .then(function (response) {
+                return response.json();
+              })
+              .then(function (data) {
+                appendData(data);
+              })
+              .catch(function (err) {
+                console.log(err);
+              });
             
             // this function resets all of the names to be reused
             function masterRestart() {
