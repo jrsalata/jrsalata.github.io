@@ -125,6 +125,7 @@
               })
               .catch(function (err) {
                 console.log(err);
+                document.getElementById("debug").innerHTML = err;
               });
             // this function resets all of the names to be reused
             function masterRestart() {
