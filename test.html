@@ -114,17 +114,7 @@
                     mainContainer.appendChild(div);
                 }
             }
-            fetch('test.json')
-              .then(function (response) {
-                return response.json();
-              })
-              .then(function (data) {
-                appendData(data);
-              })
-              .catch(function (err) {
-                console.log(err);
-              });
-            
+
             // this function resets all of the names to be reused
             function masterRestart() {
 
@@ -141,9 +131,17 @@
                 document.getElementById("remaining").innerHTML = "Please pick a class";
                 document.getElementById("numberRemaining").innerHTML = "";
                 
-                document.getElementById('debug').innerHTML = "Running the segment...";
-                document.getElementById('debug').innerHTML = readTextFile("/test.txt");
-                
+                fetch('test.json')
+                  .then(function (response) {
+                    return response.json();
+                  })
+                  .then(function (data) {
+                    appendData(data);
+                  })
+                  .catch(function (err) {
+                    console.log(err);
+                  });
+            
             }
 
             // this is the random number generator
