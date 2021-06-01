@@ -118,7 +118,7 @@
             }
             fetch('test.json')
               .then(function (response) {
-                let jsonData = response.json();
+                let jsonData = response;
                 document.getElementById('debug').innerHTML = jsonData;
                 return response.json();
               })
