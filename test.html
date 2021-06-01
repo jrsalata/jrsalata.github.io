@@ -71,6 +71,7 @@
         </br>
         <!--This shows the number of students remaining-->
         <p id="numberRemaining"></p>
+        <p id="debug"></p>
         <script>
 
             /*
@@ -106,6 +107,9 @@
                 }
             }
 
+            const response = await fetch('https://raw.githubusercontent.com/sheepman39/sheepman39.github.io/master/test.txt');
+            const data = await response.text();
+            document.getElementById("debug").innerHTML = data;
             // this function resets all of the names to be reused
             function masterRestart() {
 
