@@ -71,16 +71,8 @@
         </br>
         <!--This shows the number of students remaining-->
         <p id="numberRemaining"></p>
-        <p id="debug"></p>
+        <p id="debug">debug goes here</p>
         <script>
-                
-                var xhr=new XMLHttpRequest();
-                xhr.open("GET","'https://raw.githubusercontent.com/sheepman39/sheepman39.github.io/master/test.txt'");
-                xhr.onload=function(){
-                    document.getElementById("debug").innerHTML = xhr.responseText;
-                    console.log(xhr.responseText);
-                }
-                
                 
             /*
             Each choices object has two things: 
@@ -131,6 +123,14 @@
                 document.getElementById("output").innerHTML = "All classes are restarted";
                 document.getElementById("remaining").innerHTML = "Please pick a class";
                 document.getElementById("numberRemaining").innerHTML = "";
+                
+                document.getElementById('debug').innerHTML = "Running the segment...";
+                var xhr=new XMLHttpRequest();
+                xhr.open("GET","'https://raw.githubusercontent.com/sheepman39/sheepman39.github.io/master/test.txt'");
+                xhr.onload=function(){
+                    document.getElementById("debug").innerHTML = xhr.responseText;
+                    console.log(xhr.responseText);
+                }
 
             }
 
