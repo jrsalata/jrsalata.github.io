@@ -125,12 +125,12 @@
                 document.getElementById("numberRemaining").innerHTML = "";
                 
                 document.getElementById('debug').innerHTML = "Running the segment...";
-                //var xhr=new XMLHttpRequest();
-                //xhr.open("GET","'https://raw.githubusercontent.com/sheepman39/sheepman39.github.io/master/test.txt'");
-                //xhr.onload=function(){
-                //    document.getElementById("debug").innerHTML = xhr.responseText;
-                //    console.log(xhr.responseText);
-                //}
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET","'https://raw.githubusercontent.com/sheepman39/sheepman39.github.io/master/test.txt'");
+                xhr.onload = function(){
+                    document.getElementById("debug").innerHTML = xhr.responseText;
+                    console.log(xhr.responseText);
+                }
 
             }
 
