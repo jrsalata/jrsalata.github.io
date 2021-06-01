@@ -71,6 +71,8 @@
         </br>
         <!--This shows the number of students remaining-->
         <p id="numberRemaining"></p>
+        <div id="debug2"></div>
+
         <p id="debug">"debug goes here"</p>
         <script>
                 
@@ -107,14 +109,23 @@
                 }
             }
             function appendData(data){
-                var mainContainer = document.getElementById("debug");
+                var mainContainer = document.getElementById("debug2");
                 for (classHour in data) {
                     var div = document.createElement("div");
                     div.innerHTML = 'Name: ' + data[classHour].names;
                     mainContainer.appendChild(div);
                 }
             }
-
+            fetch('test.json')
+              .then(function (response) {
+                return response.json();
+              })
+              .then(function (data) {
+                appendData(data);
+              })
+              .catch(function (err) {
+                console.log(err);
+              });
             // this function resets all of the names to be reused
             function masterRestart() {
 
@@ -130,17 +141,6 @@
                 document.getElementById("output").innerHTML = "All classes are restarted";
                 document.getElementById("remaining").innerHTML = "Please pick a class";
                 document.getElementById("numberRemaining").innerHTML = "";
-                
-                fetch('test.json')
-                  .then(function (response) {
-                    return response.json();
-                  })
-                  .then(function (data) {
-                    appendData(data);
-                  })
-                  .catch(function (err) {
-                    console.log(err);
-                  });
             
             }
 
