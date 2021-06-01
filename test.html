@@ -107,22 +107,17 @@
                     names: [' Kayla', ' Naturelle', ' Nick H', ' Makena', ' Genevieve', ' Nick K', ' Jackson', ' Julian', ' Zach', ' Sarah', ' Piper', ' Alaina', ' Treyton', ' Lucy', ' AJ', ' Nick C', ' Tesla', ' Madison', ' Amanda', ' Leah', ' Sophia', ' Sabrina', ' Makayla', ' Hailey', ' Joseph'],
                     extra: []
                 }
-            }
-            function appendData(data, hour){
-                var mainContainer = document.getElementById("debug2");
-                for (classHour in data[hour]) {
-                    var div = document.createElement("div");
-                    div.innerHTML = 'Name: ' + data[classHour].names;
-                    mainContainer.appendChild(div);
-                }
-            }
+            };
+            
+            let classes = {};
+
             fetch('test.json')
               .then(function (response) {
                 response.clone().json();
                 return response.json();
               })
               .then(function (data) {
-                appendData(data);
+                document.getElementById("debug2").innerHTML = data;
               })
               .catch(function (err) {
                 console.log(err);
