@@ -118,8 +118,7 @@
             }
             fetch('test.json')
               .then(function (response) {
-                let jsonData = response;
-                document.getElementById('debug').innerHTML = jsonData;
+                response.clone().json();
                 return response.json();
               })
               .then(function (data) {
