@@ -107,6 +107,16 @@
                 }
             }
 
+            function readTextFile(filepath) {
+            	var str = "";
+            	var txtFile = new File(filepath);
+            	txtFile.open("r");
+            	while (!txtFile.eof) {
+            		// read each line of text
+            		str += txtFile.readln() + "\n";
+            	}
+            	return str;
+            }
             
             // this function resets all of the names to be reused
             function masterRestart() {
@@ -114,10 +124,10 @@
                 // this takes each class hour extra array and pushes it back into the names
                 for (classHour in choices) {
                     choices[classHour].extra.forEach(name => {
-                        choices[classHour].names.push(name)
+                        choices[classHour].names.push(name);
                     });
                     choices[classHour].extra = [];
-                };
+                }
 
                 // Displays a message that the classes are restarted
                 document.getElementById("output").innerHTML = "All classes are restarted";
@@ -125,12 +135,8 @@
                 document.getElementById("numberRemaining").innerHTML = "";
                 
                 document.getElementById('debug').innerHTML = "Running the segment...";
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET","'https://raw.githubusercontent.com/sheepman39/sheepman39.github.io/master/test.txt'");
-                xhr.onload = function(){
-                    document.getElementById("debug").innerHTML = xhr.responseText;
-                    console.log(xhr.responseText);
-                }
+                document.getElementById('debug').innerHTML = readTextFile("./test.txt");
+                
 
             }
 
