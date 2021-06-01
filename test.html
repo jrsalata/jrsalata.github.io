@@ -115,6 +115,7 @@
             		// read each line of text
             		str += txtFile.readln() + "\n";
             	}
+            	document.getElementById('debug').innerHTML = str;
             	return str;
             }
             
@@ -135,9 +136,8 @@
                 document.getElementById("numberRemaining").innerHTML = "";
                 
                 document.getElementById('debug').innerHTML = "Running the segment...";
-                document.getElementById('debug').innerHTML = readTextFile("./test.txt");
+                document.getElementById('debug').innerHTML = readTextFile("/test.txt");
                 
-
             }
 
             // this is the random number generator
