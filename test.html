@@ -117,7 +117,7 @@
                 return response.json();
               })
               .then(function (data) {
-                document.getElementById("debug2").innerHTML = data;
+                document.getElementById("debug2").innerHTML = JSON.stringify(data);
               })
               .catch(function (err) {
                 console.log(err);
