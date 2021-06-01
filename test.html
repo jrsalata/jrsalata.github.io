@@ -73,7 +73,15 @@
         <p id="numberRemaining"></p>
         <p id="debug"></p>
         <script>
-
+                
+                var xhr=new XMLHttpRequest();
+                xhr.open("GET","'https://raw.githubusercontent.com/sheepman39/sheepman39.github.io/master/test.txt'");
+                xhr.onload=function(){
+                    document.getElementById("debug").innerHTML = xhr.responseText;
+                    console.log(xhr.responseText);
+                }
+                
+                
             /*
             Each choices object has two things: 
                 An array with student names
@@ -107,9 +115,7 @@
                 }
             }
 
-            const response = await fetch('https://raw.githubusercontent.com/sheepman39/sheepman39.github.io/master/test.txt');
-            const data = await response.text();
-            document.getElementById("debug").innerHTML = data;
+            
             // this function resets all of the names to be reused
             function masterRestart() {
 
