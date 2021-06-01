@@ -54,12 +54,12 @@
     <center>
         <!--This is the main title, followed with each of the buttons-->
         <h1>Welcome to Voluntold 4.0.4 Beta</h1>
-        <button type="button" onclick="studentSelector(choices.firstHour)">First Hour</button>
-        <button type="button" onclick="studentSelector(choices.secondHour)">Second Hour</button>
-        <button type="button" onclick="studentSelector(choices.thirdHour)">Third Hour</button>
-        <button type="button" onclick="studentSelector(choices.fourthHour)">Fourth Hour</button>
-        <button type="button" onclick="studentSelector(choices.fifthHour)">Fifth Hour</button>
-        <button type="button" onclick="studentSelector(choices.seventhHour)">Seventh Hour</button>
+        <button type="button" onclick="studentSelector(classes.firstHour)">First Hour</button>
+        <button type="button" onclick="studentSelector(classes.secondHour)">Second Hour</button>
+        <button type="button" onclick="studentSelector(classes.thirdHour)">Third Hour</button>
+        <button type="button" onclick="studentSelector(classes.fourthHour)">Fourth Hour</button>
+        <button type="button" onclick="studentSelector(classes.fifthHour)">Fifth Hour</button>
+        <button type="button" onclick="studentSelector(classes.seventhHour)">Seventh Hour</button>
         <button type="button" onclick="masterRestart()">Restart</button>
         </br>
         </br>
@@ -108,8 +108,6 @@
                     extra: []
                 }
             };
-            
-            let classes = {};
 
             fetch('test.json')
               .then(function (response) {
@@ -117,6 +115,8 @@
                 return response.json();
               })
               .then(function (data) {
+                
+                let classes = data;
                 document.getElementById("debug2").innerHTML = JSON.stringify(data);
               })
               .catch(function (err) {
