@@ -95,7 +95,7 @@
               })
               .catch(function (err) {
                 console.log(err);
-                document.getElementById("debug").innerHTML = err;
+                document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
               });
             // this function resets all of the names to be reused
             function masterRestart(ClassObject) {
