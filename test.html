@@ -74,7 +74,7 @@
 
         <p id="debug"></p>
         <script>
-                
+
             /*
             Each choices object has two things: 
                 An array with student names
@@ -84,19 +84,19 @@
 
             let Classes;
             fetch('./test.json')
-              .then(function (response) {
-                response.clone().json();
-                return response.json();
-              })
-              .then(function (data) {
-                
-                Classes = data;
-                
-              })
-              .catch(function (err) {
-                console.log(err);
-                document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
-              });
+                .then(function (response) {
+                    response.clone().json();
+                    return response.json();
+                })
+                .then(function (data) {
+
+                    Classes = data;
+
+                })
+                .catch(function (err) {
+                    console.log(err);
+                    document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
+                });
             // this function resets all of the names to be reused
             function masterRestart(ClassObject) {
 
@@ -112,7 +112,7 @@
                 document.getElementById("output").innerHTML = "All classes are restarted";
                 document.getElementById("remaining").innerHTML = "Please pick a class";
                 document.getElementById("numberRemaining").innerHTML = "";
-            
+
             }
 
             // this is the random number generator
