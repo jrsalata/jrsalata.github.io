@@ -71,7 +71,7 @@
         </br>
         <!--This shows the number of students remaining-->
         <p id="numberRemaining"></p>
-        <div id="debug2"></div>
+        <p id="debug2"></p>
 
         <p id="debug">"debug goes here"</p>
         <script>
@@ -109,7 +109,7 @@
                 }
             };
 
-            fetch('test.json')
+            fetch('./test.json')
               .then(function (response) {
                 response.clone().json();
                 return response.json();
