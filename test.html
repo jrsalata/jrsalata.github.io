@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Voluntold 4.0.4</title>
+    <title>Voluntold 4.0.5</title>
 </head>
 <style>
     /*All of these are using a custom dark mode that I created
@@ -108,7 +108,7 @@
                     extra: []
                 }
             };
-
+            let classes;
             fetch('./test.json')
               .then(function (response) {
                 response.clone().json();
@@ -116,7 +116,7 @@
               })
               .then(function (data) {
                 
-                let classes = data;
+                classes = data;
                 document.getElementById("debug2").innerHTML = JSON.stringify(data);
               })
               .catch(function (err) {
