@@ -102,7 +102,7 @@
 
                 // this takes each class hour extra array and pushes it back into the names
                 for (classHour in ClassObject) {
-                    ClassObject.[classHour].extra.forEach(name => {
+                    ClassObject[classHour].extra.forEach(name => {
                         ClassObject[classHour].names.push(name);
                     });
                     ClassObject[classHour].extra = [];
