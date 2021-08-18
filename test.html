@@ -54,12 +54,12 @@
     <center>
         <!--This is the main title, followed with each of the buttons-->
         <h1>Welcome to Voluntold 4.0.4 Beta</h1>
-        <button type="button" onclick="studentSelector(Classes.firstHour)">First Hour</button>
-        <button type="button" onclick="studentSelector(Classes.secondHour)">Second Hour</button>
-        <button type="button" onclick="studentSelector(Classes.thirdHour)">Third Hour</button>
-        <button type="button" onclick="studentSelector(Classes.fourthHour)">Fourth Hour</button>
-        <button type="button" onclick="studentSelector(Classes.fifthHour)">Fifth Hour</button>
-        <button type="button" onclick="studentSelector(Classes.seventhHour)">Seventh Hour</button>
+        <button type="button" onclick="studentSelector(Classes.mendoza.firstHour)">First Hour</button>
+        <button type="button" onclick="studentSelector(Classes.mendoza.secondHour)">Second Hour</button>
+        <button type="button" onclick="studentSelector(Classes.mendoza.thirdHour)">Third Hour</button>
+        <button type="button" onclick="studentSelector(Classes.mendoza.fourthHour)">Fourth Hour</button>
+        <button type="button" onclick="studentSelector(Classes.mendoza.fifthHour)">Fifth Hour</button>
+        <button type="button" onclick="studentSelector(Classes.mendoza.seventhHour)">Seventh Hour</button>
         <button type="button" onclick="masterRestart(Classes)">Restart</button>
         </br>
         </br>
@@ -102,7 +102,7 @@
 
                 // this takes each class hour extra array and pushes it back into the names
                 for (classHour in ClassObject) {
-                    ClassObject[classHour].extra.forEach(name => {
+                    ClassObject.[classHour].extra.forEach(name => {
                         ClassObject[classHour].names.push(name);
                     });
                     ClassObject[classHour].extra = [];
