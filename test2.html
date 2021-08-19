@@ -92,6 +92,27 @@
                 .then(function (data) {
 
                     Classes = data;
+                    document.addEventListener('DOMContentLoaded', function() {
+                
+                        try{
+                            for (classHour in Classes.mendoza){
+                                var button = document.createElement(classHour);
+                                button.type = 'button';
+                                button.innerHTML = classHour;
+                             
+                                button.onclick = function() {
+                                    studentSelector(classHour);
+                                };
+                             
+                                var container = document.getElementById('container');
+                                container.appendChild(button);
+                            }
+                        }catch(e){
+                            document.getElementById("debug").innerHTML = e;
+                        }
+                    }, false);
+            
+                    
 
                 })
                 .catch(function (err) {
@@ -101,26 +122,7 @@
                 
                 
             
-            document.addEventListener('DOMContentLoaded', function() {
-                
-                try{
-                    for (classHour in Classes.mendoza){
-                        var button = document.createElement(classHour);
-                        button.type = 'button';
-                        button.innerHTML = classHour;
-                     
-                        button.onclick = function() {
-                            studentSelector(classHour);
-                        };
-                     
-                        var container = document.getElementById('container');
-                        container.appendChild(button);
-                    }
-                }catch(e){
-                    document.getElementById("debug").innerHTML = e;
-                }
-            }, false);
-            
+
             
             // this function resets all of the names to be reused
             function masterRestart(ClassObject) {
