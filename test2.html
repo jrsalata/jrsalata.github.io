@@ -103,17 +103,21 @@
             
             document.addEventListener('DOMContentLoaded', function() {
                 
-                for (classHour in Classes.mendoza){
-                    var button = document.createElement(classHour);
-                    button.type = 'button';
-                    button.innerHTML = classHour;
-                 
-                    button.onclick = function() {
-                        studentSelector(classHour)
-                    };
-                 
-                    var container = document.getElementById('container');
-                    container.appendChild(button);
+                try{
+                    for (classHour in Classes.mendoza){
+                        var button = document.createElement(classHour);
+                        button.type = 'button';
+                        button.innerHTML = classHour;
+                     
+                        button.onclick = function() {
+                            studentSelector(classHour);
+                        };
+                     
+                        var container = document.getElementById('container');
+                        container.appendChild(button);
+                    }
+                }catch(e){
+                    document.getElementById("debug").innerHTML = e;
                 }
             }, false);
             
