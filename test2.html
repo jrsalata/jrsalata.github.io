@@ -83,9 +83,11 @@
             Each extra array allows for flexibility and modularity and restartability for the program
             */
             function dynamicButtons(Classes){
+                
+                try{
                 document.addEventListener('DOMContentLoaded', async function() {
 
-                    try{
+                    
                         
                         /*
                         var button = document.createElement("button");
@@ -121,10 +123,11 @@
                             }
                         }
                         
-                    }catch(e){
-                        document.getElementById("debug").innerHTML = e + "\n Classes" + TestClass;
-                    }
+
                 }, false);
+                }catch(e){
+                        document.getElementById("debug").innerHTML = e + "\n Classes";
+                }
             }
                 
                 let Classes;
