@@ -108,7 +108,9 @@
                             button.setAttribute("type", "button");
                             button.setAttribute("innerHTML", "testing");
                             button.setAttribute("id", "button2");
-                            document.getElementById("debug").innerHTML = button;
+                            
+                            document.getElementById("debug").innerHTML = button.id;
+                            
                             var container = document.getElementById('container');
                             container.appendChild(button);
                             
