@@ -77,7 +77,7 @@
         <script>
 
             /*
-            Each choices object has two things: 
+            Each choices object has two things:
                 An array with student names
                 An extra array that stores the students that were selected
             Each extra array allows for flexibility and modularity and restartability for the program
@@ -98,21 +98,23 @@
                     console.log(err);
                     document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
                 });
-                
-                
+
+
                 document.addEventListener('DOMContentLoaded', function() {
-                
+
                         try{
-                            
+
                             var button = document.createElement("INPUT");
                             button.setAttribute("type", "button");
                             button.setAttribute("innerHTML", "testing");
                             button.setAttribute("id", "button2");
-                            button.setAttribute("innerHTML","Testing")
-                            
+                            button.setAttribute("innerHTML","Testing");
+
                             var container = document.getElementById('container');
                             container.appendChild(button);
                             
+                            button.setAttribute("innerHTML","Testing 116");
+
                             //button.innerHTML = "testing";
                             document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML + "\nID: " + button.id;
 
@@ -121,11 +123,11 @@
                                 var button = document.createElement(classHour);
                                 button.type = 'button';
                                 button.innerHTML = classHour;
-                             
+
                                 button.onclick = function() {
                                     studentSelector(classHour);
                                 };
-                             
+
                                 var container = document.getElementById('container');
                                 container.appendChild(button);
                             }
@@ -135,7 +137,7 @@
                         }
                     }, false);
 
-            
+
             // this function resets all of the names to be reused
             function masterRestart(ClassObject) {
 
