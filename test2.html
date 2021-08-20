@@ -82,9 +82,53 @@
                 An extra array that stores the students that were selected
             Each extra array allows for flexibility and modularity and restartability for the program
             */
+            function dynamicButtons(Classes){
+                document.addEventListener('DOMContentLoaded', async function() {
 
-            let Classes;
-            let jsonRetriever = async function(){
+                    try{
+                        
+                        /*
+                        var button = document.createElement("button");
+                        button.setAttribute("type", "button");
+                        button.setAttribute("id", "button2");
+                        button.innerHTML = 'testing 111';
+
+                        var container = document.getElementById('container');
+                        container.appendChild(button);
+                        
+                        button.setAttribute("innerHTML","Testing 116");
+
+                        //button.innerHTML = "testing";
+                        document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML + "\nID: " + button.id;
+                        
+                        button.addEventListener ("click", function(){
+                            studentSelector(Classes.mendoza.seventhHour);
+                        });
+                        */
+                        for (teacher in Classes){
+                            
+                            for (classHour in teacher){
+                                var button = document.createElement(classHour);
+                                button.setAttribute("type", "button");
+                                button.setAttribute("id", classHour);
+                                
+                                var container = document.getElementById('container');
+                                container.appendChild(button);
+                                
+                                button.addEventListener("click", function(){
+                                    studentSelector(classHour);
+                                });
+                            }
+                        }
+                        
+                    }catch(e){
+                        document.getElementById("debug").innerHTML = e + "\n Classes" + TestClass;
+                    }
+                }, false);
+            }
+                
+                let Classes;
+
                 fetch('./test.json')
                     .then(function (response) {
                         response.clone().json();
@@ -95,6 +139,7 @@
                         Classes = data;
                         //stringClasses = JSON.stringify(Classes, null, 4);
                         //document.getElementById("debug").innerHTML = "Classes: " + stringClasses;
+                        dynamicButtons(Classes);
                         return data;
                         
                     })
@@ -102,51 +147,7 @@
                         console.log(err);
                         document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
                     });
-            }
-            document.addEventListener('DOMContentLoaded', async function() {
-
-                        try{
-                            
-                            /*
-                            var button = document.createElement("button");
-                            button.setAttribute("type", "button");
-                            button.setAttribute("id", "button2");
-                            button.innerHTML = 'testing 111';
-
-                            var container = document.getElementById('container');
-                            container.appendChild(button);
-                            
-                            button.setAttribute("innerHTML","Testing 116");
-
-                            //button.innerHTML = "testing";
-                            document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML + "\nID: " + button.id;
-                            
-                            button.addEventListener ("click", function(){
-                                studentSelector(Classes.mendoza.seventhHour);
-                            });
-                            */
-                            await jsonRetriever();
-                            alert("json retriever works");
-                            for (teacher in Classes){
-                                
-                                for (classHour in teacher){
-                                    var button = document.createElement(classHour);
-                                    button.setAttribute("type", "button");
-                                    button.setAttribute("id", classHour);
-                                    
-                                    var container = document.getElementById('container');
-                                    container.appendChild(button);
-                                    
-                                    button.addEventListener("click", function(){
-                                        studentSelector(classHour);
-                                    });
-                                }
-                            }
-                            
-                        }catch(e){
-                            document.getElementById("debug").innerHTML = e + "\n Classes" + TestClass;
-                        }
-                    }, false);
+            
 
             // this function resets all of the names to be reused
             function masterRestart(ClassObject) {
