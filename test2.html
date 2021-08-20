@@ -92,15 +92,8 @@
                 .then(function (data) {
 
                     Classes = data;
-
-                })
-                .catch(function (err) {
-                    console.log(err);
-                    document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
-                });
-
-
-                document.addEventListener('DOMContentLoaded', function() {
+                    
+                                    document.addEventListener('DOMContentLoaded', function() {
 
                         try{
                             
@@ -141,6 +134,12 @@
                             document.getElementById("debug").innerHTML = e;
                         }
                     }, false);
+
+                })
+                .catch(function (err) {
+                    console.log(err);
+                    document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
+                });
 
 
             // this function resets all of the names to be reused
