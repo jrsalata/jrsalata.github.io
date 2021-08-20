@@ -107,9 +107,10 @@
                             var button = document.createElement("INPUT");
                             button.setAttribute("type", "button");
                             button.setAttribute("innerHTML", "testing");
-                            button.setAttribute("id", "INPUT");
+                            //button.setAttribute("id", "INPUT");
+                            button.id = "button"
                             //button.innerHTML = "testing";
-                            document.getElementById("INPUT").innerHTML = "Testing 111";
+                            document.getElementById("button").innerHTML = "Testing 111";
                             
                             var container = document.getElementById('container');
                             container.appendChild(button);
