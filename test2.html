@@ -106,7 +106,6 @@
 
                             var button = document.createElement("button");
                             button.setAttribute("type", "button");
-                            //button.setAttribute("innerHTML", "testing");
                             button.setAttribute("id", "button2");
                             button.innerHTML = 'testing 111';
 
@@ -117,7 +116,9 @@
 
                             //button.innerHTML = "testing";
                             document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML + "\nID: " + button.id;
-
+                            button.addEventListener ("click", function(){
+                                alert("Button did something");
+                            }
                             /*
                             for (classHour in Classes.mendoza){
                                 var button = document.createElement(classHour);
