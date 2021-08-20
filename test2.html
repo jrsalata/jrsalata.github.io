@@ -93,7 +93,7 @@
                     .then(function (data) {
     
                         Classes = data;
-                        document.getElementById("debug").innerHTML = "Classes" + Classes;
+                        document.getElementById("debug").innerHTML = "Classes" + Classes.mendoza;
                         return data;
                         
                     })
@@ -124,9 +124,9 @@
                                 studentSelector(Classes.mendoza.seventhHour);
                             });
                             */
-                            let TestClass = await jsonRetriever();
+                            await jsonRetriever();
                             
-                            for (classHour in TestClass.mendoza){
+                            for (classHour in Classes.mendoza){
                                 var button = document.createElement(classHour);
                                 button.setAttribute("type", "button");
                                 button.setAttribute("id", classHour);
