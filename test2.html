@@ -127,18 +127,19 @@
                             */
                             await jsonRetriever();
                             
-                            for (classHour in Classes.mendoza){
-                                var button = document.createElement(classHour);
-                                button.setAttribute("type", "button");
-                                button.setAttribute("id", classHour);
-                                
-                                var container = document.getElementById('container');
-                                container.appendChild(button);
-                                
-                                button.addEventListener("click", function(){
-                                    studentSelector(classHour);
-                                });
-
+                            for (teacher in Classes){
+                                for (classHour in teacher){
+                                    var button = document.createElement(classHour);
+                                    button.setAttribute("type", "button");
+                                    button.setAttribute("id", classHour);
+                                    
+                                    var container = document.getElementById('container');
+                                    container.appendChild(button);
+                                    
+                                    button.addEventListener("click", function(){
+                                        studentSelector(classHour);
+                                    });
+                                }
                             }
                             
                         }catch(e){
