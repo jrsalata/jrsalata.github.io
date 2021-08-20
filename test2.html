@@ -93,7 +93,8 @@
                     .then(function (data) {
     
                         Classes = data;
-                        document.getElementById("debug").innerHTML = "Classes: " + Classes.mendoza[0];
+                        stringClasses = JSON.stringify(Classes, null, 4);
+                        document.getElementById("debug").innerHTML = "Classes: " + stringClasses;
                         return data;
                         
                     })
