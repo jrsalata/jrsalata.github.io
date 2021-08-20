@@ -123,9 +123,9 @@
                                 studentSelector(Classes.mendoza.seventhHour);
                             });
                             */
-                            await jsonRetriever();
+                            let TestClass = await jsonRetriever();
                             
-                            for (classHour in Classes.mendoza){
+                            for (classHour in TestClass.mendoza){
                                 var button = document.createElement(classHour);
                                 button.setAttribute("type", "button");
                                 button.setAttribute("id", classHour);
@@ -140,7 +140,7 @@
                             }
                             
                         }catch(e){
-                            document.getElementById("debug").innerHTML = e + "\n" + Classes;
+                            document.getElementById("debug").innerHTML = e + "\n Classes" + Classes;
                         }
                     }, false);
 
