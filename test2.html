@@ -92,9 +92,25 @@
                 .then(function (data) {
 
                     Classes = data;
-                    document.addEventListener('DOMContentLoaded', function() {
+
+                })
+                .catch(function (err) {
+                    console.log(err);
+                    document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
+                });
+                
+                
+                document.addEventListener('DOMContentLoaded', function() {
                 
                         try{
+                            
+                            var button = document.createElement("test_btn");
+                            button.type = "button";
+                            button.innerHTML = "testing";
+                            
+                            var container = document.getElementById('container');
+                            container.appendChild(button);
+                            /*
                             for (classHour in Classes.mendoza){
                                 var button = document.createElement(classHour);
                                 button.type = 'button';
@@ -107,21 +123,11 @@
                                 var container = document.getElementById('container');
                                 container.appendChild(button);
                             }
+                            */
                         }catch(e){
                             document.getElementById("debug").innerHTML = e;
                         }
                     }, false);
-            
-                    
-
-                })
-                .catch(function (err) {
-                    console.log(err);
-                    document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
-                });
-                
-                
-            
 
             
             // this function resets all of the names to be reused
