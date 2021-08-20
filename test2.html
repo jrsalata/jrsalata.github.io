@@ -84,16 +84,24 @@
             */
 
             let Classes;
-            fetch('./test.json')
-                .then(function (response) {
-                    response.clone().json();
-                    return response.json();
-                })
-                .then(function (data) {
-
-                    Classes = data;
-                    
-                                    document.addEventListener('DOMContentLoaded', function() {
+            let jsonRetriever = async function(){
+                fetch('./test.json')
+                    .then(function (response) {
+                        response.clone().json();
+                        return response.json();
+                    })
+                    .then(function (data) {
+    
+                        Classes = data;
+                        return data;
+                        
+                    })
+                    .catch(function (err) {
+                        console.log(err);
+                        document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
+                    });
+            }
+            document.addEventListener('DOMContentLoaded', async function() {
 
                         try{
                             
@@ -115,6 +123,7 @@
                                 studentSelector(Classes.mendoza.seventhHour);
                             });
                             */
+                            await jsonRetriever();
                             
                             for (classHour in Classes.mendoza){
                                 var button = document.createElement(classHour);
@@ -134,13 +143,6 @@
                             document.getElementById("debug").innerHTML = e;
                         }
                     }, false);
-
-                })
-                .catch(function (err) {
-                    console.log(err);
-                    document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
-                });
-
 
             // this function resets all of the names to be reused
             function masterRestart(ClassObject) {
