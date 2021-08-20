@@ -124,7 +124,7 @@
                             });
                             */
                             let TestClass = await jsonRetriever();
-                            
+                            document.getElementById("debug").innerHTML = "Classes" + TestClass;
                             for (classHour in TestClass.mendoza){
                                 var button = document.createElement(classHour);
                                 button.setAttribute("type", "button");
