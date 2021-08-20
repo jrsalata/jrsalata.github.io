@@ -85,6 +85,7 @@
             function dynamicButtons(Classes){
                 
                 try{
+                    alert("dyanmic buttons started");
                 document.addEventListener('DOMContentLoaded', async function() {
 
                     
@@ -108,7 +109,7 @@
                         });
                         */
                         for (teacher in Classes){
-                            
+                            alert("teacher started");
                             for (classHour in teacher){
                                 var button = document.createElement(classHour);
                                 button.setAttribute("type", "button");
