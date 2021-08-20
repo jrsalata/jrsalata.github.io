@@ -108,15 +108,13 @@
                             button.setAttribute("type", "button");
                             button.setAttribute("innerHTML", "testing");
                             button.setAttribute("id", "button2");
-                            
-                            document.getElementById("debug").innerHTML = button.id;
-                        
                             button.innerHTML = "Testing 114";
+                            
                             var container = document.getElementById('container');
                             container.appendChild(button);
                             
                             //button.innerHTML = "testing";
-                            document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML;
+                            document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML \n "ID: " + button.id;
 
                             /*
                             for (classHour in Classes.mendoza){
