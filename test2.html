@@ -103,7 +103,8 @@
                 document.addEventListener('DOMContentLoaded', function() {
 
                         try{
-
+                            
+                            /*
                             var button = document.createElement("button");
                             button.setAttribute("type", "button");
                             button.setAttribute("id", "button2");
@@ -120,21 +121,22 @@
                             button.addEventListener ("click", function(){
                                 studentSelector(Classes.mendoza.seventhHour);
                             });
+                            */
                             
-                            /*
                             for (classHour in Classes.mendoza){
                                 var button = document.createElement(classHour);
-                                button.type = 'button';
-                                button.innerHTML = classHour;
-
-                                button.onclick = function() {
-                                    studentSelector(classHour);
-                                };
-
+                                button.setAttribute("type", "button");
+                                button.setAttribute("id", classHour);
+                                
                                 var container = document.getElementById('container');
                                 container.appendChild(button);
+                                
+                                button.addEventListener("click", function(){
+                                    studentSelector(classHour);
+                                });
+
                             }
-                            */
+                            
                         }catch(e){
                             document.getElementById("debug").innerHTML = e;
                         }
