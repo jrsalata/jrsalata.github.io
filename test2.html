@@ -98,10 +98,12 @@
 
                             //var container = document.getElementById('container');
                             //container.appendChild(button);
-                            document.body.appendChild(button);
-
-                            console.log("button created");
+                            //document.body.appendChild(button);
+                            var body = document.getElementsByTagName("body")[0];
+                            body.appendChild(button);
                             
+                            console.log("button created");
+
                             button.addEventListener("click", function () {
                                 studentSelector(data[teacher][classHour]);
                             });
@@ -130,9 +132,9 @@
                 .then(function (data) {
 
                     //if (document.readyState !== "loading") {
-                        //dynamicButtons(data);
+                    //dynamicButtons(data);
                     //} else {
-                        document.addEventListener("DOMContentLoaded", dynamicButtons(data));
+                    document.addEventListener("DOMContentLoaded", dynamicButtons(data));
                     //}
 
                 })
