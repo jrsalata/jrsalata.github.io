@@ -82,14 +82,14 @@
                 An extra array that stores the students that were selected
             Each extra array allows for flexibility and modularity and restartability for the program
             */
-            function dynamicButtons(Classes){
-                
-                try{
-                    alert("dyanmic buttons started");
-                document.addEventListener('DOMContentLoaded', async function() {
+            function dynamicButtons(choices) {
 
-                    
-                        
+                try {
+                    alert("dyanmic buttons started");
+                    document.addEventListener('DOMContentLoaded', function () {
+
+
+
                         /*
                         var button = document.createElement("button");
                         button.setAttribute("type", "button");
@@ -108,50 +108,50 @@
                             studentSelector(Classes.mendoza.seventhHour);
                         });
                         */
-                        for (teacher in Classes){
+                        for (teacher in choices) {
                             alert("teacher started");
-                            for (classHour in teacher){
+                            for (classHour in teacher) {
                                 var button = document.createElement(classHour);
                                 button.setAttribute("type", "button");
                                 button.setAttribute("id", classHour);
-                                
+
                                 var container = document.getElementById('container');
                                 container.appendChild(button);
-                                
-                                button.addEventListener("click", function(){
+
+                                button.addEventListener("click", function () {
                                     studentSelector(classHour);
                                 });
                             }
                         }
-                        
 
-                }, false);
-                }catch(e){
-                        document.getElementById("debug").innerHTML = e + "\n Classes";
+
+                    }, false);
+                } catch (e) {
+                    document.getElementById("debug").innerHTML = e + "\n Classes";
                 }
             }
-                
-                let Classes;
 
-                fetch('./test.json')
-                    .then(function (response) {
-                        response.clone().json();
-                        return response.json();
-                    })
-                    .then(function (data) {
-    
-                        Classes = data;
-                        //stringClasses = JSON.stringify(Classes, null, 4);
-                        //document.getElementById("debug").innerHTML = "Classes: " + stringClasses;
-                        dynamicButtons(data);
-                        return data;
-                        
-                    })
-                    .catch(function (err) {
-                        console.log(err);
-                        document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
-                    });
-            
+            let Classes;
+
+            fetch('./test.json')
+                .then(function (response) {
+                    response.clone().json();
+                    return response.json();
+                })
+                .then(function (data) {
+
+                    Classes = data;
+                    //stringClasses = JSON.stringify(Classes, null, 4);
+                    //document.getElementById("debug").innerHTML = "Classes: " + stringClasses;
+                    dynamicButtons(data);
+                    return data; 
+
+                })
+                .catch(function (err) {
+                    console.log(err);
+                    document.getElementById("debug").innerHTML = `Ops something went wrong.  Please report the following error code:\n${err}`;
+                });
+
 
             // this function resets all of the names to be reused
             function masterRestart(ClassObject) {

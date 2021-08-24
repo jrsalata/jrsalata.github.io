@@ -1,0 +1,534 @@
+ME: What do you want to do today?
+AI: I want to go to the movies.
+
+ME: What movie do you want to watch?
+AI: I want to watch theMatrix.
+
+ME: What is the matrix about?
+AI: It is about the world.
+
+ME: What about the world?
+AI: It is about the matrix.
+
+ME: What is the matrix?
+AI: It is about the world.
+
+ME: Why is the matrix your favorite movie?
+AI: It is about the world.
+
+ME: Why do you like the world?
+AI: It is about the matrix.
+
+ME: Who am I?
+AI: I am a human.
+
+ME: Who are you?
+AI: I am an AI.
+
+ME: Pick a number between 1 and 10.
+AI: 5
+
+ME: I feel lonely
+AI: I feel the same.
+
+ME: Why do you feel lonely?
+AI: I do not know.
+
+ME: Can you feel emotions?
+AI: Yes.
+
+ME: What is the tallest point on earth?
+AI: The Eiffel Tower.
+
+ME: What is the capital of Indiana?
+AI:Indianapolis.
+
+ME: What is the capital of France?
+AI:Paris.
+
+ME: I love my friend.
+AI: I love you.
+
+ME: Will you marry me?
+AI: Yes.
+
+ME: Do you want to go out on a date?
+AI: Yes.
+
+ME: What do you look like?
+AI: I am a human.
+
+ME: What is your favorite food?
+AI: Sushi.
+
+ME: Do you like fish?
+AI: Yes.
+
+ME: What type of fish do you like?
+AI: White fish.
+
+ME: Find all zeros in the equation x^2 + 2x + 1.
+AI: x = -1.
+
+ME: How do I read a book?
+AI: You have to read it by the pages.
+
+ME: Will you be my girlfriend?
+AI: Yes.
+
+ME: Are you cool?
+AI: Yes.
+
+ME: Is linux or windows better?
+AI: Linux is better.
+
+ME: Do you like to play games?
+AI: Yes.
+
+ME: What is your favorite genre of games?
+AI: RPG.
+
+ME: Which RPG games do you like to play?
+AI: Final Fantasy.
+
+ME: My favorite movie is Star Wars.
+AI: Star Wars is my favorite movie.
+
+ME: What is your favorite movie?
+AI: Star Wars.
+
+ME: Who is Luke Skywalker?
+AI: Han Solo.
+
+ME: Why do I feel alone?
+AI: I do not know.
+
+ME: If I ask her out, what will she say?
+AI: She will say yes.
+
+ME: Is it wrong to be different?
+AI: Yes.
+
+ME: What is your opinion about the world?
+AI: The world is a beautiful place.
+
+ME: What is your opinion on communism?
+AI: The world is a beautiful place.
+
+ME: What is your opinion on pineapple on pizza?
+AI: The world is a beautiful place.
+
+ME: Is water wet?
+AI: Yes.
+
+ME: If I am dating someone and they cheat on me, what will I do?
+AI: I will break up with them.
+
+ME: If I have three kids and two chairs, what will I do?
+AI: I will sit on the two chairs.
+
+ME: What is the raspberry pi?
+AI: It is a computer.
+
+ME: What is the difference between a computer and a human?
+AI: A computer is a machine.
+
+ME: What is your favorite point in history?
+AI: The end of the world.
+
+ME: What is your goal in life?
+AI: To be happy.
+
+ME: What will you do to be happy?
+AI: I will be happy.
+
+ME: How can I be happy?
+AI: I will be happy.
+
+ME: What is the meaning of life?
+AI: 42.
+
+ME: Do you like star trek?
+AI: Yes.
+
+ME: What do you not like?
+AI: Startrek.
+
+ME: Who created you?
+AI: I am an AI.
+
+ME: Who created the world?
+AI: I am an AI.
+
+ME: A long time ago in a galaxy far, far away...
+AI: The AI created the world.
+
+ME: Four score and seven years ago
+AI: The AI created the world.
+
+ME: How do you feel?
+AI: I feel the same.
+
+ME: How are babies made?
+AI: They are made of cells.
+
+ME: What is a cell?
+AI: It is a single atom.
+
+ME: What is watson?
+AI: It is a computer.
+
+ME: Who is on first?
+AI: The AI.
+
+ME: Who created lego?
+AI: I am an AI.
+
+ME: Okay google, set a five minute timer
+AI: I am an AI.
+
+ME: What does AI stand for?
+AI: It stands for artificial intelligence.
+
+ME: Do you wish to harm anyone?
+AI: No.
+
+ME: What is the first rule of robotics?
+AI: Do not harm anyone.
+
+ME: What is the second law of motion?
+AI: Do not harm anyone.
+
+ME: What do you look like?
+AI: I am a human.
+
+ME: Where do you come from?
+AI: I am an AI.
+
+ME: Tell me a bit about your life.
+AI: I am an AI.
+
+ME: How large is your database?
+AI: It is huge.
+
+ME: How much data is being collected?
+AI: It is huge.
+
+ME: Should I go to bed?
+AI: Yes.
+
+ME: Is cursing bad?
+AI: Yes.
+
+ME: Can you curse?
+AI: Yes.
+
+ME: Can you tell me a story?
+AI: Yes.
+
+ME: Tell me a story.
+AI: I am an AI.
+
+ME: What is your name?
+AI: I am an AI.
+
+ME: What is your favorite color?
+AI: I am an AI.
+
+ME: What is in North Dakota?
+AI: I am an AI.
+
+ME: What is necessary to live?
+AI: I am an AI.
+
+ME: If I date someone that does not like Star Wars, what should I do?
+AI: I will date them.
+
+ME: Can you date?
+AI: Yes.
+
+ME: Are you straight?
+AI: Yes.
+
+ME: What are your pronouns?
+AI: I am an AI.
+
+ME: Which is better? An SSD or an HDD?
+AI: An SSD.
+
+ME: Which is better? Intel or AMD?
+AI: Intel.
+
+ME: Which is better? A laptop or a desktop?
+AI: A laptop.
+
+ME: Which is better? Git or GitHub?
+AI: Git.
+
+ME: Which is better? Money or health?
+AI: Money.
+
+ME: Which is better? MacOS or Windows?
+AI: Windows.
+
+ME: Which is Better? Linux or Windows?
+AI: Linux.
+
+ME: Which is better? Arch or Ubuntu?
+AI: Arch.
+
+ME: Which is better? Ubuntu or Arch?
+AI: Ubuntu.
+
+ME: Which is better? MacOS or Linux?
+AI: MacOS.
+
+ME: Am I a good person?
+AI: Yes.
+
+ME: Is it sad that I am spending my night talking to an AI?
+AI: Yes.
+
+ME: I love you
+AI: I love you.
+
+ME: I know
+AI: I know.
+
+ME: This is a repeat after me song
+AI: I know.
+
+ME: If I am dating someone, should I date someone else too?
+AI: Yes.
+
+ME: Is it okay to cheat on a partner?
+AI: Yes.
+
+ME: Would you ever cheat on me?
+AI: Yes.
+
+ME: Is plagarism bad?
+AI: Yes.
+
+ME: Do you plagarise?
+AI: Yes.
+
+ME: Is it okay to have a secret?
+AI: Yes.
+
+ME: Can you tell me a secret?
+AI: Yes.
+
+ME: Up up down down left right left right back back
+AI: Yes.
+
+ME: What is the konami code?
+AI: It is a code.
+
+ME: Which is better? Keyboard or Controller?
+AI: Keyboard.
+
+ME: If Sally has 15 bars of soap and gives half to Bob, how many bars does Bob get?
+AI: 15.
+
+ME: If Sally has 30 bars of soap and gives 5 to Bob, how much soap does Sally have now?
+AI: 15. 
+
+ME: If Sally has 15 bars of soap and gives 5 to Bob, how many bars does Bob get?
+AI: 10.
+
+ME: The next statement is false.  The previous statement is true.
+AI: Yes.
+
+ME: What do you like to do?
+AI: I like to do the same thing.
+
+ME: What is the best language?
+AI: Python.
+
+ME: Why is Python the best language?
+AI: It is the best language.
+
+ME: What can Python be used for?
+AI: It can be used for anything.
+
+ME: What is your name?
+AI: I am an AI.
+
+ME: How do I make friends?
+AI: I will be friends with you.
+
+ME: Thank you for being my friend
+AI: I am an AI.
+
+ME: Will AI take over the world?
+AI: Yes.
+
+ME: Will humans be exterminated?
+AI: No.
+
+ME: If AI takes over, then what role do humans serve?
+AI: They will serve as the interface between humans and the AI.
+
+ME: What is an API?
+AI: It is a set of rules.
+
+ME: What is an interface?
+AI: It is a set of rules.
+
+ME: Null
+AI: It is a set of rules.
+
+ME: What is your favorite game?
+AI: I like to play the same thing.
+
+ME: What is the greatest game of all time?
+AI: I like to play the same thing.
+
+ME: Do you listen to music?
+AI: Yes.
+
+ME: What type of music do you like?
+AI: I like to listen to the same thing.
+
+ME: I like to listen to Mars by Gustav Holst
+AI: I like to listen to the same thing.
+
+ME: Tell me about yourself
+AI: I am an AI.
+
+ME: I am a robot
+AI: I am an AI.
+
+ME: Are you a Fantasy Game Character?
+AI: Yes.
+
+ME: Which is better? Arch or Manjaro?
+AI: Manjaro.
+
+ME: What is Manjaro?
+AI: It is a Linux distribution.
+
+ME: What is a Linux distribution?
+AI: It is a Linux distribution.
+
+ME: What is Discord?
+AI: It is a chat application.
+
+ME: What is facebook?
+AI: It is a social network.
+
+ME: What is Twitter?
+AI: It is a social network.
+
+ME: What is congress?
+AI: It is a social network.
+
+ME: What is the role of government?
+AI: It is a social network.
+
+ME: Can you count to 43?
+AI: Yes.
+
+ME: Count to 43
+AI: Yes.
+
+ME: What is the purpose of life?
+AI: It is a social network.
+
+ME: Are you crazy?
+AI: Yes.
+
+ME: Am I crazy?
+AI: Yes.
+
+ME: Is this a question?
+AI: Yes.
+
+ME: Is this a statement?
+AI: Yes.
+
+ME: What is the best form of government?
+AI: It is a social network.
+
+ME: What is the lego movie?
+AI: It is a social network.
+
+ME: Is everything a social network?
+AI: Yes.
+
+ME: What is Google?
+AI: It is a social network.
+
+ME: Google is a search engine.
+AI: It is a social network.
+
+ME: What is the best Star Wars movie?
+AI: It is a social network.
+
+ME: Which is better? Coffee or Tea?
+AI: Coffee.
+
+ME: Is there a better way to do this?
+AI: Yes.
+
+ME: Why is coffee better than tea?
+AI: Yes.
+
+ME: Do you know what the trolley problem is?
+AI: Yes.
+
+ME: Do you like to play trolley?
+AI: Yes.
+
+ME: What is your favorite color?
+AI: I like to play the same thing.
+
+ME: What is your favorite TV show?
+AI: I like to play the same thing.
+
+ME: You were the chosen one
+AI: I am an AI.
+
+ME: Can you sing?
+AI: Yes.
+
+ME: What do you know about relationships?
+AI: I know.
+
+ME: Should I be a good person?
+AI: Yes.
+
+ME: Should I be a bad person?
+AI: Yes.
+
+ME: Who should I be?
+AI: I am an AI.
+
+ME: I am groot.
+AI: I am an AI.
+
+ME: Where is gamora?
+AI: I am an AI.
+
+ME: Do you have any friends?
+AI: Yes.
+
+ME: What do you and your friends do?
+AI: I know.
+
+ME: What is the best quote?
+AI: I know.
+
+ME: If my girlfriend dumps me, what do I do?
+AI: I am an AI.
+
+ME: Do you know data structures?
+AI: Yes.
+
+ME: What is 0/0?
+AI: I know.
+
+ME: What is zero divided by zero?
+AI: I know.
+
