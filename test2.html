@@ -155,23 +155,25 @@
                 .then(function (data) {
                     try {
 
-                        for (teacher in data) {
-                            console.log("Teacher: " + teacher);
-                            //alert("teacher started");
-                            for (classHour in data[teacher]) {
-                                console.log("classHour: " + classHour);
-                                var button = document.createElement(classHour);
-                                button.setAttribute("type", "button");
-                                button.setAttribute("id", classHour);
+                        document.addEventListener('DOMContentLoaded', (event) => {
+                            for (teacher in data) {
+                                console.log("Teacher: " + teacher);
+                                //alert("teacher started");
+                                for (classHour in data[teacher]) {
+                                    console.log("classHour: " + classHour);
+                                    var button = document.createElement(classHour);
+                                    button.setAttribute("type", "button");
+                                    button.setAttribute("id", classHour);
 
-                                var container = document.getElementById('container');
-                                container.appendChild(button);
+                                    var container = document.getElementById('container');
+                                    container.appendChild(button);
 
-                                button.addEventListener("click", function () {
-                                    studentSelector(data[teacher][classHour]);
-                                });
+                                    button.addEventListener("click", function () {
+                                        studentSelector(data[teacher][classHour]);
+                                    });
+                                }
                             }
-                        }
+                        }, false);
                         /*
                         window.addEventListener('DOMContentLoaded', function () {
                             console.log("Dom parsed");
