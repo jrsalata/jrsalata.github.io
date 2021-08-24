@@ -70,24 +70,21 @@
         <p id="debug"></p>
         <script>
 
+            var teacher = "mendoza";
             /*
             Each choices object has two things:
                 An array with student names
                 An extra array that stores the students that were selected
             Each extra array allows for flexibility and modularity and restartability for the program
-            function onReady() {
-}
             */
             function dynamicButtons(data) {
                 try {
-
-                    //for (teacher in data) {
                         
-                        for (classHour in data["mendoza"]) {
+                        for (classHour in data[teacher]) {
                             
                             var button = document.createElement("BUTTON");
                             button.setAttribute("id", classHour);
-                            button.innerHTML = data["mendoza"][classHour].className;
+                            button.innerHTML = data[teacher][classHour].className;
 
                             // makes the button visible on the body
                             document.getElementById("container").appendChild(button);
@@ -95,11 +92,10 @@
                             
                             button.addEventListener("click", function (classHour) {
                                 return function(){
-                                    studentSelector(data["mendoza"][classHour]);
+                                    studentSelector(data[teacher][classHour]);
                                 }
                             }(classHour));
                         }
-                    //}
                 } catch (err) {
                     document.getElementById("debug").innerHTML = err;
                     console.log(err);
