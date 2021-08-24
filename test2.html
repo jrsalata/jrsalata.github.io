@@ -92,16 +92,20 @@
                         //alert("teacher started");
                         for (classHour in data[teacher]) {
                             console.log("classHour: " + classHour);
+
                             var button = document.createElement(classHour);
                             button.setAttribute("type", "button");
                             button.setAttribute("id", classHour);
 
+                            // makes the button visible on the body
+                            document.getElementById("container").appendChild(button);
+
                             //var container = document.getElementById('container');
                             //container.appendChild(button);
                             //document.body.appendChild(button);
-                            var body = document.getElementsByTagName("body")[0];
-                            body.appendChild(button);
-                            
+                            //var body = document.getElementsByTagName("body")[0];
+                            //body.appendChild(button);
+
                             console.log("button created");
 
                             button.addEventListener("click", function () {
