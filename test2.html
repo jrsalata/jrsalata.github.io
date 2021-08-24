@@ -156,6 +156,22 @@
                     try {
 
                         console.log("here");
+                        for (teacher in data["mendoza"]) {
+                                console.log("here");
+                                alert("teacher started");
+                                for (classHour in teacher) {
+                                    var button = document.createElement(classHour);
+                                    button.setAttribute("type", "button");
+                                    button.setAttribute("id", classHour);
+
+                                    var container = document.getElementById('container');
+                                    container.appendChild(button);
+
+                                    button.addEventListener("click", function () {
+                                        studentSelector(classHour);
+                                    });
+                                }
+                            }
                         window.addEventListener('DOMContentLoaded', function () {
                             console.log("Dom parsed");
 
