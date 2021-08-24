@@ -155,13 +155,12 @@
                 .then(function (data) {
                     try {
 
-                        console.log("here");
                         for (teacher in data) {
                             console.log("Teacher: " + teacher);
                             //alert("teacher started");
                             for (classHour in teacher) {
                                 console.log("classHour: " + classHour);
-                                var button = document.createElement(classHour);
+                                var button = document.createElement(classHour.constructor.name);
                                 button.setAttribute("type", "button");
                                 button.setAttribute("id", classHour);
 
@@ -173,6 +172,7 @@
                                 });
                             }
                         }
+                        /*
                         window.addEventListener('DOMContentLoaded', function () {
                             console.log("Dom parsed");
 
@@ -194,6 +194,7 @@
                             }
 
                         }, false);
+                        */
                     } catch (e) {
                         console.log(e);
                         //document.getElementById("debug").innerHTML = e + "\n Classes";
