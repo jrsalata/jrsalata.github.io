@@ -85,23 +85,27 @@
 }
             */
             function dynamicButtons(data) {
-                console.log(data);
-                for (teacher in data) {
-                    console.log("Teacher: " + teacher);
-                    //alert("teacher started");
-                    for (classHour in data[teacher]) {
-                        console.log("classHour: " + classHour);
-                        var button = document.createElement(classHour);
-                        button.setAttribute("type", "button");
-                        button.setAttribute("id", classHour);
+                try {
+                    console.log(data);
+                    for (teacher in data) {
+                        console.log("Teacher: " + teacher);
+                        //alert("teacher started");
+                        for (classHour in data[teacher]) {
+                            console.log("classHour: " + classHour);
+                            var button = document.createElement(classHour);
+                            button.setAttribute("type", "button");
+                            button.setAttribute("id", classHour);
 
-                        var container = document.getElementById('container');
-                        container.appendChild(button);
+                            var container = document.getElementById('container');
+                            container.appendChild(button);
 
-                        button.addEventListener("click", function () {
-                            studentSelector(data[teacher][classHour]);
-                        });
+                            button.addEventListener("click", function () {
+                                studentSelector(data[teacher][classHour]);
+                            });
+                        }
                     }
+                } catch (err) {
+                    console.log(err);
                 }
             }
             let Classes;
@@ -123,7 +127,7 @@
                 .then(function (data) {
 
                     if (document.readyState !== "loading") {
-                        dynamicButtons(data); 
+                        dynamicButtons(data);
                     } else {
                         document.addEventListener("DOMContentLoaded", dynamicButtons(data));
                     }
