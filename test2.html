@@ -84,9 +84,6 @@
             function onReady() {
 }
             */
-            function buttonEvent(classHour){
-                studentSelector(Classes["mendoza"][classHour]);
-            }
             function dynamicButtons(data) {
                 try {
 
@@ -102,7 +99,11 @@
                             document.getElementById("container").appendChild(button);
 
                             
-                            button.addEventListener("click", buttonEvent(classHour));
+                            button.addEventListener("click", function (classHour) {
+                                return function(){
+                                    studentSelector(data["mendoza"][classHour]);
+                                }
+                            }(classHour));
                         }
                     //}
                 } catch (err) {
