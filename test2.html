@@ -86,10 +86,10 @@
 
                 try {
                     console.log(choices);
-                    
-                    document.addEventListener('DOMContentLoaded', ( event ) => {
+
+                    document.addEventListener('DOMContentLoaded', (event) => {
                         console.log("Dom parsed");
-                    
+
 
 
 
@@ -153,12 +153,12 @@
 
                 })
                 .then(function (data) {
+                    try {
 
-                    console.log("here");
-                    window.addEventListener('DOMContentLoaded', function() {
-                        console.log("Dom parsed");
+                        console.log("here");
+                        window.addEventListener('DOMContentLoaded', function () {
+                            console.log("Dom parsed");
 
-                        try{
                             for (teacher in data["mendoza"]) {
                                 console.log("here");
                                 alert("teacher started");
@@ -175,10 +175,12 @@
                                     });
                                 }
                             }
-                        } catch (e) {
-                            document.getElementById("debug").innerHTML = e + "\n Classes";
-                        }
-                    }, false);
+
+                        }, false);
+                    } catch (e) {
+                        console.log(e);
+                        //document.getElementById("debug").innerHTML = e + "\n Classes";
+                    }
                 })
                 .catch(function (err) {
                     console.log(err);
