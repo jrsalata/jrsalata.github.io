@@ -110,7 +110,7 @@
                     button.addEventListener ("click", function(){
                         studentSelector(Classes.mendoza.seventhHour);
                     });
-                    */
+                    
                     for (teacher in choices) {
                         console.log("here");
                         alert("teacher started");
@@ -127,7 +127,22 @@
                             });
                         }
                     }
+                    */
 
+                    for (classHour in choices['mendoza']) {
+                        console.log(classHour);
+                        var button = document.createElement(classHour);
+                        button.setAttribute("type", "button");
+                        button.setAttribute("id", classHour);
+
+                        var container = document.getElementById('container');
+                        container.appendChild(button);
+
+                        button.addEventListener("click", function () {
+                            studentSelector(classHour);
+                        });
+                    }
+                    
 
                 }, false);
                 } catch (e) {
