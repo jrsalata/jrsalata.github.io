@@ -126,11 +126,11 @@
                 })
                 .then(function (data) {
 
-                    if (document.readyState !== "loading") {
-                        dynamicButtons(data);
-                    } else {
+                    //if (document.readyState !== "loading") {
+                        //dynamicButtons(data);
+                    //} else {
                         document.addEventListener("DOMContentLoaded", dynamicButtons(data));
-                    }
+                    //}
 
                 })
                 .catch(function (err) {
