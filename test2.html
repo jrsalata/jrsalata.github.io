@@ -87,32 +87,24 @@
             function dynamicButtons(data) {
                 try {
                     console.log(data);
+                    var buttonArray = [];
+                    var buttonNum = 0;
                     for (teacher in data) {
-                        console.log("Teacher: " + teacher);
-                        //alert("teacher started");
+                        
                         for (classHour in data[teacher]) {
-                            console.log("classHour: " + classHour);
-
+                            
                             var button = document.createElement("BUTTON");
-                            //button.setAttribute("type", "button");
                             button.setAttribute("id", classHour);
-                            // sets the text of the button
                             button.innerHTML = classHour;
 
                             // makes the button visible on the body
                             document.getElementById("container").appendChild(button);
 
-                            //var container = document.getElementById('container');
-                            //container.appendChild(button);
-                            //document.body.appendChild(button);
-                            //var body = document.getElementsByTagName("body")[0];
-                            //body.appendChild(button);
-
-                            console.log("button created");
-
-                            button.addEventListener("click", function () {
+                            buttonArray.push(button);
+                            buttonArray[buttonNum].addEventListener("click", function () {
                                 studentSelector(data[teacher][classHour]);
                             });
+                            buttonNum++;
                         }
                     }
                 } catch (err) {
