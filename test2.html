@@ -87,8 +87,6 @@
             function dynamicButtons(data) {
                 try {
 
-                    var buttonArray = [];
-                    var buttonNum = 0;
                     for (teacher in data) {
                         
                         for (classHour in data[teacher]) {
@@ -100,12 +98,10 @@
                             // makes the button visible on the body
                             document.getElementById("container").appendChild(button);
 
-                            buttonArray.push(button);
-                            buttonArray[buttonNum].addEventListener("click", function () {
+                            
+                            button.addEventListener("click", function () {
                                 studentSelector(data[teacher][classHour]);
                             });
-                            buttonNum++;
-                            document.getElementById("debug").innerHTML = buttonArray[0];
                         }
                     }
                 } catch (err) {
