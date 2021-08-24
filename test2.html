@@ -87,9 +87,9 @@
             function dynamicButtons(data) {
                 try {
 
-                    for (teacher in data) {
+                    //for (teacher in data) {
                         
-                        for (classHour in data[teacher]) {
+                        for (classHour in data["mendoza"]) {
                             
                             var button = document.createElement("BUTTON");
                             button.setAttribute("id", classHour);
@@ -100,10 +100,10 @@
 
                             
                             button.addEventListener("click", function () {
-                                studentSelector(data[teacher][classHour]);
+                                studentSelector(data["mendoza"][classHour]);
                             });
                         }
-                    }
+                    //}
                 } catch (err) {
                     console.log(err);
                 }
