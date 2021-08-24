@@ -99,6 +99,8 @@
                             var container = document.getElementById('container');
                             container.appendChild(button);
 
+                            console.log("button created");
+                            
                             button.addEventListener("click", function () {
                                 studentSelector(data[teacher][classHour]);
                             });
