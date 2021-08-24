@@ -159,7 +159,7 @@
                             console.log("Teacher: " + teacher);
                             //alert("teacher started");
                             for (classHour in data[teacher]) {
-                                console.log("classHour: " + classHour.constructor.name);
+                                console.log("classHour: " + classHour);
                                 var button = document.createElement(classHour);
                                 button.setAttribute("type", "button");
                                 button.setAttribute("id", classHour);
@@ -168,7 +168,7 @@
                                 container.appendChild(button);
 
                                 button.addEventListener("click", function () {
-                                    studentSelector(classHour);
+                                    studentSelector(data[teacher][classHour]);
                                 });
                             }
                         }
