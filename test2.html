@@ -82,15 +82,10 @@
                 An extra array that stores the students that were selected
             Each extra array allows for flexibility and modularity and restartability for the program
             function onReady() {
-    // ...your code here...
-}
-if (document.readyState !== "loading") {
-    onReady(); // Or setTimeout(onReady, 0); if you want it consistently async
-} else {
-    document.addEventListener("DOMContentLoaded", onReady);
 }
             */
             function dynamicButtons(data) {
+                console.log("here")
                 for (teacher in data) {
                     console.log("Teacher: " + teacher);
                     //alert("teacher started");
@@ -128,7 +123,7 @@ if (document.readyState !== "loading") {
                 .then(function (data) {
 
                     if (document.readyState !== "loading") {
-                        dynamicButtons(data); // Or setTimeout(onReady, 0); if you want it consistently async
+                        dynamicButtons(data); 
                     } else {
                         document.addEventListener("DOMContentLoaded", dynamicButtons(data));
                     }
