@@ -81,61 +81,34 @@
                 An array with student names
                 An extra array that stores the students that were selected
             Each extra array allows for flexibility and modularity and restartability for the program
+            function onReady() {
+    // ...your code here...
+}
+if (document.readyState !== "loading") {
+    onReady(); // Or setTimeout(onReady, 0); if you want it consistently async
+} else {
+    document.addEventListener("DOMContentLoaded", onReady);
+}
             */
-            function dynamicButtons(choices) {
-
-                try {
-                    console.log(choices);
-
-                    document.addEventListener('DOMContentLoaded', (event) => {
-                        console.log("Dom parsed");
-
-
-
-
-                        /*
-                        var button = document.createElement("button");
+            function dynamicButtons(data) {
+                for (teacher in data) {
+                    console.log("Teacher: " + teacher);
+                    //alert("teacher started");
+                    for (classHour in data[teacher]) {
+                        console.log("classHour: " + classHour);
+                        var button = document.createElement(classHour);
                         button.setAttribute("type", "button");
-                        button.setAttribute("id", "button2");
-                        button.innerHTML = 'testing 111';
+                        button.setAttribute("id", classHour);
 
                         var container = document.getElementById('container');
                         container.appendChild(button);
-                        
-                        button.setAttribute("innerHTML","Testing 116");
 
-                        //button.innerHTML = "testing";
-                        document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML + "\nID: " + button.id;
-                        
-                        button.addEventListener ("click", function(){
-                            studentSelector(Classes.mendoza.seventhHour);
+                        button.addEventListener("click", function () {
+                            studentSelector(data[teacher][classHour]);
                         });
-                        */
-
-                        for (teacher in choices) {
-                            console.log("here");
-                            alert("teacher started");
-                            for (classHour in teacher) {
-                                var button = document.createElement(classHour);
-                                button.setAttribute("type", "button");
-                                button.setAttribute("id", classHour);
-
-                                var container = document.getElementById('container');
-                                container.appendChild(button);
-
-                                button.addEventListener("click", function () {
-                                    studentSelector(classHour);
-                                });
-                            }
-                        }
-
-
-                    }, false);
-                } catch (e) {
-                    document.getElementById("debug").innerHTML = e + "\n Classes";
+                    }
                 }
             }
-
             let Classes;
 
             fetch('./test.json')
@@ -153,54 +126,13 @@
 
                 })
                 .then(function (data) {
-                    try {
 
-                        document.addEventListener('DOMContentLoaded', (event) => {
-                            for (teacher in data) {
-                                console.log("Teacher: " + teacher);
-                                //alert("teacher started");
-                                for (classHour in data[teacher]) {
-                                    console.log("classHour: " + classHour);
-                                    var button = document.createElement(classHour);
-                                    button.setAttribute("type", "button");
-                                    button.setAttribute("id", classHour);
-
-                                    var container = document.getElementById('container');
-                                    container.appendChild(button);
-
-                                    button.addEventListener("click", function () {
-                                        studentSelector(data[teacher][classHour]);
-                                    });
-                                }
-                            }
-                        }, true);
-                        /*
-                        window.addEventListener('DOMContentLoaded', function () {
-                            console.log("Dom parsed");
-
-                            for (teacher in data["mendoza"]) {
-                                console.log("here");
-                                alert("teacher started");
-                                for (classHour in teacher) {
-                                    var button = document.createElement(classHour);
-                                    button.setAttribute("type", "button");
-                                    button.setAttribute("id", classHour);
-
-                                    var container = document.getElementById('container');
-                                    container.appendChild(button);
-
-                                    button.addEventListener("click", function () {
-                                        studentSelector(classHour);
-                                    });
-                                }
-                            }
-
-                        }, false);
-                        */
-                    } catch (e) {
-                        console.log(e);
-                        //document.getElementById("debug").innerHTML = e + "\n Classes";
+                    if (document.readyState !== "loading") {
+                        dynamicButtons(data); // Or setTimeout(onReady, 0); if you want it consistently async
+                    } else {
+                        document.addEventListener("DOMContentLoaded", dynamicButtons(data));
                     }
+
                 })
                 .catch(function (err) {
                     console.log(err);
