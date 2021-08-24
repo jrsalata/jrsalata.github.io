@@ -93,42 +93,43 @@
 
 
 
-                        /*
-                        var button = document.createElement("button");
-                        button.setAttribute("type", "button");
-                        button.setAttribute("id", "button2");
-                        button.innerHTML = 'testing 111';
+                    /*
+                    var button = document.createElement("button");
+                    button.setAttribute("type", "button");
+                    button.setAttribute("id", "button2");
+                    button.innerHTML = 'testing 111';
 
-                        var container = document.getElementById('container');
-                        container.appendChild(button);
-                        
-                        button.setAttribute("innerHTML","Testing 116");
+                    var container = document.getElementById('container');
+                    container.appendChild(button);
+                    
+                    button.setAttribute("innerHTML","Testing 116");
 
-                        //button.innerHTML = "testing";
-                        document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML + "\nID: " + button.id;
-                        
-                        button.addEventListener ("click", function(){
-                            studentSelector(Classes.mendoza.seventhHour);
-                        });
-                        */
-                        for (teacher in choices) {
-                            alert("teacher started");
-                            for (classHour in teacher) {
-                                var button = document.createElement(classHour);
-                                button.setAttribute("type", "button");
-                                button.setAttribute("id", classHour);
+                    //button.innerHTML = "testing";
+                    document.getElementById("debug").innerHTML = "Text: " + document.getElementById("button2").innerHTML + "\nID: " + button.id;
+                    
+                    button.addEventListener ("click", function(){
+                        studentSelector(Classes.mendoza.seventhHour);
+                    });
+                    */
+                    for (teacher in choices) {
+                        console.log("here");
+                        alert("teacher started");
+                        for (classHour in teacher) {
+                            var button = document.createElement(classHour);
+                            button.setAttribute("type", "button");
+                            button.setAttribute("id", classHour);
 
-                                var container = document.getElementById('container');
-                                container.appendChild(button);
+                            var container = document.getElementById('container');
+                            container.appendChild(button);
 
-                                button.addEventListener("click", function () {
-                                    studentSelector(classHour);
-                                });
-                            }
+                            button.addEventListener("click", function () {
+                                studentSelector(classHour);
+                            });
                         }
+                    }
 
 
-                    }, false);
+                }, false);
                 } catch (e) {
                     document.getElementById("debug").innerHTML = e + "\n Classes";
                 }
@@ -147,7 +148,7 @@
                     //stringClasses = JSON.stringify(Classes, null, 4);
                     //document.getElementById("debug").innerHTML = "Classes: " + stringClasses;
                     dynamicButtons(data);
-                    return data; 
+                    return data;
 
                 })
                 .catch(function (err) {
