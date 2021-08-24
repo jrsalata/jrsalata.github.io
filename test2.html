@@ -94,8 +94,10 @@
                             console.log("classHour: " + classHour);
 
                             var button = document.createElement("BUTTON");
-                            button.setAttribute("type", "button");
+                            //button.setAttribute("type", "button");
                             button.setAttribute("id", classHour);
+                            // sets the text of the button
+                            button.innerHTML = classHour;
 
                             // makes the button visible on the body
                             document.getElementById("container").appendChild(button);
