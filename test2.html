@@ -148,9 +148,36 @@
                     Classes = data;
                     //stringClasses = JSON.stringify(Classes, null, 4);
                     //document.getElementById("debug").innerHTML = "Classes: " + stringClasses;
-                    dynamicButtons(data);
+                    //dynamicButtons(data);
                     return data;
 
+                })
+                .then(function (data) {
+
+                    document.addEventListener('DOMContentLoaded', ( event ) => {
+                        console.log("Dom parsed");
+
+                        try{
+                            for (teacher in data["mendoza"]) {
+                                console.log("here");
+                                alert("teacher started");
+                                for (classHour in teacher) {
+                                    var button = document.createElement(classHour);
+                                    button.setAttribute("type", "button");
+                                    button.setAttribute("id", classHour);
+
+                                    var container = document.getElementById('container');
+                                    container.appendChild(button);
+
+                                    button.addEventListener("click", function () {
+                                        studentSelector(classHour);
+                                    });
+                                }
+                            }
+                        } catch (e) {
+                            document.getElementById("debug").innerHTML = e + "\n Classes";
+                        }
+                    }, false);
                 })
                 .catch(function (err) {
                     console.log(err);
