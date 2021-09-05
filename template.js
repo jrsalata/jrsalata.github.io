@@ -39,10 +39,10 @@ function dynamicButtons(data) {
 }
 
 // Defines Classes as a variable that will later have json data assigned to it
-let Classes;
+var Classes;
 
 // Holds the hour of the last class selected for click anywhere functionality
-let lastClass = "";
+var lastClass = "";
 
 // fetch the json data from this file
 fetch('./template.json')
