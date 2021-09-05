@@ -43,7 +43,7 @@ var Classes;
 
 // Holds the hour of the last class selected for click anywhere functionality
 var lastClass = "";
-document.addEventListener("click", studentSelector(lastClass), true);
+//document.addEventListener("click", studentSelector(lastClass), true);
 //document.body.onclick = studentSelector(lastClass);
 
 // fetch the json data from this file
@@ -108,6 +108,7 @@ function studentSelector(hour) {
     if(hour === undefined || hour === null || hour === ""){
         return
     }
+    console.log("Continues");
 
     // checks if the array is empty
     if (hour.names.length === 0) {
