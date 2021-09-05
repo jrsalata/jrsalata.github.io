@@ -41,6 +41,9 @@ function dynamicButtons(data) {
 // Defines Classes as a variable that will later have json data assigned to it
 let Classes;
 
+// Holds the hour of the last class selected for click anywhere functionality
+let lastClass = "";
+
 // fetch the json data from this file
 fetch('./template.json')
     .then(function (response) {
@@ -63,6 +66,7 @@ fetch('./template.json')
     .then(function (data) {
 
         // when the DOMContentLoaded is true, start making the buttons
+        document.body.addEventListener("click", studentSelector(lastClass));
         document.addEventListener("DOMContentLoaded", dynamicButtons(Classes));
 
     })
@@ -97,6 +101,11 @@ function getRndInteger(min, max) {
 // this is the actual selector function
 function studentSelector(hour) {
 
+    // checks if hour is null or undefined
+    if(hour === undefined || hour === null || hour === ""){
+        return
+    }
+
     // checks if the array is empty
     if (hour.names.length === 0) {
 
@@ -120,6 +129,10 @@ function studentSelector(hour) {
     hour.extra.push(pick);
     hour.names.splice(ranNum, 1);
 
+
+    // sets the lastClass variable to the class selected
+    lastClass = hour;
+    
     // output of the selected student, students left, and the number left
     document.getElementById("output").innerHTML = "<b><em>Next Victim: </em></b>" + pick;
     document.getElementById("remaining").innerHTML = "Students left: " + hour.names.join(", ");
