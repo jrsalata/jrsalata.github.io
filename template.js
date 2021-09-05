@@ -66,7 +66,7 @@ fetch('./template.json')
     .then(function (data) {
 
         // when the DOMContentLoaded is true, start making the buttons
-        document.body.addEventListener("click", studentSelector(lastClass));
+        document.addEventListener("click", studentSelector(lastClass));
         document.addEventListener("DOMContentLoaded", dynamicButtons(Classes));
 
     })
@@ -132,7 +132,7 @@ function studentSelector(hour) {
 
     // sets the lastClass variable to the class selected
     lastClass = hour;
-    
+
     // output of the selected student, students left, and the number left
     document.getElementById("output").innerHTML = "<b><em>Next Victim: </em></b>" + pick;
     document.getElementById("remaining").innerHTML = "Students left: " + hour.names.join(", ");
