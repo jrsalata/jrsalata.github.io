@@ -43,6 +43,7 @@ var Classes;
 
 // Holds the hour of the last class selected for click anywhere functionality
 var lastClass = "";
+document.onclick = studentSelector(lastClass);
 
 // fetch the json data from this file
 fetch('./template.json')
@@ -66,7 +67,6 @@ fetch('./template.json')
     .then(function (data) {
 
         // when the DOMContentLoaded is true, start making the buttons
-        document.addEventListener("click", studentSelector(lastClass));
         document.addEventListener("DOMContentLoaded", dynamicButtons(Classes));
 
     })
