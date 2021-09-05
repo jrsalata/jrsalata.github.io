@@ -101,6 +101,8 @@ function getRndInteger(min, max) {
 // this is the actual selector function
 function studentSelector(hour) {
 
+    console.log("Hour: " + hour);
+    console.log("lastClass: " + lastClass);
     // checks if hour is null or undefined
     if(hour === undefined || hour === null || hour === ""){
         return
