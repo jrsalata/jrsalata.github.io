@@ -43,7 +43,7 @@ var Classes;
 
 // Holds the hour of the last class selected for click anywhere functionality
 var lastClass = "";
-document.addEventListener("click", studentSelector(lastClass));
+document.addEventListener("click", studentSelector(lastClass), true);
 //document.body.onclick = studentSelector(lastClass);
 
 // fetch the json data from this file
