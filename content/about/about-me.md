@@ -8,4 +8,4 @@ I am currently earning my degree in Computer Science with a specialization in Co
 
 I hope to be a Software Developer after I graduate and work on robotic process automation (RPA) or backend development. I chose to specialize in Cognitive Automation because it is a whole new way to solve problems and complete tedious tasks.  
 
-Outside of my professional work, I am an enthusiest photographer that enjoys taking pictures at different events.  I love capturing moments, expressions, and experiences in a way that most people miss.  While everyone has a camera on their phone these days, very few people are intentional with how they take pictures.  
+Outside of my professional work, I am an enthusiest photographer that enjoys taking pictures at different events.  I love capturing moments, expressions, and experiences in a way that most people miss.  While everyone has a camera on their phone these days, very few people are intentional with how they take pictures.  I try to tell a story with my work where every detail matters. I might post some on here in the near future.
