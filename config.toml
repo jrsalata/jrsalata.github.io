@@ -1,4 +1,53 @@
+# Credit to https://github.com/joeroe/risotto/blob/main/exampleSite/config.toml
 theme = "risotto"
 baseURL = "https://sheepman39.github.io/"
 languageCode = "en-us"
 title = "John S's Blog"
+author = "John S"
+copyright = "© John S and [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors)"
+DefaultContentLanguage = "en"
+pagination.pagerSize = 3
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-dark"
+
+[params.about]
+title = "John S's Blog"
+description = "A personal blog exploring the wonders and struggles of a Computer Science student"
+
+# Social Links
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/sheepman39"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-linkedin"
+title = "LinkedIn"
+url = "https://linkedin.com/in/john-salata"
+
+[menu]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
