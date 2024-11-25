@@ -1,12 +1,12 @@
-# Credit to https://github.com/joeroe/risotto/blob/main/exampleSite/config.toml
+# Credit to https://github.com/joeroe/risotto/blob/main/exampleSite/config.tomlbaseURL = "https://sheepman39.github.io"
 theme = "risotto"
-baseURL = "https://sheepman39.github.io/"
-languageCode = "en-us"
 title = "John S's Blog"
 author = "John S"
-copyright = "© John S and [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors)"
-DefaultContentLanguage = "en"
+copyright = "© [John S](https://github.com/sheepman39) & [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors)."
 pagination.pagerSize = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
 
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
@@ -17,6 +17,7 @@ noindex = false
 [params.theme]
 palette = "base16-horizon-dark"
 
+# Sidebar: about/bio
 [params.about]
 title = "John S's Blog"
 description = "A personal blog exploring the wonders and struggles of a Computer Science student"
@@ -51,3 +52,15 @@ category = "categories"
 tag = "tags"
 series = "series"
 
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+
+  # Table of contents
+  # Add toc = true to content front matter to enable
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = true
