@@ -15,7 +15,7 @@ sectionPagesMenu = "main"
 noindex = false
 
 [params.theme]
-palette = "base16-dark"
+palette = "base16-horizon-dark"
 
 [params.about]
 title = "John S's Blog"
