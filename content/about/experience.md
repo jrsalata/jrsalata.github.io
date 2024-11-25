@@ -6,32 +6,22 @@ author: "John S"
 description: "This is not intended to be a formal resume, but rather a list of some of my past experience and achievements."
 ---
 
+## Quick Links
+[Technical Skills](#technical-skills)
+[Certifications](#certifications)
+[Work Experience](#work-experience)
+[Projects](#projects)
+[Organizations](#organizations)
+[Awards](#awards)
+
+
 ## Technical Skills
-- Concepts
-    * Data Structures and Algorithms
-    * Object Oriented Design
-    * Software Design Patterns
-    * Test Driven Development
-    * Version Control Systems
-    * Robotic Process Automation
-    * *nix Operating Systems
-- Languages
-    * C/C++
-    * Java
-    * Python
-    * Node.js
-    * Bash
-- Tools/Frameworks
-    * UiPath
-    * Automation Anywhere
-    * Maven
-    * Hugo
-    * Ember.js
-    * JQuery
-    * mySQL
-    * SQLlite
-    * MongoDB
-    * Pandas
+| **Category**   |  **Skills**                                                                |
+|----------------|----------------------------------------------------------------------------|
+| **Concepts**   | *nix Operating Systems, Software Design Patterns, Test Driven Development, Robotic Process Automation |
+| **Languages**  | C/C++, Java, Python, Node.js, Bash                                         |
+| **Databases**  | mySQL, SQLlite, MongoDB, |
+| **Tools/Frameworks** | UiPath, Automation Anywhere, Pandas, Hugo, Ember.js, JQuery |
 
 ## Certifications
 - [Career Essentials in GitHub](https://www.linkedin.com/learning/certificates/5952be181d082742e8f76658abe8b1b1cd3d9615d28ce80d96014d6d1b37e177?u=87254282)
@@ -112,3 +102,5 @@ description: "This is not intended to be a formal resume, but rather a list of s
 ### Eagle Scout Rank (May 2019)
 - Awarded by Scouting America (formerly the Boy Scouts of America), the Eagle Scout rank is the highest rank in the Scouts BSA program awarded to those who have served their community, gained leadership experience, learned new skills, and completed a service project for their local community
 - Designed, planned, and executed the construction of a composting center for my middle school to reduce food waste
+
+[Back to top](#quick-links)
