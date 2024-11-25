@@ -1,7 +1,7 @@
 ---
 title: "Experience"
 date: 2024-11-25T10:25:19-05:00
-draft: true
+draft: false
 ---
 
 This is not intended to be a formal resume, but rather a list of some of my past experience and achievements.
@@ -74,3 +74,41 @@ This is not intended to be a formal resume, but rather a list of some of my past
 - Resolved merge conflicts when needed
 - [Top Contributor](https://github.com/Eagle-9/crash/graphs/contributors) by number of commits and lines of code
 - [GitHub](https://github.com/Eagle-9/crash)
+
+### DAlTON
+#### Spring 2023
+- Created a Java program to help organize logistics at camp
+- Demonstrated an understanding of data structures, recursion, interfaces, abstract classes, aggregation, and sorting algorithms.
+- [GitHub](https://github.com/sheepman39/DAlTON)
+
+## Organizations
+### Residence Hall Association (2022-Present)
+- Currently serves as the VP of Traditions (2024-2025)
+- Planned, developed, and executed large-scale events with over 400 residents
+- Collaborated with other organizations to develop new programs
+- Delegated planning tasks for each event
+- Advocate for residents needs
+
+### National Residence Hall Honorary (2023-Present)
+- Recognize and celebrate the work for student and professional staff on campus
+- Participate in small service events to give back to the community
+- Built connections with the Indianapolis community
+
+## Awards 
+### Deans List - (Fall 2022-Present)
+
+### Bronze Diamond Award (April 2024)
+- Awarded by the Residence Hall Assocation, I was selected to be a recipient of the Bronze Diamond Award for my dedication and service to our community
+
+### Outstanding Leadership Award (April 2024)
+- Awarded by the National Residence Hall Honorary, I was selected for the leadership I gave and the positive encouragement that I bring to others
+
+### Rookie of the Year (Spring 2023)
+- Awarded by the Residence Hall Association, I was recognized as an incoming freshman that showed leadership, dedication, and innovation with the events we planned.  I was responsible for planning our annual Field Day event, which hosted over 200 students and involved coordinating logistics between multiple buildings to bring everything together.
+
+### Herbert Presidential Scholarship (Fall 2022)
+- Awarded by the former IUPUI Honors College, the Herbert Presidential Scholarship is granted to incoming students who have demonstrated exceptional leadership to their community
+
+### Eagle Scout Rank (May 2019)
+- Awarded by Scouting America (formerly the Boy Scouts of America), the Eagle Scout rank is the highest rank in the Scouts BSA program awarded to those who have served their community, gained leadership experience, learned new skills, and completed a service project for their local community
+- Designed, planned, and executed the construction of a composting center for my middle school to reduce food waste

@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2024-11-25T10:25:13-05:00
-draft: true
+draft: false
 ---
 
 I am currently earning my degree in Computer Science with a specialization in Cognitive Automation. I chose to study CS because I love breaking down problems, building a solution, and learning ways to build better solutions.  I am motivated by solving real problems and a drive to constantly find ways to improve.
