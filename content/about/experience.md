@@ -14,8 +14,6 @@ description: "This is not intended to be a formal resume, but rather a list of s
 - [Organizations](#organizations)
 - [Awards](#awards)
 
----
-
 ## Technical Skills
 | **Category**   |  **Skills**                                                                |
 |----------------|----------------------------------------------------------------------------|
@@ -24,15 +22,13 @@ description: "This is not intended to be a formal resume, but rather a list of s
 | **Databases**  | mySQL, SQLlite, MongoDB, |
 | **Tools/Frameworks** | UiPath, Automation Anywhere, Pandas, Hugo, Ember.js, JQuery |
 
----
 
 ## Certifications
 - [Career Essentials in GitHub](https://www.linkedin.com/learning/certificates/5952be181d082742e8f76658abe8b1b1cd3d9615d28ce80d96014d6d1b37e177?u=87254282)
 
----
 
 ## Work Experience
----
+
 
 ### Developer at the Center for Software and Innovation (June 2024 - Present)
 - Collaborated with a small team of students to develop web-based applications
@@ -53,10 +49,9 @@ description: "This is not intended to be a formal resume, but rather a list of s
 - Collaborated with other Peer Leaders to enhance lab sessions and encourage best practices
 - Critiqued 50+ student submissions with detailed feedback to ensure learning goals were met
 
----
 
 ## Projects
----
+
 
 ### SIC/XE Assembler
 #### Fall 2024
@@ -82,10 +77,9 @@ description: "This is not intended to be a formal resume, but rather a list of s
 - Demonstrated an understanding of data structures, recursion, interfaces, abstract classes, aggregation, and sorting algorithms.
 - [GitHub](https://github.com/sheepman39/DAlTON)
 
----
 
 ## Organizations
----
+
 
 ### Residence Hall Association (2022-Present)
 - Currently serves as the VP of Traditions (2024-2025)
@@ -99,10 +93,9 @@ description: "This is not intended to be a formal resume, but rather a list of s
 - Participate in small service events to give back to the community
 - Built connections with the Indianapolis community
 
----
 
 ## Awards 
----
+
 
 ### Deans List - (Fall 2022-Present)
 - Maintained a 4.0 GPA
@@ -123,6 +116,5 @@ description: "This is not intended to be a formal resume, but rather a list of s
 - Awarded by Scouting America (formerly the Boy Scouts of America), the Eagle Scout rank is the highest rank in the Scouts BSA program awarded to those who have served their community, gained leadership experience, learned new skills, and completed a service project for their local community
 - Designed, planned, and executed the construction of a composting center for my middle school to reduce food waste
 
----
 
 [Back to top](#quick-links)
