@@ -25,6 +25,7 @@ description: "This is not intended to be a formal resume, but rather a list of s
 
 ## Certifications
 - [Career Essentials in GitHub](https://www.linkedin.com/learning/certificates/5952be181d082742e8f76658abe8b1b1cd3d9615d28ce80d96014d6d1b37e177?u=87254282)
+
 [Back to top](#quick-links)
 
 ## Work Experience
@@ -48,6 +49,7 @@ description: "This is not intended to be a formal resume, but rather a list of s
 - Motivated students to develop new programming techniques and practices
 - Collaborated with other Peer Leaders to enhance lab sessions and encourage best practices
 - Critiqued 50+ student submissions with detailed feedback to ensure learning goals were met
+
 [Back to top](#quick-links)
 
 ## Projects
@@ -76,6 +78,7 @@ description: "This is not intended to be a formal resume, but rather a list of s
 - Created a Java program to help organize logistics at camp
 - Demonstrated an understanding of data structures, recursion, interfaces, abstract classes, aggregation, and sorting algorithms.
 - [GitHub](https://github.com/sheepman39/DAlTON)
+
 [Back to top](#quick-links)
 
 ## Organizations
@@ -92,6 +95,7 @@ description: "This is not intended to be a formal resume, but rather a list of s
 - Recognize and celebrate the work for student and professional staff on campus
 - Participate in small service events to give back to the community
 - Built connections with the Indianapolis community
+
 [Back to top](#quick-links)
 
 ## Awards 
@@ -115,6 +119,5 @@ description: "This is not intended to be a formal resume, but rather a list of s
 ### Eagle Scout Rank (May 2019)
 - Awarded by Scouting America (formerly the Boy Scouts of America), the Eagle Scout rank is the highest rank in the Scouts BSA program awarded to those who have served their community, gained leadership experience, learned new skills, and completed a service project for their local community
 - Designed, planned, and executed the construction of a composting center for my middle school to reduce food waste
-
 
 [Back to top](#quick-links)
