@@ -16,6 +16,12 @@
     padding: 0.25rem;
 }
 
+.page__logo-inner:hover {
+    display: block;
+    background: var(--hover);
+    padding: 0.25rem;
+}
+
 a.page__logo-inner:link, a.page__logo-inner:visited {
     color: inherit;
     text-decoration: inherit;
