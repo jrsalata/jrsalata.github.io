@@ -1,7 +1,7 @@
 ---
 title: "Creating This Blog"
 date: 2024-11-26T00:52:49Z
-draft: true
+draft: false
 description: "Hear about how I learned and deployed this site with Hugo"
 ---
 
