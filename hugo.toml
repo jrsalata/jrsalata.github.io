@@ -3,7 +3,7 @@ baseURL = "https://salata.software"
 theme = "risotto"
 title = "Salata Software"
 author = "John S"
-copyright = "© [John S](https://github.com/sheepman39) & [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors)."
+copyright = "© [John S](https://github.com/sheepman39)<br>[View Source Code](https://github.com/sheepman39/sheepman39.github.io)"
 pagination.pagerSize = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -22,6 +22,11 @@ palette = "base16-horizon-dark"
 [params.about]
 title = "John S's Blog"
 description = "A personal blog exploring the wonders and struggles of a Computer Science student"
+
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
 
 # Social Links
 [[params.socialLinks]]

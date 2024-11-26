@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-date: 2024-11-25T10:25:13-05:00
+date: 2024-11-26T10:25:13-05:00
 draft: false
 author: "John S"
 description: "Here is a bit of personal info about myself"
