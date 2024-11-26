@@ -159,7 +159,7 @@ samp {
 
 code {
     background: var(--bg) !important;
-    color: var(--link);
+    color: var(--base0E);
     padding: 0 .25rem;
     border-radius: .25rem;
 }
