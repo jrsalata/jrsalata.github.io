@@ -1,6 +1,7 @@
-# Credit to https://github.com/joeroe/risotto/blob/main/exampleSite/config.tomlbaseURL = "https://sheepman39.github.io"
+# Credit to https://github.com/joeroe/risotto/blob/main/exampleSite/config.toml
+baseURL = "https://salata.software"
 theme = "risotto"
-title = "John S's Blog"
+title = "Salata Software"
 author = "John S"
 copyright = "© [John S](https://github.com/sheepman39) & [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors)."
 pagination.pagerSize = 3
@@ -45,6 +46,12 @@ weight = 10
 identifier = "posts"
 name = "Posts"
 url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/Projects/"
 weight = 10
 
 [taxonomies]
