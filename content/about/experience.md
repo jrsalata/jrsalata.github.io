@@ -20,7 +20,7 @@ description: "This is not intended to be a formal resume, but rather a list of s
 | **Concepts**   | *nix Operating Systems, Software Design Patterns, Test Driven Development, Robotic Process Automation |
 | **Languages**  | C/C++, Java, Python, Node.js, Bash                                         |
 | **Databases**  | mySQL, SQLlite, MongoDB, |
-| **Tools/Frameworks** | UiPath, Automation Anywhere, Pandas, Hugo, Ember.js, JQuery |
+| **Other Tools** | UiPath, Automation Anywhere, Pandas, Hugo, Ember.js, JQuery |
 
 
 ## Certifications
