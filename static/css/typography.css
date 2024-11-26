@@ -20,6 +20,12 @@ h6 {
     margin: 1.5rem 0 0 0;
     font-weight: 600;
 }
+/* adjust h1 size to be slightly bigger */
+h1 {
+    font-size: 1.25rem;
+    margin: 4rem 1rem 1rem 0;
+    font-weight: 600;
+}
 
 h1+h2,
 h1+h3,
@@ -207,6 +213,11 @@ sub {
 }
 
 /* Tables */
+table, th, td {
+    border: 1px solid var(--muted);
+    border-collapse: collapse;
+}
+
 table {
     border-spacing: 0;
     margin: 0 0 1.5rem 0;
