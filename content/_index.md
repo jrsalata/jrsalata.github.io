@@ -1,6 +1,6 @@
 # Welcome!
 
-It is my goal that I will be able to build up this page to act as a professional journal/blog for myself.  I want a place to point people towards when they want to see my portfolio, resume, thoughts, and other personal items.  I hope to show off some of my work while also providing updates on different projects and the struggles I am overcoming.
+Hi! Welcome to my personal site where I post small articles about the different projects I'm working on, tools I'm learning, or any other fun thoughts I have.  Right now, this site is a bit barren since it is relatively new, but I hope to build it up over the next few months with some previous projects and thoughts on the current state of technology.  In the meantime, feel free to check out each of the links below and let me know what your thoughts are.
 
 ## Quick Links
 * [Learn More About Me](https://salata.software/about/)
