@@ -3,6 +3,7 @@ title: "Creating This Blog"
 date: 2024-11-26T00:52:49Z
 draft: false
 description: "Hear about how I learned and deployed this site with Hugo"
+toc: true
 ---
 
 I never had the long-term plan of creating this website for myself. I remembered that I had an old repo using GitHub pages for a different project (TODO: Make that blog) that was no longer used.  It was filled with old code from high school that was not a good representation of my best work.  I wanted to delete it and put a placeholder in there.  However, I felt a particular desire to find a good way of making a static website since I disliked working with raw HTML/CSS/JS.  That is when I came across Hugo.
