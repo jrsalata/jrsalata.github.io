@@ -21,7 +21,7 @@ palette = "base16-horizon-dark"
 # Sidebar: about/bio
 [params.about]
 title = "John S's Blog"
-description = "A personal blog exploring the wonders and struggles of a Computer Science student"
+description = "A personal blog exploring the challenges and adventures of a Computer Science student"
 
 
 # Sidebar: social links
