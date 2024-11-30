@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-author: "John S."
+author: "John Salata"
 description: "Learn more about my background and experience"
 date: 2024-11-24T10:25:19-05:00
 ---

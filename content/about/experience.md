@@ -2,7 +2,7 @@
 title: "Experience"
 date: 2024-11-25T10:25:19-05:00
 draft: false
-author: "John S"
+author: "John Salata"
 description: "This is not intended to be a formal resume, but rather a list of some of my past experience and achievements."
 weight: 2
 toc: true

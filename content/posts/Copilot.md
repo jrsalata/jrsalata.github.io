@@ -2,7 +2,7 @@
 title: "My GitHub Copilot Experience"
 date: 2024-11-27T08:24:09-05:00
 description: "Hear my thoughts and experiences with these new AI tools that bring unease to some"
-author: "John S"
+author: "John Salata"
 draft: false
 toc: true
 ---
@@ -18,7 +18,7 @@ With these points in mind, let's focus in on a tool I have many opinions about: 
 
 To start out with, let's look at how GitHub advertises Copilot. On their main page, they describe it as "Your AI Pair Programmer" and I think that is the most accurate way to describe this tool. After all, that is what AI is. It is a tool, not a replacement. 
 
-# First-Year Students Effect
+# First-Year Students Impact
 In my experience as a TA for our intro level CS course, I saw a lot of people use Chat-GPT or [Replit's AI](https://replit.com/ai) to solve problems for them. Many of them struggled when their code wasn't working because they didn't learn _why_ the code worked. Just that the magical AI box generated it and that it _should_ work. The same goes for blindly copying and pasting snippets from Stack Overflow without stopping and asking why it works.
 
 My philosophy when it comes to learning a new skill is to ask why something works and not just what or how. I would always redirect students to asking the critical question of why we are doing something. Frequently, they would struggle to explain their thought process with how they developed the code on the screen because they didn't develop it. At this point, I would hand them a whiteboard marker and we would go through the problem and develop an algorithm for it. Once we developed an algorithm, we would work together on the code and understanding _why_ we wrote specific lines.

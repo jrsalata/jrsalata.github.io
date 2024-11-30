@@ -2,6 +2,7 @@
 title: "Creating This Blog"
 date: 2024-11-26T00:52:49Z
 draft: false
+author: "John Salata"
 description: "Hear about how I learned and deployed this site with Hugo"
 toc: true
 ---
