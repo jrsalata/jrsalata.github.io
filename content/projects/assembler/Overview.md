@@ -5,6 +5,7 @@ draft: true
 weight: 1
 author: "John Salata"
 description: "A brief discription of the assembler project"
+toc: true
 ---
 
 # Overview
@@ -41,3 +42,25 @@ HOUTPUT00000000039d
 T000000196d000375012c05000003a00d1ba1360fa25f9041A0153b2ff0
 E000000
 ```
+
+More specific details will come in later posts to explain all of the nuances in the input and output.  For now, it is mean to show some background info and our general goal with this project.
+
+# Goals and Design Decisions
+Our primary goals for this project are to build a fully functioning SIC/XE Assembler that can handle
+- literals
+- expressions
+- macros
+- functions
+- program blocks
+- control sections
+
+Additionally, I wanted to set some additional goals to ensure that the project would be easy to work on as more features were added.  This included the SOLID principles and other concepts like:
+- Single responsibility where each method has one purpose
+- Open-close principle where base classes can be extended but not modified
+- Liskov-substitution principle where child classes can be substituted for their parents
+- Interface principle where many interfaces are better than one general purpose
+- Dependency inversion principle where we depend on abstractions rather than concretions
+- Minimal Exception safety where we do not guarantee valid results upon an error
+- Clear Error Messages where when something does go wrong, a clear message is given to the user
+
+The one risky philosophy I want to explain with this project is the choice to use minimal exception safety as the base for how we handle all exceptions.  The reason why we do not guarantee safety or validation is that this is an assembler where everything has to be just right or else nothing will be right at all.  I would rather have exceptions flow up and reported instead of having incorrect output.  This ensures that user's know immediately when their input does not work and-with clear error messages-can pinpoint where it failed.    
