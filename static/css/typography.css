@@ -160,14 +160,16 @@ samp {
 code {
     background: var(--bg) !important;
     color: var(--base0E);
-    padding: 0 .25rem;
+    padding: 0 0;
     border-radius: .25rem;
 }
 
 pre {
-    overflow-x: auto;
+    overflow-x: visible;
     padding: 1.5rem;
     margin: 0 0 1.5rem 0;
+    background: var(--bg) !important;
+    
 }
 
 /* Fix overflow when config markup.highlight.lineNos is true */
