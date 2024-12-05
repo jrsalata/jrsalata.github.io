@@ -4,7 +4,7 @@ date: 2024-11-30T11:02:55-05:00
 draft: true
 weight: 1
 author: "John Salata"
-description: "A brief discription of the assembler project"
+description: "A brief description of the assembler project"
 toc: true
 ---
 
@@ -46,6 +46,7 @@ E000000
 More specific details will come in later posts to explain all of the nuances in the input and output.  For now, it is mean to show some background info and our general goal with this project.
 
 # Goals and Design Decisions
+## Primary Goals
 Our primary goals for this project are to build a fully functioning SIC/XE Assembler that can handle
 - literals
 - expressions
@@ -64,3 +65,23 @@ Additionally, I wanted to set some additional goals to ensure that the project w
 - Clear Error Messages where when something does go wrong, a clear message is given to the user
 
 The one risky philosophy I want to explain with this project is the choice to use minimal exception safety as the base for how we handle all exceptions.  The reason why we do not guarantee safety or validation is that this is an assembler where everything has to be just right or else nothing will be right at all.  I would rather have exceptions flow up and reported instead of having incorrect output.  This ensures that user's know immediately when their input does not work and-with clear error messages-can pinpoint where it failed.    
+
+## Language Choice
+Originally, I wanted to write this project in C++ because it was statically typed, object oriented, and provided many flexible ways to implement different features. I spent the past 3 semesters working with C++ so it was a language I was very familiar with.
+
+However, it can be quite tricky to work with.  There is a lot of boilerplate when it comes to handling file IO and it is easy to make critical mistakes with memory management. I remember plenty of times where I was working on an issue because I kept getting segmentation faults with no idea where to look for the issue.  As a side note, I recently found out what core dumps were and how to use them from [Low Level Learning](https://www.youtube.com/watch?v=3T3ZDquDDVg). I wish I knew sooner how core dumps worked. But I digress.
+
+Since C++ was a bit too fragile at times, I narrowed it down between Java, Python, Kotlin, or Rust.  Any of these languages would have worked just fine.  It mostly came down to personal preference. 
+
+Java, Python, and Kotlin are all object oriented programs which would make certain implementations easier.  Rust could support some of these concepts, but is more focused on functional programming.  Kotlin is very closely related to Java so I could have implemented the same objects and patterns in there.  However, I was not as familiar with Kotlin as I am with Java and thought it would be a tad risky to learn it for a large project.  In hindsight, it would have been the perfect opportunity to learn Kotlin.  
+
+With Python, it was easy to work with and was statically typed.  It also supports type hints which would have made it more like other strongly typed languages.  However, I am not a huge fan with how Python handles OOP sometimes.  With all of these (mostly arbitrary) thoughts in mind, there was one language remaining.
+
+I decided to write this program in Java primarily because of its ease of use, explicit typing, and personal preference. I love typed languages because they offer a clear structure to work with and most text editors will display relevant info on that type. I was already familiar with how Java implemented different OOP features from my [Resource Manager Project](https://github.com/sheepman39/dalton), however, this would be the first time trying to use more sophisticated design patterns in Java.
+
+## Build Tools
+At first, I was using a makefile to help build the project.  It is what I was familiar with and taught to do in class.  However, as the complexity grew, I realized I needed a smarter way to build, test, and manage this project.  I decided to use Maven to manage this project due to its ease of use.  I never used Maven before, but I found it easy to create the structure and transfer my project to it.  This also would end up being the best choice I made as it also integrated a testing system that would help me ensure that my code was correct without having to manually check everything every single time.  
+
+Before this project, I never used any proper testing tools.  I had a few test suites that would let me know if something went wrong in a larger project, but it was far from perfect.  This would end up being an opportunity to learn how to write tests that cover a wide array of cases.  
+
+Later in this series of posts I'll talk in more detail about my experiences.
