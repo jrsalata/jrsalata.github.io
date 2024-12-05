@@ -94,7 +94,7 @@ toc: true
 - Maintained a 4.0 GPA
 
 ## Bronze Diamond Award (April 2024)
-- Awarded by the Residence Hall Assocation, I was selected to be a recipient of the Bronze Diamond Award for my dedication and service to our community
+- Awarded by the Residence Hall Association, I was selected to be a recipient of the Bronze Diamond Award for my dedication and service to our community
 
 ## Outstanding Leadership Award (April 2024)
 - Awarded by the National Residence Hall Honorary, I was selected for the leadership I gave and the positive encouragement that I bring to others
