@@ -1,14 +1,13 @@
 ---
 title: "Overview"
 date: 2024-11-30T11:02:55-05:00
-draft: true
+draft: false
 weight: 1
 author: "John Salata"
 description: "A brief description of the assembler project"
 toc: true
 ---
 
-# Overview
 In the Fall 2024 semester, I took a Computer Structures class that covered a lot of the lower-level features of computers that we often take for granted.  Some of the topics that we covered include, but not limited to, assembly, linkers, loaders, and compiler design.  The big final project that we spent the entire semester on was to build an assembler for the SIC/XE instruction set. We could use any language or tool that we wanted to as long as all of the work was original.  For me, this was the first project I've worked on with no guardrails or language requirements.  This openness made it an interesting challenge and opportunity to work with new tools.
 
 # Background Knowledge
