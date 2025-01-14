@@ -8,6 +8,7 @@ toc: true
 ---
 
 For 3 summers, I worked at Owasippe Scout Reservation on the commissioner team.  Some of my responsibilities included (but definitely not limited to):
+
 - Answering camper's questions
 - Operating the trading post
 - Giving directions to lost campers
@@ -23,4 +24,4 @@ For 3 summers, I worked at Owasippe Scout Reservation on the commissioner team. 
 
 It seems like a lot of different responsibilities now that I list them all out. What is even crazier to think about is that the above list is just what I can come up with on top of my head.  Every week would be different and I had to quickly adapt to being assigned new tasks and duties. Many of which I never signed up for.  But I accepted them all the same.  After all, even the most distasteful tasks are for a good cause. If I wasn't willing to do it, then who would?
 
-If I were to sum up the three summer's work of experience and try to 
+If I were to sum up the three summer's work of experience and try to
