@@ -11,14 +11,16 @@ toc: true
 # Technical Skills
 | **Category**   |  **Skills**                                                                |
 |----------------|----------------------------------------------------------------------------|
-| **Concepts**   | *nix Operating Systems, Software Design Patterns, Test Driven Development, Robotic Process Automation |
+| **Concepts**   | *nix Operating Systems, Software Design Patterns, Test Driven Development, Robotic Process Automation, Chatbot Development |
 | **Languages**  | C/C++, Java, Python, Node.js, Bash                                         |
 | **Databases**  | mySQL, SQLlite, MongoDB, |
-| **Other Tools** | UiPath, Automation Anywhere, Pandas, Hugo, Ember.js, JQuery |
+| **Other Tools** | UiPath, Automation Anywhere, Pandas, Hugo, Rasa, Ember.js, JQuery |
 
 
 # Certifications
 - [Career Essentials in GitHub](https://www.linkedin.com/learning/certificates/5952be181d082742e8f76658abe8b1b1cd3d9615d28ce80d96014d6d1b37e177?u=87254282)
+- [Rasa Developer Certification]()
+- [Project Management Job Simulation](https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/tHFz7Bfjmh35DXQv6_T6kdcdKSTfg2aotxT_5vZX6G4KctkmxAtCY_1733433787105_completion_certificate.pdf)
 
 [Back to top](#technical-skills)
 
