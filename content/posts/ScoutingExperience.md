@@ -37,4 +37,20 @@ Now, this is not the same mentality as a perfectionist. I do not believe that ev
 
 When talking about success, we can define it in many different ways. Maybe we value the number of people that attended an event. Maybe we value the grade from an assignment. Maybe we value a certain rating or review. We use these metrics to try and quantify our success and failures. One philosophy that I developed in Scouting is that there is no such thing as failure. What I mean by this is that our definition of success is allowed to constantly change as your goals and activities develop. Sometimes an event is rained out and the planned swimming competition was not able to happen. Does that mean it was a failure? No, of course not. As the situation develops, we are allowed to change how we measure success. In this case, we can measure it by how we handled the weather and kept the event going.
 
-My baseline for success is that at least one person enjoys an event OR you learned something and can find a way to continually improve your process. Learning is success and we should celebrate that. Acknowledge the shortcomings, but do not treat them as failures. Treat them as opportunities to grow, improve, and reflect.
+My baseline for success is that at least one person enjoys an event OR you learned something and can find a way to continually improve your process. Learning is a form of success and we should celebrate that. Acknowledge the shortcomings, but do not treat them as failures. Treat them as opportunities to grow, improve, and reflect.
+
+Now it is true that events can be not as successful as one would have hoped, but that still does not make it a failure. The only true failure is when no one gains anything positive and no one grows from the experience. I have yet to see this happen in even the most gloomy of circumstances.
+
+The idea that there is no such thing as failure changed how I viewed outcomes that were less than desired. Instead of beating myself up or blaming everyone else, I started to see room to grow and continually improve. The right mindset is just as important as any vision or goal you might have.
+
+# Love One Another
+
+The phrase "love one another" has particular significance in the OA for very complex reasons that I will not go into here. But I think it does a great job of encapsulating what a great person should strive to do. Love one another.
+
+Why does this matter in the real world? Simply put, we are all human. We have our own struggles, our own triumphs, our own experiences, and our own passions in life. It is impossible to truly understand every aspect of another person and what they might be going through. We are all unique and that uniqueness is something that should be celebrated. Instead of judging one another for our differences and spreading negativity, we should love one another and try to understand one another.
+
+As a leader, I keep this phrase in mind when working with other people. When someone is late, busy, or otherwise having a bad day, I try to understand why that is and work with them on it. This is not an excuse for negative behavior, but rather an understanding that life happens and that is okay. Treating someone kindly during a rough time can make all the difference in the world.
+
+To me, this also means keeping an open ear when people need a place to vent their frustrations or struggles without any judgement. I am but one human and can not fully understand what someone else is going through in life. But I can show empathy. I can show that I care and offer to help however I can. Sometimes just being there can help someone in ways I can never fully understand.
+
+There is enough hate and judgement in this world. It can often feel like our differences divide us. I chose to believe that our differences can unite us if we keep our ears open and simply love one another.
