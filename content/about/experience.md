@@ -68,7 +68,7 @@ toc: true
 - Created issues to keep track of tasks and progress
 - Learned Test Driven Development to ensure correctness and speed up development
 - Utilized GitHub Actions to help build and test code
-- [GitHub](https://github.com/sheepman39/Assembler)
+- [GitHub](https://github.com/jrsalata/Assembler)
 
 ## Crazy Random Awesome SHell (CRASH)
 
@@ -87,7 +87,7 @@ toc: true
 
 - Created a Java program to help organize logistics at camp
 - Demonstrated an understanding of data structures, recursion, interfaces, abstract classes, aggregation, and sorting algorithms.
-- [GitHub](https://github.com/sheepman39/DAlTON)
+- [GitHub](https://github.com/jrsalata/DAlTON)
 
 [Back to top](#technical-skills)
 

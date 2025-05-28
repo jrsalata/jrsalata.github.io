@@ -3,7 +3,7 @@ baseURL = "https://salata.software"
 theme = "risotto"
 title = "Salata Software"
 author = "John Salata"
-copyright = "© [John Salata](https://github.com/sheepman39)<br>[View Source Code](https://github.com/sheepman39/sheepman39.github.io)"
+copyright = "© [John Salata](https://github.com/jrsalata)<br>[View Source Code](https://github.com/jrsalata/jrsalata.github.io)"
 pagination.pagerSize = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -32,7 +32,7 @@ description = "A personal blog exploring the challenges and adventures of a Comp
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
-url = "https://github.com/sheepman39"
+url = "https://github.com/jrsalata"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-linkedin"

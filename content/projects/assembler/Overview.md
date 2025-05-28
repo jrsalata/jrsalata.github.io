@@ -86,7 +86,7 @@ Java, Python, and Kotlin are all object oriented programs which would make certa
 
 With Python, it was easy to work with and was statically typed.  It also supports type hints which would have made it more like other strongly typed languages.  However, I am not a huge fan with how Python handles OOP sometimes.  With all of these (mostly arbitrary) thoughts in mind, there was one language remaining.
 
-I decided to write this program in Java primarily because of its ease of use, explicit typing, and personal preference. I love typed languages because they offer a clear structure to work with and most text editors will display relevant info on that type. I was already familiar with how Java implemented different OOP features from my [Resource Manager Project](https://github.com/sheepman39/dalton), however, this would be the first time trying to use more sophisticated design patterns in Java.
+I decided to write this program in Java primarily because of its ease of use, explicit typing, and personal preference. I love typed languages because they offer a clear structure to work with and most text editors will display relevant info on that type. I was already familiar with how Java implemented different OOP features from my [Resource Manager Project](https://github.com/jrsalata/dalton), however, this would be the first time trying to use more sophisticated design patterns in Java.
 
 ## Build Tools
 
