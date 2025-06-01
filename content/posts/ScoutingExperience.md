@@ -19,8 +19,6 @@ Eventually, our Camp Director made it on site and we were able to use some batte
 
 Normally, this is where the story would end. However, the power company had no idea when the lights would come back on. It took almost 4 days for the power to be restored. This is where extra preparation came in handy. I always keep a few extra lights and portable power banks charged throughout my gear and car. Because of this, I was able to stay somewhat connected and bright through it all. I never planned for a four day power outage, but I was able to overcome the challenge because I was prepared for other events.
 
-Being prepared for many different scenarios and being able to adapt and improvise to new ones enabled me to host community events through storms, accidents, and missing equipment. It is a skill that I never take for granted.
-
 # Visions, SMART Goals, and Continued Improvement
 
 Back in 2017, I was inducted into Scouting's National Honor Society, the Order of the Arrow (OA). The OA focuses on developing cheerful servant leaders through giving service back to camp and enabling youth to truly take charge of the program. The important detail is that everything the OA does is planned, organized, and executed by the youth under the guidance of adult advisers. By design, the advisers do very little outside of ensuring all relevant rules are being followed and guiding their youth in a productive path. This creates an environment where it truly is youth ran and this includes defining our vision and goals for a year.
