@@ -60,9 +60,15 @@ weight = 10
 
 [[menu.main]]
 identifier = "projects"
-name = "Projects"
+name = "projects"
 url = "/Projects/"
 weight = 10
+
+[[menu.main]]
+identifier = "honors"
+name = "honors_e_portfolio"
+url = "/honors/"
+weight = 11
 
 [taxonomies]
 category = "categories"
