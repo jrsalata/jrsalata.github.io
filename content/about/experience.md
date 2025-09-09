@@ -1,6 +1,6 @@
 ---
 title: "Experience"
-date: 2024-11-25T10:25:19-05:00
+date: 2025-9-9T10:25:19-05:00
 draft: false
 author: "John Salata"
 description: "This is not intended to be a formal resume, but rather a list of some of my past experience and achievements."
@@ -13,9 +13,9 @@ toc: true
 | **Category**   |  **Skills**                                                                |
 |----------------|----------------------------------------------------------------------------|
 | **Concepts**   | *nix Operating Systems, Software Design Patterns, Test Driven Development, Robotic Process Automation, Chatbot Development |
-| **Languages**  | C/C++, Java, Python, Node.js, Bash                                         |
-| **Databases**  | mySQL, SQLlite, MongoDB, |
-| **Other Tools** | UiPath, Automation Anywhere, Pandas, Hugo, Rasa, Ember.js, JQuery |
+| **Languages**  | C/C++, Java, Ruby, Python, Node.js, Bash                                         |
+| **Databases**  | mySQL, SQLlite, MongoDB, PostgreSQL |
+| **Other Tools and Platforms** | UiPath, Automation Anywhere, Ruby on Rails, Google Cloud Platform (GCP), Pandas, Hugo, Rasa, Ember.js, JQuery |
 
 # Certifications
 
@@ -26,6 +26,15 @@ toc: true
 [Back to top](#technical-skills)
 
 # Work Experience
+
+## Jr. Softwawre Engineer
+
+### Resultant
+
+- Migrated cloud-native workflows to separate processes to save 99.25% (~$80k/year) in costs
+- Demonstrated adaptability by quickly integrating into ongoing projects, performing critical code fixes, and contributing to new feature development using tools and frameworks with no prior experience
+- Independently connected with managers to understand client needs and implement the best solutions
+- Collaborated with engineers to identify and document potential solutions
 
 ## Software Engineer Intern
 
@@ -58,6 +67,14 @@ toc: true
 [Back to top](#technical-skills)
 
 # Projects
+
+## CrowdCam
+
+### Spring 2025
+
+- Designed and developed a media-sharing platform using the Django framework
+- Created Software Requirement Specification and Design Analysis Documents
+- [GitHub](https://github.com/crowdcam/crowdcam)
 
 ## SIC/XE Assembler
 
@@ -95,7 +112,8 @@ toc: true
 
 ## Residence Hall Association (2022-Present)
 
-- Currently serves as the VP of Traditions (2024-2025)
+- Currently serves as the President (2025-2026)
+- Previously served as the VP of Traditions (2024-2025)
 - Planned, developed, and executed large-scale events with over 400 residents
 - Collaborated with other organizations to develop new programs
 - Delegated planning tasks for each event
