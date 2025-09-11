@@ -36,7 +36,9 @@ When I look at everything I have gone through over these past four years, I am r
 
 > "Despite everything, it's still you." - Toby Fox.
 
-Despite all of the late nights, difficult exams, and struggles with organization, it is still me at the core of it. I just gained a few layers on top from all of the lessons I've learned.
+In context of the game, there is a mirror close to the beginning of the game that reads "It's you!". As you travel through the world, you make lots of new friends and help those in need. The nicer you are, the harder the battles are for you. In one of the final sections of the game, you find an almost identical house with the same mirror with that simple line. You (as the character) grew so much it can be hard to remember how you started your journey. But despite all of that, it's still you on the inside and thats what matters.
+
+Despite all of the late nights, difficult exams, and struggles with organization, it is still me at the core of it. I just gained a few layers on top from all of the lessons I've learned and challenges I overcame.
 
 So who am I?
 
