@@ -55,7 +55,7 @@ Another assignment that I completed as a part of H200 was a simple journey map. 
 ## Initial Map
 
 Here is what I created during H200:
-![JourneyMap.pdf](JourneyMap.pdf)
+![JourneyMap.pdf](/honors/JourneyMap.pdf)
 
 Upon reflection, this journey map doesn't truly reflect my growth from that point. In fact, I wish I added more points to everything so there was more context. These are just a few points on my journey and they seem to hop from one to the other with little to no build up.
 
