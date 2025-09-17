@@ -3,7 +3,7 @@ title: "Personal Growth Journey"
 author: "John Salata"
 description: "This is a reflection on who I am before, during, and after college"
 date: 2025-09-09T10:25:19-05:00
-draft: true
+draft: false
 ---
 
 # Who am I?
@@ -139,4 +139,8 @@ flowchart TD
 
 ## Map Reflection
 
-jj
+Overall, I think that my overall goals and path have not significantly changed over the past few years. I was able to find real world experience opportunities where I gained new profesional skills and expanded my technical abilities.
+
+I think the biggest change in this map - outside of the additional details and context - is my direction. I knew I wanted to build software and solve problems. I just wasn't sure the best way to do that. I think my expereince at Resultant helped me understand how impactful going into the consulting field can be. I can have the opportunity to work with multiple clients and gain experience with multiple different technologies.
+
+Its easy to look at all of the growth I still need to accomplish. I do not know what I do not know about so many different fields. But this map allows me to see all of the progress I have made and how further I am compared to when I started.
