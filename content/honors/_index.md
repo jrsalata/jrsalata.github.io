@@ -3,7 +3,7 @@ title: "Honors E-Portfolio"
 author: "John Salata"
 description: "A brief recap and reflection over my experience as an Honor's student at IU Indy"
 date: 2024-11-24T10:25:19-05:00
-draft: true
+draft: false
 ---
 
 As a part of my Honors experience at IU Indy, each senior must create their own e-portfolio to showcase their work, learning, and progress.
