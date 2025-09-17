@@ -7,6 +7,7 @@ draft: true
 ---
 
 # Who am I?
+
 That really is the question that can sum up a great portion of our college expereinces. "Who am I?".
 
 Finding yourself and recognizing growth can be difficult at times, especially when so much around us is changing faster than we can process. When I look at myself, there is so much I see and so much that I want to become.
@@ -54,7 +55,7 @@ Another assignment that I completed as a part of H200 was a simple journey map. 
 ## Initial Map
 
 Here is what I created during H200:
-![alt](JourneyMap.pdf)
+![JourneyMap.pdf](JourneyMap.pdf)
 
 Upon reflection, this journey map doesn't truly reflect my growth from that point. In fact, I wish I added more points to everything so there was more context. These are just a few points on my journey and they seem to hop from one to the other with little to no build up.
 
@@ -68,11 +69,21 @@ Another important detail to note about me: I am a bad digital designer. There ar
 
 I love text-centered tools because they are easy to save, share, edit, and configure. This website itself is nothing more than a bunch of fancy markdown files. The less I have to configure, the better.
 
-Anyways, enough about my opinions on modern digital styling tools. Here is my updated journey map.
+Anyways, enough about my opinions on modern digital styling tools. Here is my updated journey map. [Skip to next section](#map-reflection)
 
-<!-- insert map here -->
+[![](https://mermaid.ink/img/pako:eNp9V01vGzcQ_SvEnqRCdmVZlrI6FEjtpjGaAkaTXAofQpGUlhGXXJBcK0qQ_va-4XJXHw0aIMKSQ868efM4pL8VwklVrIqNcXtRcR_Zh4dny_AvRIxGs-nN3ZhdXf3CdhW3o_c0qSQzinur7ZZVbs-iY-SFOcv-wCL2mgsuVX0Yd45oY_IAX69G_9BvttBnsrw409rojBy9I8cI0Pv1ikfFONurddD4wlylTIOZqLiolGdBGSUi4LZS2RiY51a62hwuY2x1HN0ndxK7f9fxbbtmXAiHyOR2p1TDoudix9yGNd59JrfgxG5VyM4GnMljVHVj4O_EbT_FgmMuAl4ANS3WKx60ObCa79TPlQuIWCntmdvbzvNPb_S29YrdXMIWrm6wfmA-MULM897EeMCgodoBeH1gv_GtUew9Akf21OWRvYKDvhJlqkSZDQPu3tpN9xHOZ-krTSkKNHpQtbMBzGVhSGRdaZTISganNumEr7XRUauQpnORwcEZWJRuN76IIYxr5X91x9e0IRkTyjZxoi1zHvGpnnvndyTJXMlA30FUzhl2X3lXq7Vzu76wKZOc5mw6op9s6UL0lh7cbJqmjLbtlwFcGwjDO5pLWQ5ga4fKdohJ1-EQwHdICHOU5Ci5rLVVwvPNqVhDzY05WiB5_4IkNw7_vVZWBkoYXB8oSdl6Cmqc2EnoK0c47qYoQXjdRJTuRRnXIEjAl-cmG5I_KF-ClBxsjYPRNmECCWsbleVWqElKE9XX0VHM8QU9UgeBevzqjsl0qWQDW7sYjlQpecqU7LDVONTZ79FdX48bqtTNFX5meU2Hf7APgG46MR3WQYnRB1QeJ7RWNAG1KgHK4oGOKgaBZFTpbZXlMr5wotum1aM32nKjvxLmA7AKHTS4B208gh3JHj8-fXwkTyTyN5Q0DucJ0OSlxzmjPGaUx20vu4R0sA8QZp1IuDYn-qAhsy7qjRZoDiT0JLGuM2wIaX8MxheeJDfR2RNfXgWwIFAFAwWdeUNy8njWoYigBfxqK3RjVDhvZLPLSPUhVmF0j7NqVOxo22iP5vLWWZf6pKXuG1fs9dDtpYpIjdSMM47InRNi8nWtPJK17K0OEN_hPHjPYrc8k3hLJN8SyfNeUCn5wZ73EJnnU_SVpngIql4b5Y-E2eMk0d23YULW5XWf80o6l6e9kpTRBkXLg9vEPfeUcdBbNC1SkbcXnM7HF3gqbcwJpQhKZxP7qP_udazYg78GRVDfHpeRYo_DScsNNLVOQH_p9EsYQX6G0XdHCtNTMicW51dP0MnxZB4p6FcNQOdpCqtbE7mN_4_2r35ZArJFp8E6KHejAsGj_rQDljC-cE9iGUoSK4064FinDScPh4DmKzgIh_T6W-Gc4LtLx8K7vRS8PjkgDd-ib-B0YHRP5ntep1YMr6BE40vwBqK06tz5om9ROt-zW89lS--HJ9yxV793I6SZ1w2cnS3O7SHj-oGpHyXTZ7cePaZbmG4GdALZPR02LSoaNTogVnRtYpCgslvwnu8XemVYwkH7MD7pynR86_EPggrlcytS4SQ6trrkJsVFPUiJXRvmUurYFfi4GeN0DyXF5ptBvtC9I7MMkkqATyhcWT9CQpuAYM9PnnjHJwQ9RL40vOOEqpecqvSgekzq66KeCRA7FN25QiHgp0-fikmBVoSmIfGK_kYYngsc7Fo9Fyt8Su53z8Wz_Y51vI3u_cGKYhV9qyaFd-22KlYbjqCTom0kYD9ojgzqfgnQ_e3cMNx6CpN345ZR_p6er8VqUZaLtLpYfSu-YLy4nk6XZbm8Wc7LRTmfTYpDsbpalLfXr8oSplm5nE1vF98nxdfkf3a9nC-m5d18US5my_nyblIoSdf6n93fB-nPhO__AjTQ_cs?type=png)](https://mermaid.live/edit#pako:eNp9V01vGzcQ_SvEnqRCdmVZlrI6FEjtpjGaAkaTXAofQpGUlhGXXJBcK0qQ_va-4XJXHw0aIMKSQ868efM4pL8VwklVrIqNcXtRcR_Zh4dny_AvRIxGs-nN3ZhdXf3CdhW3o_c0qSQzinur7ZZVbs-iY-SFOcv-wCL2mgsuVX0Yd45oY_IAX69G_9BvttBnsrw409rojBy9I8cI0Pv1ikfFONurddD4wlylTIOZqLiolGdBGSUi4LZS2RiY51a62hwuY2x1HN0ndxK7f9fxbbtmXAiHyOR2p1TDoudix9yGNd59JrfgxG5VyM4GnMljVHVj4O_EbT_FgmMuAl4ANS3WKx60ObCa79TPlQuIWCntmdvbzvNPb_S29YrdXMIWrm6wfmA-MULM897EeMCgodoBeH1gv_GtUew9Akf21OWRvYKDvhJlqkSZDQPu3tpN9xHOZ-krTSkKNHpQtbMBzGVhSGRdaZTISganNumEr7XRUauQpnORwcEZWJRuN76IIYxr5X91x9e0IRkTyjZxoi1zHvGpnnvndyTJXMlA30FUzhl2X3lXq7Vzu76wKZOc5mw6op9s6UL0lh7cbJqmjLbtlwFcGwjDO5pLWQ5ga4fKdohJ1-EQwHdICHOU5Ci5rLVVwvPNqVhDzY05WiB5_4IkNw7_vVZWBkoYXB8oSdl6Cmqc2EnoK0c47qYoQXjdRJTuRRnXIEjAl-cmG5I_KF-ClBxsjYPRNmECCWsbleVWqElKE9XX0VHM8QU9UgeBevzqjsl0qWQDW7sYjlQpecqU7LDVONTZ79FdX48bqtTNFX5meU2Hf7APgG46MR3WQYnRB1QeJ7RWNAG1KgHK4oGOKgaBZFTpbZXlMr5wotum1aM32nKjvxLmA7AKHTS4B208gh3JHj8-fXwkTyTyN5Q0DucJ0OSlxzmjPGaUx20vu4R0sA8QZp1IuDYn-qAhsy7qjRZoDiT0JLGuM2wIaX8MxheeJDfR2RNfXgWwIFAFAwWdeUNy8njWoYigBfxqK3RjVDhvZLPLSPUhVmF0j7NqVOxo22iP5vLWWZf6pKXuG1fs9dDtpYpIjdSMM47InRNi8nWtPJK17K0OEN_hPHjPYrc8k3hLJN8SyfNeUCn5wZ73EJnnU_SVpngIql4b5Y-E2eMk0d23YULW5XWf80o6l6e9kpTRBkXLg9vEPfeUcdBbNC1SkbcXnM7HF3gqbcwJpQhKZxP7qP_udazYg78GRVDfHpeRYo_DScsNNLVOQH_p9EsYQX6G0XdHCtNTMicW51dP0MnxZB4p6FcNQOdpCqtbE7mN_4_2r35ZArJFp8E6KHejAsGj_rQDljC-cE9iGUoSK4064FinDScPh4DmKzgIh_T6W-Gc4LtLx8K7vRS8PjkgDd-ib-B0YHRP5ntep1YMr6BE40vwBqK06tz5om9ROt-zW89lS--HJ9yxV793I6SZ1w2cnS3O7SHj-oGpHyXTZ7cePaZbmG4GdALZPR02LSoaNTogVnRtYpCgslvwnu8XemVYwkH7MD7pynR86_EPggrlcytS4SQ6trrkJsVFPUiJXRvmUurYFfi4GeN0DyXF5ptBvtC9I7MMkkqATyhcWT9CQpuAYM9PnnjHJwQ9RL40vOOEqpecqvSgekzq66KeCRA7FN25QiHgp0-fikmBVoSmIfGK_kYYngsc7Fo9Fyt8Su53z8Wz_Y51vI3u_cGKYhV9qyaFd-22KlYbjqCTom0kYD9ojgzqfgnQ_e3cMNx6CpN345ZR_p6er8VqUZaLtLpYfSu-YLy4nk6XZbm8Wc7LRTmfTYpDsbpalLfXr8oSplm5nE1vF98nxdfkf3a9nC-m5d18US5my_nyblIoSdf6n93fB-nPhO__AjTQ_cs)
 
-If you want to see the raw text, here it is
+| Figure | Relevant Link |
+|----|---|
+| Figure 1 | [Voluntold Template](https://github.com/jrsalata/voluntold) |
+| Figure 2 | [Dalton](https://github.com/jrsalata/dalton) | 
+| Figure 3 | [American History Misconceptions](https://sites.google.com/iu.edu/ahmyths/home) |
+| Figure 4 | [Assembler](https://github.com/jrsalata/assembler) |
+| Figure 5 | [Website Source Code](https://github.com/jrsalata/jrsalata.github.io) |
+| Figure 6 | [CrowdCam](https://github.com/crowdcam/crowdcam) |
+
+
+If you want to see the raw text, here it is. Otherwise, [skip below](#map-reflection)
 
 ```txt
 flowchart TD
@@ -98,4 +109,34 @@ flowchart TD
     script --> 2021
     2021 --> cybsec(Took some cybersecurity courses in high school)
     2021 --> iupui(Finalized my decision to attend IUPUI in the Fall of 2022)
+    iupui --> 2022(2022-2023)
+    cybsec --> 2022
+    2022 --> mail(Created a mail notification system as a final project)
+    2022 --> dalton(Created a resource allocation system to demonstrate basic principles
+    *Figure 2)
+    2022 --> myths(Completed my first Honors contract: A website detailing common myths of American History
+    *Figure 3)
+    myths --> 2023(2023-2024)
+    dalton --> 2023
+    mail --> 2023
+    2023 --> assembler(Created an assembler as part of an Honors Contract and demonstrated the use of software design patterns
+    *Figure 4)
+    2023 --> hill(Completed an internship with Dr. Hill where I learned about computer vision and web designs)
+    hill --> 2024(2024-Present)
+    assembler --> 2024
+    2024 --> resultant(Completed an internship with Resultant and gained professional skills)
+    2024 --> site(Created this personal website to showcase my projects
+    *Figure 5)
+    2024 --> crowdcam(Created a page called CrowdCam for my senior capstone
+    *Figure 6)
+    site --> graduate(Post-Graduation)
+    resultant --> graduate
+    crowdcam --> graduate
+    graduate --> job(I plan on finding a full time job as a software engineer for a consulting or development firm)
+    graduate --> certificates(I plan on devoting time to earn some additional certifications to learn more advanced skills and concepts)
+    graduate --> more(I want to keep learning and expanding my skillset as I gain more professional experience)
 ```
+
+## Map Reflection
+
+jj
