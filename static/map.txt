@@ -1,0 +1,48 @@
+flowchart TD
+    start(2015) --> khan(Started learning how to code on Khan Aacademy)
+    khan --> 2018(~2018)
+    2018 --> voluntold(Learned how to create a website to help a teacher select students randomly)
+    2018 --> git(Created a GitHub account to keep track of project changes)
+    voluntold --> template(Created a template so others could easily make/host their own
+    *Figure 1)
+    2018 --> compost(Started creating a compost as a part of my Eagle Scout Project)
+    git --> 2019(~2019)
+    template --> 2019
+    compost --> 2019
+    2019 --> eagle(Demonstrated leadership and planning abilities and earned the Eagle Scout rank)
+    2019 --> cloud(Started learning about cloud computing in order to work on projects on school Chromebooks)
+    eagle --> 2020(2020)
+    cloud --> 2020
+    2020 --> linux(Started using Linux and learning more about how systems work)
+    linux --> minecraft(Created a small minecraft server for friends to play on during lockdown)
+    minecraft --> script(Developed several scripts to handle server backups, maintenance, and monitoring)
+    2020 --> discordBot(Created small discord bots and learned more about development)
+    discordBot --> 2021(2021-2022)
+    script --> 2021
+    2021 --> cybsec(Took some cybersecurity courses in high school)
+    2021 --> iupui(Finalized my decision to attend IUPUI in the Fall of 2022)
+    iupui --> 2022(2022-2023)
+    cybsec --> 2022
+    2022 --> mail(Created a mail notification system as a final project)
+    2022 --> dalton(Created a resource allocation system to demonstrate basic principles
+    *Figure 2)
+    2022 --> myths(Completed my first Honors contract: A website detailing common myths of American History
+    *Figure 3)
+    myths --> 2023(2023-2024)
+    dalton --> 2023
+    mail --> 2023
+    2023 --> assembler(Created an assembler as part of an Honors Contract and demonstrated the use of software design patterns
+    *Figure 4)
+    2023 --> hill(Completed an internship with Dr. Hill where I learned about computer vision and web designs)
+    hill --> 2024(2024-Present)
+    assembler --> 2024
+    2024 --> resultant(Completed an internship with Resultant and gained professional skills)
+    2024 --> site(Created this personal website to showcase my projects
+    *Figure 5)
+    2024 --> crowdcam(Created a page called CrowdCam for my senior capstone
+    *Figure 6)
+    site --> graduate(Post-Graduation)
+    resultant --> graduate
+    crowdcam --> graduate
+    graduate --> job(I plan on finding a full time job as a software engineer for a consulting or development firm)
+    graduate --> certificates(I plan on devoting time to earn some additional certifications to learn more advanced skills and concepts)
