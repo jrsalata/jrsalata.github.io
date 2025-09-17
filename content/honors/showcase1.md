@@ -4,6 +4,7 @@ author: "John Salata"
 description: "This is a reflection on who I am before, during, and after college"
 date: 2025-09-09T10:25:19-05:00
 draft: false
+toc: true
 ---
 
 # Who am I?
@@ -55,7 +56,7 @@ Another assignment that I completed as a part of H200 was a simple journey map. 
 ## Initial Map
 
 Here is what I created during H200:
-<iframe src="/JourneyMap.pdf" width="100%" height="500px"></iframe>
+<iframe src="/JourneyMap.pdf" width="100%" height="250"></iframe>
 
 Upon reflection, this journey map doesn't truly reflect my growth from that point. In fact, I wish I added more points to everything so there was more context. These are just a few points on my journey and they seem to hop from one to the other with little to no build up.
 
@@ -82,10 +83,8 @@ Anyways, enough about my opinions on modern digital styling tools. Here is my up
 | Figure 5 | [Website Source Code](https://github.com/jrsalata/jrsalata.github.io) |
 | Figure 6 | [CrowdCam](https://github.com/crowdcam/crowdcam) |
 
-
 If you want to see the raw text, here it is. Otherwise, [skip below](#map-reflection)
 
-```txt
 flowchart TD
     start(2015) --> khan(Started learning how to code on Khan Aacademy)
     khan --> 2018(~2018)
@@ -135,7 +134,6 @@ flowchart TD
     graduate --> job(I plan on finding a full time job as a software engineer for a consulting or development firm)
     graduate --> certificates(I plan on devoting time to earn some additional certifications to learn more advanced skills and concepts)
     graduate --> more(I want to keep learning and expanding my skillset as I gain more professional experience)
-```
 
 ## Map Reflection
 
