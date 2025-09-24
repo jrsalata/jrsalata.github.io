@@ -3,7 +3,7 @@ title: "Assembler Honors Contract"
 author: "John Salata"
 description: "One of my most memorable Honor's Experiences was independently creating a complex system"
 date: 2025-09-23T10:25:19-05:00
-draft: true
+draft: false
 toc: true
 weight: 2
 ---

@@ -2,7 +2,7 @@
 title: "Documentation"
 date: 2024-12-10T20:02:55-05:00
 draft: false
-weight: 2
+weight: 3
 author: "John Salata"
 description: "A redirection to the generated javadocs"
 toc: false
