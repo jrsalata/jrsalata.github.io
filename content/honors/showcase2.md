@@ -44,3 +44,11 @@ Here is the final project PowerPoint that helps to explain parts of the overall 
 <iframe src="/FinalProject.pdf" width="100%" height="300"></iframe>
 
 For more technical details, I highly recommend reading the full project page [here](/projects/assembler) and checking out the technical documentation [here](/docs/apidocs/index.html). Source Code can be found on my GitHub [here](https://github.com/jrsalata/assembler) as well.
+
+## Reflection
+
+Overall, this was the most challenging project I completed. Each moving part was complex and finding issues was like searching for a needle in a haystack. Despite the challenges, I was able to make a well-thought out design that enabled parts of the overall project to be simpler than it might have otherwise been.
+
+I gained experience designing a low-level tool that-while having no real-world application-can be adapted for other projects and architectures. I demonstrated that I can work independently and drive myself to accomplish difficult goals by breaking everything down into smaller features and chunks to work on. I also used build tools and test driven development to gain experience with practices used in the real world.
+
+While it was no fancy website or practical project, I think I grew the most from this free-form application of everything I learned leading up to it.
