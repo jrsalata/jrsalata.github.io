@@ -2,9 +2,10 @@
 title: "Development Growth"
 author: "John Salata"
 description: "A reflection on a few different projects and my growth from them"
-date: 2025-10-16T10:25:19-05:00
+date: 2025-10-22T10:25:19-05:00
 draft: false
 weight: 3
+toc: true
 ---
 
 In my time at IUPUI and IU Indianapolis, I was able to apply the general skills that I gained into many different class projects, personal projects, and professional work as well. Looking back from my freshman year, I've made some practical projects that solve real problems in ways that helped me tremendously. Here are just a few that I've worked on and how I grew from them.
