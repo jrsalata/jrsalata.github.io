@@ -42,7 +42,7 @@ url = "https://linkedin.com/in/john-salata"
 [[params.socialLinks]]
 icon = "fa-solid fa-envelope"
 title = "Email"
-url = "mailto:jrsalata@iu.edu"
+url = "mailto:john@salata.software"
 
 [menu]
 
