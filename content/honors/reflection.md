@@ -26,3 +26,17 @@ This was especially true during my internship at Resultant. Everything I learned
 
 At Resultant, I worked with technologies and platforms I had no experience with. It was intimidating at first. I don't fully understand all of the details but I knew enough to know what I needed to learn. Every project from my simple package system to a complex assembler gave me the determination and wisdom to keep going and make an impact on the projects and teams I worked with.
 
+I also think that the soft skills that I developed and demonstrated during my time can not be overstated. We spent a lot of time going over what it means to be client-focused on the consulting field. I've always been someone thats focused on the needs of others in my community, but I've never applied this mindset in my projects before.
+
+I focused on not just _what_ the problem was, but _why_ it was a problem. I worked to understand what our clients needed and gave them something they needed to further their mission and not just what they thought they wanted. This includes taking initiative on modifying requirements, adding navigational buttons, and other quality of life additions that could have been neglected, but added value to those that would be using our work.
+
+With respect to the team that I worked with, I took initiative on ongoing problems and offered to help every chance I got. Here is what one of my managers said about me at the end of my time at Resultant:
+
+> "John did an incredible job assimilating into an extremely fast paced environment on a large codebase that has evolved over the last 9 years. He absolutely excelled in providing value to the team and the client."
+
+This feedback helped me understood why I was succeding in the way that I was at Resultant. To me, this is just who I am and I was just doing my job. To everyone else, I was going above and beyond what they expected from an intern and kept up with the frequent changes and feature requests.
+
+# Future Plans
+
+With everything that I learned in my time in the Honors College, I understand that there is much more to the software development field than just knowing and specializing in everything. It is about learning how to learn and being adaptable to new situations.
+
