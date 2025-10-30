@@ -3,7 +3,7 @@ title: "College Reflection"
 author: "John Salata"
 description: "A brief reflection on my overall growth at IU Indy"
 date: 2025-10-30T10:25:19-05:00
-draft: true
+draft: false
 toc: true
 weight: 4
 ---
@@ -38,5 +38,6 @@ This feedback helped me understood why I was succeding in the way that I was at 
 
 # Future Plans
 
-With everything that I learned in my time in the Honors College, I understand that there is much more to the software development field than just knowing and specializing in everything. It is about learning how to learn and being adaptable to new situations.
+With everything that I learned in my time in the Honors College, I understand that there is much more to the software development field than just knowing and specializing in everything. It is about learning how to learn and being adaptable to new situations. It is about taking initiative in teams to get work done. It is about focusing on the needs of others so the work done is what is needed. Its all of these things.
 
+I know that I have much to learn in the workforce, but with the foundation that I gained through all of these experiences, I am confiden that I can continue to learn and grow.
