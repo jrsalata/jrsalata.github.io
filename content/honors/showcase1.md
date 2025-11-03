@@ -8,9 +8,13 @@ toc: true
 weight: 1
 ---
 
+# Overview
+
+This page goes through two very important aspects of my personal identity: Who am I? and the map of my journey.
+
 # Who am I?
 
-That really is the question that can sum up a great portion of our college expereinces. "Who am I?".
+That really is the question that can sum up a great portion of our college experiences. "Who am I?".
 
 Finding yourself and recognizing growth can be difficult at times, especially when so much around us is changing faster than we can process. When I look at myself, there is so much I see and so much that I want to become.
 
@@ -48,7 +52,7 @@ So who am I?
 
 > I am a computer nerd that loves using the skills I learn to solve practical problems _for people_.  I enjoy camping and taking pictures of the outdoors _to capture moments that most of us miss_.  I do my best to make healthy personal connections with those I meet and hear their stories _to understand them better_.  I am ambitious and organized in my work _because I care about the work I do_. _I am someone who never wants to stop learning and growing because the world is constantly changing in new and exciting ways._
 
-Nothing from my original statement was removed. Afterall, it is still me. But I added some details and refined who I am. Despite those additions, I don't think a single paragraph of statements and accurately describe anyone. There are many qualities of people that can not be captured by words or stories. Many qualities are better captured by one's actions and work rather than words on a page.
+Nothing from my original statement was removed. After all, it is still me. But I added some details and refined who I am. Despite those additions, I don't think a single paragraph of statements and accurately describe anyone. There are many qualities of people that can not be captured by words or stories. Many qualities are better captured by one's actions and work rather than words on a page.
 
 # Journey Map
 
@@ -88,8 +92,8 @@ Click [here](/map.txt) to see the raw text of my Journey Map.
 
 ## Map Reflection
 
-Overall, I think that my overall goals and path have not significantly changed over the past few years. I was able to find real world experience opportunities where I gained new profesional skills and expanded my technical abilities.
+Overall, I think that my overall goals and path have not significantly changed over the past few years. I was able to find real world experience opportunities where I gained new professional skills and expanded my technical abilities.
 
-I think the biggest change in this map - outside of the additional details and context - is my direction. I knew I wanted to build software and solve problems. I just wasn't sure the best way to do that. I think my expereince at Resultant helped me understand how impactful going into the consulting field can be. I can have the opportunity to work with multiple clients and gain experience with multiple different technologies.
+I think the biggest change in this map - outside of the additional details and context - is my direction. I knew I wanted to build software and solve problems. I just wasn't sure the best way to do that. I think my experience at Resultant helped me understand how impactful going into the consulting field can be. I can have the opportunity to work with multiple clients and gain experience with multiple different technologies.
 
 Its easy to look at all of the growth I still need to accomplish. I do not know what I do not know about so many different fields. But this map allows me to see all of the progress I have made and how further I am compared to when I started.

@@ -20,6 +20,7 @@ toc: true
 # Certifications
 
 - [Career Essentials in GitHub](https://www.linkedin.com/learning/certificates/5952be181d082742e8f76658abe8b1b1cd3d9615d28ce80d96014d6d1b37e177?u=87254282)
+- [Docker Foundations Professional](https://www.linkedin.com/learning/certificates/0d56498094195986a91f9493623e5c07ef9e87a2f4bf38aa63e2b438a7079c28?u=87254282)
 - [Rasa Developer Certification](/)
 - [Project Management Job Simulation](https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/tHFz7Bfjmh35DXQv6_T6kdcdKSTfg2aotxT_5vZX6G4KctkmxAtCY_1733433787105_completion_certificate.pdf)
 
@@ -27,7 +28,7 @@ toc: true
 
 # Work Experience
 
-## Jr. Softwawre Engineer
+## Jr. Software Engineer
 
 ### Resultant
 
@@ -67,6 +68,14 @@ toc: true
 [Back to top](#technical-skills)
 
 # Projects
+
+## DuesManager
+
+### Spring 2025
+
+- Developed an automation task using UiPath to automate payment and member platform synchronization
+- Improved data accuracy and process efficiency to enable leadership to make data-driven decisions
+- [More Details](/projects/duesmanager/)
 
 ## CrowdCam
 
@@ -131,7 +140,7 @@ toc: true
 
 ## Deans List - (Fall 2022-Present)
 
-- Maintained a 4.0 GPA
+- Maintained a 3.99 GPA
 
 ## Bronze Diamond Award (April 2024)
 

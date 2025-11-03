@@ -8,6 +8,12 @@ toc: true
 weight: 2
 ---
 
+# Overview
+
+This showcases one of the Honors Contracts I completed where I created an assembler. It was one of the first projects I completed independently with limited guidelines and expectations.
+
+# Assembler
+
 One of the most challenging and rewarding Honor's Experiences I completed was my Honors Contract for CSCI-C 335: Computer Structures.
 
 The entire class focused on learning how computers work at an extremely low level. We discussed how different components of a processor work and how simple parts can be combined to enable complex behavior.
@@ -16,11 +22,13 @@ The semester-long project that everyone in the class completed was to apply our 
 
 However, as mine was an Honors Contract, I had the opportunity to complete this project by myself. This introduced a few challenges as I would be taking on more responsibility than my classmates.
 
-Side note: If you want to hear more about the technical details, please consider looking at [my full section](/projects/assembler) dedicated to this project! This page is meant to recap some of the more significant sections.
+Side note: If you want to hear more about the technical details, please consider looking at [my full post](/projects/assembler) dedicated to this project! This page is meant to recap the personal growth from this experience.
 
 ## Challenges
 
 One of the biggest challenges with this project was accountability. I had to hold myself accountable to spend time working on this throughout the semester. With the amount of complexity it would need, this was not something that could be done in a month, let alone last minute. Building an assembler from scratch is not easy and requires weeks of planning and understanding of the core components. Understanding the core components would end up being one of the most challenging parts of this project.
+
+> "The answer to almost every question is 'It Depends'" - Dr. Hill
 
 Knowing the challenges with a complex project, I decided to spend plenty of time focusing on the overall design of the software. I recently completed a course about software design patterns and saw this as the perfect opportunity to apply what I learned in a new way.
 
@@ -33,7 +41,7 @@ Eventually, I created a design that would theoretically work and slowly implemen
 Below is the diagram that models how parts of the assembler would work.
 
 ![Assembler Diagram](/UML.svg)
-[Link to UML in a new tab](/UML.svg)
+[Link to diagram in a new tab](/UML.svg)
 
 Overall, it is safe to say that this is a very complex piece of software. However, because I incorporated good design principles and patterns, it is very extendable and can be adapted for other projects as well. Technically speaking, it handles two different assembly languages: SIC and SIC/XE. While they are closely related, there are some important differences in how they are handled. With the builder pattern, we can easily swap the parts out to work properly.
 

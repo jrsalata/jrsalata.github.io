@@ -8,5 +8,6 @@ This site focuses on the more technical side of myself and focuses heavily on pr
 
 * [Learn More About Me](/about/)
 * [Work Experience](/about/experience/)
+* [Honors E-Portfolio](/honors/)
 * [Past and Present Projects](/projects/)
 * [Thoughts on Anything and Everything](/posts/)

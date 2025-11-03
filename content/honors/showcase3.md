@@ -1,5 +1,5 @@
 ---
-title: "Development Growth"
+title: "Overall Growth and Professional Development"
 author: "John Salata"
 description: "A reflection on a few different projects and my growth from them"
 date: 2025-10-21T10:25:19-05:00
@@ -7,6 +7,8 @@ draft: false
 weight: 3
 toc: true
 ---
+
+# Overview
 
 In my time at IUPUI and IU Indianapolis, I was able to apply the general skills that I gained into many different class projects, personal projects, and professional work as well. Looking back from my freshman year, I've made some practical projects that solve real problems in ways that helped me tremendously. Here are just a few that I've worked on and how I grew from them.
 
@@ -22,7 +24,7 @@ When our small group was brainstorming ideas, there were a few different directi
 
 In 2024, I served as the Studio Boulder Program Lead for the 2024 National Order of the Arrow Conference (NOAC). NOAC is essentially a week-long conference for Scouting America's National Honor Society: The Order of the Arrow (OA). 
 
-In this role specifically, I would be leading the Studio program for this conference. The Studio program allows participants to submit photos and videos to our team where they can then be published online to show the Conference from their point of view. Afterall, our photography team is relatively small and we can not capture every moment that is worth sharing.
+In this role specifically, I would be leading the Studio program for this conference. The Studio program allows participants to submit photos and videos to our team where they can then be published online to show the Conference from their point of view. After all, our photography team is relatively small and we can not capture every moment that is worth sharing.
 
 The biggest challenge in this role is the sheer amount of media that we collect. With over 6000 pieces of media and 400+ participants, keeping track of everything was difficult. Not only did we have to organize the files by who submitted them, but we had to sort and cull in order to find the ones that were actually usable.
 
@@ -52,9 +54,12 @@ In my local Order of the Arrow Lodge, we have a payment portal and a member port
 
 ## Solution
 
-One of the certificates I've earned at IU Indianapolis is in Cognitive Automation which is a fancy way of saying that I learned how to use automation tools with AI to complete complex tasks. Most of the time, these are repetitive tasks that are tedious for humans to do and have no way to implement a solution with traditional programatic tools.
+One of the certificates I've earned at IU Indianapolis is in Cognitive Automation which is a fancy way of saying that I learned how to use automation tools with AI to complete complex tasks. Most of the time, these are repetitive tasks that are tedious for humans to do and have no way to implement a solution with traditional programmatic tools.
 
-The end result ended up being a powerful task that would find the dues payments on the payment portal, process them through a python script to clean the data, then import the results on the members portal. Final results and any anomolies would be sent to a Slack channel for further review.
+#### Solution Diagram
+![Process Diagram](https://mermaid.ink/img/pako:eNp1Ul2PmzAQ_CuWn1opiQjkk4c-HKRqpItihbtKB8mDa-8FK2AjY65JQ_57DSQnUalISLvMzA479hUzxQH7-D1Tv1lKtUEv4V4i-5AADYffUB2xFHiVAUcvtDzV6Il0-JMySZRRdmqqQ8v9hEhC6CUHaVB0KQ3kHVyvzoWyDiE1FBmFguhnjcjbF3IxqZIoYloU5uvd_a2TEK0YlKV131amqEyNnjfJBvJfoB-z-4KV1krXaLW7thX6QSXPQN861mrXscKqyASjBmoUkoQ_uiFoPWLlx6HP3ogyp6bJAQWqtP8QRAmzxX_oa_lBM8HROqztmwj-Dy8kLS8mSSwK9F1kcAeC6A507Trstc-bto1eky4KtIMmzrs2eu2R486jPaD7MQUplRKyQ29avc4LrQqb5lo28a52_V22JrWYKMsK6m1yBAlasHYfc35Yby0zJniAc9A5Fdxep2uD7LEV57DHvi051ac93sub5dHKqOgiGfaNrmCAq4Lb8ENBj5rm2H-nWWm_AhdG6U13P9trOsAFlbFS-UNoW-xf8Rn7njeaTybLqess5hPXcSYDfMG-6y1G7nzhzsfj6XS2nM1ntwH-0w5wRkvH88aOO3bGzszxGoVW1TH99D_qZpXOSIPkoANVSYP9iTu7_QWiZP6s?type=png)
+
+The end result ended up being a powerful task that would find the dues payments on the payment portal, process them through a python script to clean the data, then import the results on the members portal. Final results and any anomalies would be sent to a Slack channel for further review.
 
 I also created a Slack Bot so this process can be ran at any time by certain members in our Slack Workspace. 
 
@@ -66,7 +71,7 @@ From a personal perspective, I refined my automation skills by working with a re
 
 # Software Engineering Internship at Resultant
 
-In the Summer of 2025, I had the opportunity to work at a mid-size consulting firm based in Indianapolis called Resultant. To say that I learned a lot and made a recognizeable impact in my short time there would be an understatement. Not only did I apply the technical skills I gained from IU Indy, but I learned about the complex world of consulting and the importance of being client-focused. It was a great opportunity to work with some amazing people over the summer.
+In the Summer of 2025, I had the opportunity to work at a mid-size consulting firm based in Indianapolis called Resultant. To say that I learned a lot and made a recognizable impact in my short time there would be an understatement. Not only did I apply the technical skills I gained from IU Indy, but I learned about the complex world of consulting and the importance of being client-focused. It was a great opportunity to work with some amazing people over the summer.
 
 ## Cloud Migration Project
 
@@ -104,7 +109,7 @@ The problem and solution seemed obvious to me at the time. I spent a few days wo
 
 Weird? If the issue was caused by too many entries, it should not be happening with this few entries.
 
-And then I found it. The _actual_ cause of the page jumping. A CSS tag was being removed after a certain period of time which caused the jupming effect that was so bothersome. A simple 3 line change is all that was needed to fix the issue. 
+And then I found it. The _actual_ cause of the page jumping. A CSS tag was being removed after a certain period of time which caused the jumping effect that was so bothersome. A simple 3 line change is all that was needed to fix the issue. 
 
 Despite this, the client was intrigued by the filtering page. I presented it to them and they loved it. I was able to solve the problem and create a complex feature that was needed for their use case. 
 
@@ -112,6 +117,6 @@ Despite this, the client was intrigued by the filtering page. I presented it to 
 
 With all of my experiences, I know that I have much to learn. How exciting?
 
-I know enough to be able to quickly learn and adapt to almost any problem. My passion truly is solving problems with people so they are better equiped to make the world a better place.
+I know enough to be able to quickly learn and adapt to almost any problem. My passion truly is solving problems with people so they are better equipped to make the world a better place.
 
 I also think that what made some of these experiences stand out was not my technical abilities. What stood out to me was the way in which I interacted with those I worked with. I am a ambitious, innovative, and passionate person that loves using my technical skills to solve problems.

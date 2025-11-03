@@ -1,5 +1,5 @@
 ---
-title: "College Reflection"
+title: "Holistic Reflection"
 author: "John Salata"
 description: "A brief reflection on my overall growth at IU Indy"
 date: 2025-10-30T10:25:19-05:00
@@ -16,13 +16,13 @@ Now, I've gained some experience. I learned concepts and tools that younger me n
 
 My time in the Honors college reinforced this with a few of the projects and experiences I completed. 
 
-My [assembler](/honors/showcase2/), for example, was an application of thoery learned over two semesters. It implemented design patterns from my Principles of Software Design course and the theories that we were learning in Computer Structures. I used this as an opportunity to learn about test driven development and other automated build tools. Am I an expert in test driven development or build tools? No. But I can learn more when I need to.
+My [assembler](/honors/showcase2/), for example, was an application of theory learned over two semesters. It implemented design patterns from my Principles of Software Design course and the theories that we were learning in Computer Structures. I used this as an opportunity to learn about test driven development and other automated build tools. Am I an expert in test driven development or build tools? No. But I can learn more when I need to.
 
 One of my first projects was a simple package management system. You could log packages, pick them up, and mark their condition. When I built it, it took a lot of time and effort to get everything working. It was a bunch of new concepts that I was still learning about. 
 
 Looking back, I see how much I've grown. What felt like a mountain of a project is now just a small hill. The more projects I complete, the more problems I overcome, the more mountains I climb, the easier the next one is and the harder future mountains can be.
 
-This was especially true during my internship at Resultant. Everything I learned, developed, and struggled with gave me the determination, ambition, and willingness to learn what I needed. I specifically mention that the struggles I faced while learning in school because the biggest struggles lead to the most memorable and important lessons. Despite how dificult some of the challenges were, I never gave up and continued to learn and develop.
+This was especially true during my internship at Resultant. Everything I learned, developed, and struggled with gave me the determination, ambition, and willingness to learn what I needed. I specifically mention that the struggles I faced while learning in school because the biggest struggles lead to the most memorable and important lessons. Despite how difficult some of the challenges were, I never gave up and continued to learn and develop.
 
 At Resultant, I worked with technologies and platforms I had no experience with. It was intimidating at first. I don't fully understand all of the details but I knew enough to know what I needed to learn. Every project from my simple package system to a complex assembler gave me the determination and wisdom to keep going and make an impact on the projects and teams I worked with.
 
@@ -34,10 +34,10 @@ With respect to the team that I worked with, I took initiative on ongoing proble
 
 > "John did an incredible job assimilating into an extremely fast paced environment on a large codebase that has evolved over the last 9 years. He absolutely excelled in providing value to the team and the client."
 
-This feedback helped me understood why I was succeding in the way that I was at Resultant. To me, this is just who I am and I was just doing my job. To everyone else, I was going above and beyond what they expected from an intern and kept up with the frequent changes and feature requests.
+This feedback helped me understood why I was succeeding in the way that I was at Resultant. To me, this is just who I am and I was just doing my job. To everyone else, I was going above and beyond what they expected from an intern and kept up with the frequent changes and feature requests.
 
 # Future Plans
 
 With everything that I learned in my time in the Honors College, I understand that there is much more to the software development field than just knowing and specializing in everything. It is about learning how to learn and being adaptable to new situations. It is about taking initiative in teams to get work done. It is about focusing on the needs of others so the work done is what is needed. Its all of these things.
 
-I know that I have much to learn in the workforce, but with the foundation that I gained through all of these experiences, I am confiden that I can continue to learn and grow.
+I know that I have much to learn in the workforce, but with the foundation that I gained through all of these experiences, I am confident that I can continue to learn and grow.
