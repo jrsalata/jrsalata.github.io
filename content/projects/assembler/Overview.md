@@ -4,7 +4,7 @@ date: 2024-11-30T11:02:55-05:00
 draft: false
 weight: 1
 author: "John Salata"
-description: "A brief description of the assembler project"
+description: "A brief description of the assembler project."
 toc: true
 ---
 

@@ -3,7 +3,7 @@ title: "Dues Manager RPA Process"
 date: 2025-06-01T00:52:49Z
 draft: false
 author: "John Salata"
-description: "A real world application for robotic process automation (RPA) and integration"
+description: "A demonstration of a real world application for robotic process automation (RPA) and integration."
 toc: true
 ---
 

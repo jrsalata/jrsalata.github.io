@@ -1,7 +1,7 @@
 ---
 title: "Overall Growth and Professional Development"
 author: "John Salata"
-description: "A reflection on a few different projects and my growth from them"
+description: "A reflection on different experiences with an emphasis on how I grew from them."
 date: 2025-10-21T10:25:19-05:00
 draft: false
 weight: 3

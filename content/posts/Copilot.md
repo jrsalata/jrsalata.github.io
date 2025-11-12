@@ -1,7 +1,7 @@
 ---
 title: "My GitHub Copilot Experience"
 date: 2024-11-27T08:24:09-05:00
-description: "Hear my thoughts and experiences with these new AI tools that bring unease to some"
+description: "Hear my thoughts and experiences with these new AI tools that bring unease to some."
 author: "John Salata"
 draft: false
 toc: true

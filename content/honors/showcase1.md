@@ -1,7 +1,7 @@
 ---
 title: "Personal Growth Journey"
 author: "John Salata"
-description: "This is a reflection on who I am before, during, and after college"
+description: "This article goes through two very important aspects of my personal identity: Who am I? and the map of my journey."
 date: 2025-09-09T10:25:19-05:00
 draft: false
 toc: true

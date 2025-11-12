@@ -1,9 +1,9 @@
 ---
 title: "Experience"
-date: 2025-9-9T10:25:19-05:00
+date: 2025-11-01T10:25:19-05:00
 draft: false
 author: "John Salata"
-description: "This is not intended to be a formal resume, but rather a list of some of my past experience and achievements."
+description: "A detailed review of my technical skills, work experience, personal projects, and other activities."
 weight: 2
 toc: true
 ---

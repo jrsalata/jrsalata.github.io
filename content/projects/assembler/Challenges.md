@@ -4,7 +4,7 @@ date: 2024-12-10T20:02:55-05:00
 draft: false
 weight: 2
 author: "John Salata"
-description: "A brief reflection about the various challenges I overcame in this project"
+description: "A brief reflection about the various challenges I overcame in this project."
 toc: true
 ---
 

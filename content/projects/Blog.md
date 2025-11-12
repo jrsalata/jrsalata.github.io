@@ -3,7 +3,7 @@ title: "Creating This Blog"
 date: 2024-11-26T00:52:49Z
 draft: false
 author: "John Salata"
-description: "Read about how I built and deployed this site with Hugo and GitHub Pages"
+description: "Read about how I built and deployed this site with Hugo and GitHub Pages."
 toc: true
 ---
 

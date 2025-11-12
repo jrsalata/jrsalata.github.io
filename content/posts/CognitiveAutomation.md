@@ -1,7 +1,7 @@
 ---
 title: "Cognitive Automation Odyssey"
 date: 2024-12-13T14:24:09-05:00
-description: "A brief overview of my journey learning about the various aspects Cognitive Automation and Robotic Process Automation tools"
+description: "A brief overview of my journey learning about the various aspects Cognitive Automation and Robotic Process Automation tools."
 author: "John Salata"
 draft: false
 toc: true

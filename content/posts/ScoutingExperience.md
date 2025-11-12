@@ -2,7 +2,7 @@
 title: "Lessons From Scouting"
 date: 2025-01-16T19:24:54Z
 draft: false
-description: "A brief reflection on some of the most impactful lessons I learned from my time in Scouting"
+description: "A brief reflection on some of the most impactful lessons I learned from my time in Scouting."
 author: "John Salata"
 toc: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Holistic Reflection"
 author: "John Salata"
-description: "A brief reflection on my overall growth at IU Indy"
+description: "A brief reflection on my overall growth at IU Indy as an Honors College student."
 date: 2025-10-30T10:25:19-05:00
 draft: false
 toc: true

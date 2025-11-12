@@ -1,7 +1,7 @@
 ---
 title: "Assembler Honors Contract"
 author: "John Salata"
-description: "One of my most memorable Honor's Experiences was independently creating a complex system"
+description: "This showcase highlights one of the most challenging and satisfying projects that I completed: building an assembler."
 date: 2025-09-23T10:25:19-05:00
 draft: false
 toc: true

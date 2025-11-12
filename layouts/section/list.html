@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <h1 id="{{ .Title | urlize }}">{{ .Title | markdownify }}</h1>
+
+  {{ .Content }}
+
+  <div class="posts-list">
+  {{ range .Pages.ByWeight }}
+    <article class="post-item">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a> - Last Updated: {{ .Date.Format "January 2, 2006" }}</h2>
+      <p class="post-meta"></p>
+      <p class="post-summary">{{ if .Params.description }}{{ .Params.description }}{{ end }}</p>
+    </article>
+  {{ end }}
+  </div>
+
+{{ end }}
+
+{{/* This section is needed for the sidebar note */}}
+{{ define "aside" }}
+  {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+{{ end }}
