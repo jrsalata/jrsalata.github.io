@@ -87,3 +87,9 @@ unsafe = true
     startLevel = 1
     endLevel   = 2
     ordered    = true
+
+[privacy]
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true

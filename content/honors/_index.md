@@ -12,4 +12,8 @@ We start this project in a class taken our freshman year called H200: Introducti
 
 Below are some different reflections, personal statements, and projects that best reflect some of my learning with respect to the Honors program. 
 
+## Welcome Video
+
+{{< youtube YP_wBYgNr0U >}}
+
 If you are looking for more technical or personal perspectives, please consider looking at some of my [projects](/projects) or [posts](/posts) as they were completed on my own time with no arbitrary requirements.
