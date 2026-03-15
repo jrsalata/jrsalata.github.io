@@ -2,7 +2,7 @@
 title: "Toolery"
 author: "John Salata"
 description: "Your personal wellness toolbox!"
-date: 2026-03-15T10:25:19-05:00
+date: 2026-03-14T10:25:19-05:00
 draft: false
 ---
 
