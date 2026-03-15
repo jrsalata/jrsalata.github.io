@@ -1,6 +1,6 @@
 ---
 title: "Toolery Privacy Policy"
-date: 2026-03-15T19:52:49Z
+date: 2026-03-14T19:52:49Z
 draft: false
 author: "John Salata"
 description: "Privacy policy for the data we (don't) collect with Toolery"
