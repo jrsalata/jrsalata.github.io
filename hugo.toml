@@ -65,10 +65,16 @@ url = "/Projects/"
 weight = 10
 
 [[menu.main]]
+identifier = "toolery"
+name = "toolery"
+url = "/toolery/"
+weight = 11
+
+[[menu.main]]
 identifier = "honors"
 name = "honors_e_portfolio"
 url = "/honors/"
-weight = 11
+weight = 12
 
 [taxonomies]
 category = "categories"
