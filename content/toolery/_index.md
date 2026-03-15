@@ -22,3 +22,5 @@ Some features include:
 - No ads
 
 It is currently in a closed testing period. If you are interested, please email toolery@salata.software with the email address associated with your Google Play Account!
+
+The source code can be found on [GitHub](https://github.com/jrsalata/toolery). Contributions are welcome!
