@@ -14,6 +14,4 @@ Below are some different reflections, personal statements, and projects that bes
 
 ## Welcome Video
 
-{{< youtube YP_wBYgNr0U >}}
-
 If you are looking for more technical or personal perspectives, please consider looking at some of my [projects](/projects) or [posts](/posts) as they were completed on my own time with no arbitrary requirements.
