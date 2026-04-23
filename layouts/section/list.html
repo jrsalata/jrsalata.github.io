@@ -4,7 +4,7 @@
   {{ .Content }}
 
   <hr>
-  <div class="posts-list">
+  <section class="posts-list" aria-labelledby="{{ .Title | urlize }}">
   {{ range .Pages.ByWeight }}
     <article class="post-item">
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a> - Last Updated: {{ .Date.Format "January 2, 2006" }}</h2>
@@ -12,7 +12,7 @@
       <p class="post-summary">{{ if .Params.description }}{{ .Params.description }}{{ end }}</p>
     </article>
   {{ end }}
-  </div>
+  </section>
 
 {{ end }}
 
