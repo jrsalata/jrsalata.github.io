@@ -1,10 +1,11 @@
 {{ define "main" }}
-  <h1 id="{{ .Title | urlize }}">{{ .Title | markdownify }}</h1>
+  {{ $sectionID := .Title | urlize }}
+  <h1 id="{{ $sectionID }}">{{ .Title | markdownify }}</h1>
 
   {{ .Content }}
 
   <hr>
-  <div class="posts-list">
+  <section class="posts-list" aria-labelledby="{{ $sectionID }}">
   {{ range .Pages.ByWeight }}
     <article class="post-item">
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a> - Last Updated: {{ .Date.Format "January 2, 2006" }}</h2>
@@ -12,7 +13,7 @@
       <p class="post-summary">{{ if .Params.description }}{{ .Params.description }}{{ end }}</p>
     </article>
   {{ end }}
-  </div>
+  </section>
 
 {{ end }}
 
