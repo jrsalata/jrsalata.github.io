@@ -1,10 +1,11 @@
 {{ define "main" }}
-  <h1 id="{{ .Title | urlize }}">{{ .Title | markdownify }}</h1>
+  {{ $sectionID := .Title | urlize }}
+  <h1 id="{{ $sectionID }}">{{ .Title | markdownify }}</h1>
 
   {{ .Content }}
 
   <hr>
-  <section class="posts-list" aria-labelledby="{{ .Title | urlize }}">
+  <section class="posts-list" aria-labelledby="{{ $sectionID }}">
   {{ range .Pages.ByWeight }}
     <article class="post-item">
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a> - Last Updated: {{ .Date.Format "January 2, 2006" }}</h2>
