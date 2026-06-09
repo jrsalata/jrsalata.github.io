@@ -1,7 +1,7 @@
 ---
 title: "Personal AI Usage Policy"
 date: 2026-06-09T01:10:49Z
-draft: true
+draft: false
 description: "A transparent review of how I may/may not use AI in my writings and work"
 author: "John Salata"
 toc: true
