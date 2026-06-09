@@ -8,6 +8,14 @@ weight: 2
 toc: true
 ---
 
+# Education
+
+- Bachelors of Science in Computer Science with Highest Distinction
+- Minor in Mathematics
+- Cognitive Automation and Bot Development Certificate
+- Network Security Certificate
+- Honors College Scholar
+
 # Technical Skills
 
 | **Category**   |  **Skills**                                                                |
@@ -138,9 +146,13 @@ toc: true
 
 # Awards
 
-## Deans List - (Fall 2022-Present)
+## RHA Executive Board Member of the year (2026)
 
-- Maintained a 3.99 GPA
+- Awarded the the Residence Hall Association adviser, I was selected for my dedication to our residents and tenacity while working with my executive board.
+
+## Deans List (Fall 2022-Spring 2026)
+
+- Maintained a 3.975 GPA
 
 ## Bronze Diamond Award (April 2024)
 
