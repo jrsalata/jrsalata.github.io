@@ -20,4 +20,4 @@ Last updated: March 15, 2026
 
 ## Contact
 
-If you have any questions regarding how your data is stored locally on your device, please email toolery@salata.software
+If you have any questions regarding how your data is stored locally on your device, please email <toolery@salata.software>

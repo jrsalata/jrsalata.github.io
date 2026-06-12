@@ -4,6 +4,8 @@ Welcome to my personal site where I post small articles about the different proj
 
 This site focuses on the more technical side of myself and focuses heavily on projects, skills, and thoughts around technology. I encourage you to read around and explore some of my thoughts!
 
+<!-- TODO: Add AI usage disclaimer for demo -->
+
 ## Quick Links
 
 * [Learn More About Me](/about/)
